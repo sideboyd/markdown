@@ -4,7 +4,6 @@
     * [数据库设计](https://github.com/sideboyd/markdown/blob/master/files/data%20design.md)
 * 阿里云产品    
     * [阿里云产品](https://github.com/sideboyd/markdown/blob/master/files/aliyun.md)
-
 * UI框架
     * [BOOTSTRAP](https://github.com/sideboyd/bootstrap)
     * [adminLTE](https://github.com/sideboyd/AdminLTE)
@@ -18,4 +17,7 @@
     * [android thing UI](https://github.com/sideboyd/sample-simpleui)
 * 人脸识别
     * [arcfaceSDK](https://github.com/sideboyd/ArcFaceDemo)
-* [机器学习算法汇总](https://github.com//RedditSota/state-of-the-art-result-for-machine-learning-problems)
+* 机器学习
+    * [机器学习算法汇总](https://github.com//RedditSota/state-of-the-art-result-for-machine-learning-problems)
+* python
+    * [python note]()
