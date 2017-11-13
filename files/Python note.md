@@ -407,12 +407,69 @@ def fab(n):
 	return n3
 	
 number = int(input('input a int:'))
-result = fab(number)
+result = fab(number
 if result != -1:
 	print('%d total:' % result)
 ```
 
-![pytyonnote_fab](D:\markdown\image\pytyonnote_fab.JPG)
+
+
+```python
+def fab(n):
+	if n < 1:
+		print('error')
+		return -1
+	
+	if n == 1 or n == 2:
+		return 1
+	else:
+		return fab(n-1) + fab(n-2)
+		
+result = fab(20)
+if result != -1:
+	print('%d total:' % result)
+```
+
+递归算法可以理解为：分治思想
+
+效率问题来说：迭代效率更高，
+
+## 课时25：递归汉诺塔
+
+**递归求解汉诺塔**
+
+|  1   |      |      |
+| :--: | :--: | :--: |
+|  2   |      |      |
+|  3   |      |      |
+|  4   |      |      |
+|  5   |      |      |
+|  6   |      |      |
+|  7   |      |      |
+|  X   |  Y   |  Z   |
+
+思路分解：先把1-6从X移动到Y,再把7移动至Z，最后把1-6从Y移动到Z。
+
+拆解问题：
+
+```python
+def hanoi(n, x, y, z):
+	if n == 1:
+		print(x, '-->', z)
+	else:
+		hanoi(n-1, x, z, y)#将前n-1个盘子从x移动到y上
+		print(x, '-->', z) #将最底下的最后一个盘子从X移动到z上
+		hanoi(n-1, y, x, z)#将y上的n-1个盘子移动到z上
+		
+n = int(input('input hanoi level:'))
+hanoi(n, 'x', 'y', 'z')
+```
+
+
+
+## 课时26：
+
+
 
 
 
