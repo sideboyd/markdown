@@ -198,13 +198,221 @@ print('折扣后价格是：', new_price)
 
 
 
-## 课时21：
+## 课时21：内嵌函数和闭包
+
+**global 关键字**
+
+如果尝试修改全局变量，python会自动创建一个同名的局域变量，shadowing功能
+
+```python
+count = 5
+def myfun():
+    global count
+    count = 10
+    print(10)
+```
+
+这里的global count ，是强行在函数中修改全局变量
+
+**内嵌函数：**
+
+python是支持函数的嵌套：
+
+```python
+def fun1():
+    print('fun1' downloading...)
+    def fun2():
+    	print('fun2' downloading...)
+    fun2()
+```
+
+嵌套内的函数，不能进行全局调用
+
+**闭包：**
+
+如果在一个内部函数里的变量
+
+```python
+def fun1():
+	x = 5
+	def fun2():
+         nonlocal x
+		x**2 = x
+		return x
+	return fun2()
+```
+
+这里的nonlocal，是允许内嵌函数使用外部变量
+
+## 课时22：lambda表达式
+
+**匿名函数**
+
+```python
+def ds(x):
+	return 2* x + 1
+	
+g = lambda x: 2 * x + 1
+
+```
+
+不用考虑申请和释放资源的问题
+
+```python
+def add(x, y):
+	return x + y
+
+g = lambda x, y : x + y
+
+```
 
 
 
+**lambda表达式的重要意义**
+
+使用lambda可以让代码更简单，
+
+不用def直接调用，
+
+只调用一两次的函数，不用起名字直接使用即可，
+
+**BIF**
+
+filter()
+
+```
+help(filter)
+```
 
 
 
+```python
+list(filter(none, [1, 0, False, Ture]))
+```
+
+
+
+```python
+def odd(x):
+	return x % 2
+	
+temp = range(10)
+show = filter(odd, temp)
+list(show)
+```
+
+```python
+list(filter(lambda x : x % 2, range(10)))
+```
+
+map()
+
+```python
+list(map(lambda x : x * 2, range(10)))
+```
+
+
+
+## 课时23：递归
+
+普通程序员用迭代，天才程序员用递归。
+
+**汉若塔**
+
+函数调用自身，python默认定义调用100层
+
+```
+import sys
+sys.
+```
+
+
+
+```python
+def recursion():
+	return recursion()
+```
+
+**递归求阶乘**
+
+```python
+def factorial(n):
+	result = n
+	for i in range(1, n):
+		result *= i
+		
+	return result
+	
+number = int(input('please input a number:'))
+result = factorial(number)
+print("%d 的阶乘是：%d" % (number, result))
+```
+
+
+
+```python
+def factorial(n):
+	if n ==1:
+		return 1
+	else:
+		return n * factorial(n-1)
+		
+number = int(input('input a int:'))
+result = factorial(number)
+print("%d 的阶乘是：%d" % (number, result))
+```
+
+
+
+**递归：有调用自身的行为，有一个正确的返回条件**
+
+## 课时24：递归例子
+
+**Fibonacci递归例子**
+
+如果兔子在出生的两个月之后就拥有了繁殖能力，假设所有兔子都不会死去，一年之后能繁殖多少兔子。
+
+斐波那契数列的迭代实现：0.618:1
+
+| 月数   | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 10   | 11   | 12   |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 兔子对数 | 1    | 1    | 2    | 3    | 5    | 8    | 13   | 21   | 34   | 55   | 89   | 144  |
+
+数据函数定义：
+
+```
+F(n) = 1, when n = 1
+           2, when n = 2
+           F(n-1)+F(n-2), when n>2
+```
+
+求出经历20个月后：
+
+```python
+def fab(n):
+	n1 = 1
+	n2 = 1
+	n3 = 1
+	
+	if n < 1:
+		print('error!')
+		return -1
+		
+	while(n-2) > 0:
+		n3 = n2 + n1
+		n1 = n2
+		n2 = n3
+		n -= 1
+		
+	return n3
+	
+number = int(input('input a int:'))
+result = fab(number)
+if result != -1:
+	print('%d total:' % result)
+```
+
+![pytyonnote_fab](D:\markdown\image\pytyonnote_fab.JPG)
 
 
 
