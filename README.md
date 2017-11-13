@@ -19,5 +19,6 @@
     * [arcfaceSDK](https://github.com/sideboyd/ArcFaceDemo)
 * 机器学习
     * [机器学习算法汇总](https://github.com//RedditSota/state-of-the-art-result-for-machine-learning-problems)
+    * [python-mugo](https://github.com/brilee/MuGo)
 
 
