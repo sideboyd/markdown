@@ -467,7 +467,115 @@ hanoi(n, 'x', 'y', 'z')
 
 
 
-## 课时26：
+## 课时26：字典
+
+**唯一的映射类型=字典: 这里的字典可以理解为 mapping**
+
+**键（key = string）  值（value）**
+
+映射：数集A： 数集B 一对一的关系或一对多的关系，俗称映射
+
+**如何创建和访问字典**
+
+```
+brand = ['李宁','耐克','阿迪','鱼C']
+```
+
+```
+slogan = ['一切皆有可能','Just do it','impossible is nothing','让编程改变世界']
+```
+
+```
+print('鱼C的口号是', slogan[brand.index('鱼C')])
+```
+
+创建字典：
+
+```
+dict1 = {'李宁':'一切皆有可能','耐克':'Just do it','阿迪':'impossible is nothing','鱼C':'让编程改变世界'}
+```
+
+```
+print('鱼C的口号是', dict1['鱼C'])
+```
+
+```
+dict1['李宁'] = '一切皆不可能' #变更数据value
+```
+
+```
+dict1['王宁'] = '一切皆不可能' #数组中查询不到则新建
+```
+
+```
+dict1
+```
+
+
+
+## 课时27：字典
+
+字典会自动添加新键
+
+工厂函数（类型）:::  str(), int(), list(), tuple()
+
+例如 ： fromkeys(...)
+
+```
+dict1 = {}
+```
+
+```
+dict1.fromkeys((1,2,3), 'Number')# 只能附加一个值
+```
+
+访问字典的几种方法：keys(), values(), items()
+
+```python
+dict1 = {}
+dict1 = dict1.fromkeys(range(32), 'nice')
+```
+
+```python
+for eachkey in dict1.keys():
+	print(eachkey)
+```
+
+```python
+for eachvalue in dict1.values():
+	print(eachvalue)
+```
+
+```python
+for eachitem in dict1.items():
+	print(eachitem)
+```
+
+```
+dict1
+```
+
+```python
+dict1.get(31, 'none!')
+```
+
+```python
+dict1.get(32, 'none!')
+```
+
+清空字典： a.clean()      或   dict1 = {}   #这种方式有隐患
+
+```python
+dir(dict)
+```
+
+copy() 和赋值的区别，copy()是创建新的ID，类似clone，赋值是同ID不同标签
+
+## 课时28：
+
+
+
+
 
 
 
