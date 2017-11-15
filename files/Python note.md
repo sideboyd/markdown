@@ -586,3 +586,172 @@ copy() 和赋值的区别，copy()是创建新的ID，类似clone，赋值是同
 
 
 END;
+
+
+
+# 小玩意
+
+## 天气
+
+import urllib.request
+import gzip
+import json
+print('------天气查询------')
+def get_weather_data() :
+
+    city_name = input('请输入要查询的城市名称：')
+    url1 = 'http://wthrcdn.etouch.cn/weather_mini?city='+urllib.parse.quote(city_name)
+    url2 = 'http://wthrcdn.etouch.cn/weather_mini?citykey=101010100'
+    #网址1只需要输入城市名，网址2需要输入城市代码
+    #print(url1)
+    weather_data = urllib.request.urlopen(url1).read()
+    #读取网页数据
+    weather_data = gzip.decompress(weather_data).decode('utf-8')
+    #解压网页数据
+    weather_dict = json.loads(weather_data)
+    #将json数据转换为dict数据
+    return weather_dict
+
+def show_weather(weather_data):
+    weather_dict = weather_data 
+    #将json数据转换为dict数据
+    if weather_dict.get('desc') == 'invilad-citykey':
+        print('你输入的城市名有误，或者天气中心未收录你所在城市')
+    elif weather_dict.get('desc') =='OK':
+        forecast = weather_dict.get('data').get('forecast')
+        print('城市：',weather_dict.get('data').get('city'))
+        print('温度：',weather_dict.get('data').get('wendu')+'℃ ')
+        print('感冒：',weather_dict.get('data').get('ganmao'))
+        print('风向：',forecast[0].get('fengxiang'))
+        print('风级：',forecast[0].get('fengli'))
+        print('高温：',forecast[0].get('high'))
+        print('低温：',forecast[0].get('low'))
+        print('天气：',forecast[0].get('type'))
+        print('日期：',forecast[0].get('date'))
+        print('*******************************')
+        four_day_forecast =input('是否要显示未来四天天气，是/否：')
+        if four_day_forecast == '是' or 'Y' or 'y':
+            for i in range(1,5):
+                print('日期：',forecast[i].get('date'))
+                print('风向：',forecast[i].get('fengxiang'))
+                print('风级：',forecast[i].get('fengli'))
+                print('高温：',forecast[i].get('high'))
+                print('低温：',forecast[i].get('low'))
+                print('天气：',forecast[i].get('type'))
+                print('--------------------------')
+    print('***********************************')
+
+show_weather(get_weather_data())
+
+
+
+## 百度地图查距离
+
+import json
+import requests as rs
+def geturl():
+
+    print ("请输入起点所在的城市：")
+    origin_region = input(">>>")
+    print ("请输入起点位置：")
+    origin = input(">>>")
+    print ("请输入终点点所在的城市：")
+    destination_region = input(">>>")
+    print ("请输入终点位置：")
+    destination = input(">>>")
+    ak="mQOS9IMeEUNiiclPzSVCntdOXCZLjyD7"
+    url = "http://api.map.baidu.com/direction/v1?mode=transit&origin=%s&destination=%s&origin_region=%s&&destination_region=%s&output=json&ak=%s" % (origin,destination,origin_region,destination_region,ak)
+    return (url,origin_region,origin,destination_region,destination)
+
+def getres(url):
+    res = rs.get(url)
+    js = json.loads(res.text)
+    if js["status"] == 0:
+        try:
+            if js["result"]["error"] == 0:
+                return js["result"]["taxi"]
+        except:
+            return 0
+    return 0
+
+print ('''
+************************************************
+     Welcome to Location Searching System!       
+************************************************
+''')
+
+url = geturl()
+result = getres(url[0])
+if result == 0:
+    print ("Error: Cannot find the place!")
+else:
+```python
+print ("起点： %s  %s" % (url[1],url[2]))
+print ("终点： %s  %s" % (url[3],url[4]))
+print ("距离： %.1f  公里，开车大约需要%d分钟 " % (result["distance"]/1000,result["duration"]/60+1))  
+```
+## 百度爬虫
+
+import requests
+from bs4 import BeautifulSoup
+from datetime import datetime
+import pandas
+import re
+
+
+
+data=[]
+
+for k in range(1,33):
+​    
+    date=[]
+    media=[]
+    title=[]
+    link=[]
+    newsurl='http://news.baidu.com/ns?word=%28%E6%B7%B1%E5%BA%B7%E4%BD%B3A%2C%E5%BA%B7%E4%BD%B3%E9%9B%86%E5%9B%A2%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%2C%E5%BA%B7%E4%BD%B3%E9%9B%86%E5%9B%A2%29&pn='+str((k-1)*20)+'&cl=2&ct=1&tn=newsdy&rn=20&ie=utf-8&bt=1293811200&et=1451577599'
+    kv={"User-Agent":"Mozilla/5.0 "}
+    res=requests.get(newsurl,headers=kv)
+    res.encoding='utf-8'
+    soup=BeautifulSoup(res.text,'html.parser')
+    for i in range(20):
+        news=soup.find_all( 'div', { 'class', 'result'})[i]
+    
+        h3=news.find( name= "a", attrs={ "target": re.compile( "_blank")})#取出每则新闻的标题
+        title.append(h3.text)
+    
+        m=news.find( name= "p", attrs={ "class": re.compile( "c-author")})#取出每则新闻的发布媒体
+        m1=m.text.split()[0]
+        media.append(m1)
+                
+        t=m.text.split()[1]#取出每则新闻的发布时间
+        dt=datetime.strptime(t,'%Y年%m月%d日')
+        d=dt.strftime('%Y-%m-%d')
+        date.append(d)
+        
+        href=news.h3.a['href']
+        link.append(href)
+        
+        data.append((date[i], title[i], media[i],link[i]))
+
+
+
+
+    print("第" + str(k) + "页完成")
+df=pandas.DataFrame(data)
+df.to_excel('000016深康佳.xlsx')
+
+
+
+## 汉诺塔
+
+def hanoi(n, x, y, z):
+
+	if n == 1:
+		print(x, '-->', z)
+	else:
+		hanoi(n-1, x, z, y)#将前n-1个盘子从x移动到y上
+		print(x, '-->', z) #将最底下的最后一个盘子从X移动到z上
+		hanoi(n-1, y, x, z)#将y上的n-1个盘子移动到z上
+
+n = int(input('input hanoi level:'))
+hanoi(n, 'x', 'y', 'z')
