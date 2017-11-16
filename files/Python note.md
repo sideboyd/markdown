@@ -593,10 +593,15 @@ END;
 
 ## 天气
 
+```python
 import urllib.request
+
 import gzip
+
 import json
+
 print('------天气查询------')
+
 def get_weather_data() :
 
     city_name = input('请输入要查询的城市名称：')
@@ -613,6 +618,7 @@ def get_weather_data() :
     return weather_dict
 
 def show_weather(weather_data):
+
     weather_dict = weather_data 
     #将json数据转换为dict数据
     if weather_dict.get('desc') == 'invilad-citykey':
@@ -643,12 +649,19 @@ def show_weather(weather_data):
 
 show_weather(get_weather_data())
 
+```
+
+
+
 
 
 ## 百度地图查距离
 
+```python
 import json
+
 import requests as rs
+
 def geturl():
 
     print ("请输入起点所在的城市：")
@@ -664,6 +677,7 @@ def geturl():
     return (url,origin_region,origin,destination_region,destination)
 
 def getres(url):
+
     res = rs.get(url)
     js = json.loads(res.text)
     if js["status"] == 0:
@@ -675,27 +689,41 @@ def getres(url):
     return 0
 
 print ('''
-************************************************
+
+---
+
      Welcome to Location Searching System!       
-************************************************
+
+---
+
 ''')
 
 url = geturl()
+
 result = getres(url[0])
+
 if result == 0:
+
     print ("Error: Cannot find the place!")
+
 else:
-```python
-print ("起点： %s  %s" % (url[1],url[2]))
-print ("终点： %s  %s" % (url[3],url[4]))
-print ("距离： %.1f  公里，开车大约需要%d分钟 " % (result["distance"]/1000,result["duration"]/60+1))  
+
+    print ("起点： %s  %s" % (url[1],url[2]))
+    print ("终点： %s  %s" % (url[3],url[4]))
+    print ("距离： %.1f  公里，开车大约需要%d分钟 " % (result["distance"]/1000,result["duration"]/60+1))  
 ```
+
 ## 百度爬虫
 
+```python
 import requests
+
 from bs4 import BeautifulSoup
+
 from datetime import datetime
+
 import pandas
+
 import re
 
 
@@ -703,7 +731,9 @@ import re
 data=[]
 
 for k in range(1,33):
-​    
+
+    
+
     date=[]
     media=[]
     title=[]
@@ -735,56 +765,75 @@ for k in range(1,33):
 
 
 
-
     print("第" + str(k) + "页完成")
+
 df=pandas.DataFrame(data)
+
 df.to_excel('000016深康佳.xlsx')
-
-
+```
 
 ## 汉诺塔
 
+```python
 def hanoi(n, x, y, z):
 
-	if n == 1:
-		print(x, '-->', z)
-	else:
-		hanoi(n-1, x, z, y)#将前n-1个盘子从x移动到y上
-		print(x, '-->', z) #将最底下的最后一个盘子从X移动到z上
-		hanoi(n-1, y, x, z)#将y上的n-1个盘子移动到z上
+    if n == 1:
+    	print(x, '-->', z)
+    else:
+    	hanoi(n-1, x, z, y)#将前n-1个盘子从x移动到y上
+    	print(x, '-->', z) #将最底下的最后一个盘子从X移动到z上
+    	hanoi(n-1, y, x, z)#将y上的n-1个盘子移动到z上
 
 n = int(input('input hanoi level:'))
+
 hanoi(n, 'x', 'y', 'z')
-
-
+```
 
 ## 图片爬虫
 
+```python
 import urllib.request
+
 import urllib.error
+
 import os
+
 import sys
+
 import http.server
+
 import http.client
+
 import time
+
 import re
+
 import random
+
 import math
 
 home = 'http://jandan.net/ooxx'
+
 data = None
+
 headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36'}
+
 enctype = 'utf-8'
+
 proxies = []
+
 error = None
+
 max_error_times = 5        #最多允许失败5次，否则放弃该图片下载
 
 def create_localhost():
+
     number = int((math.sqrt(5)-1)/2) * len(proxies)
     for x in range(number):
         proxies.append(None)
 
 def get_response(req):
+
     error_time = 0
     while True:
         try:
@@ -814,6 +863,7 @@ def get_response(req):
         return response
 
 def get_proxy():
+
     global data,headers,proxies
     req = urllib.request.Request('http://www.xici.net.co',None,headers)
     response = get_response(req)
@@ -833,6 +883,7 @@ def get_proxy():
             proxies.append(each_proxy[0]+':'+each_proxy[1])
 
 def change_proxy():
+
     proxy = random.choice(proxies)
     if proxy == None:
         proxy_support = proxy_support = urllib.request.ProxyHandler({})
@@ -844,6 +895,7 @@ def change_proxy():
     print('智能切换代理：%s' % ('本机' if proxy==None else proxy))
 
 def get_pic(page):      #生成器，返回一个图片链接
+
     global data,headers,enctype
     while True:
         url = 'https://yande.re/post?page=%d&tags=rating:e' % page
@@ -865,17 +917,18 @@ def get_pic(page):      #生成器，返回一个图片链接
 
 
 
-
 [/hide]
 
 ,pic_url):      #检测是否是正确的html格式
+
                 yield pic_url
         time.sleep(5)
         page += 1
 
-save_path = 'D:\\图片\\马克思主义'
+save_path = 'D:\图片\马克思主义'
 
 def download():
+
     count = 1
     global data,headers
     for pic_url in get_pic(1):         #get_pic(1)表示从第1页开始下载
@@ -891,11 +944,16 @@ def download():
             print('本次成功下载第%d个图片! %s' % (count , pic_url))
             count += 1
 
-if __name__ == '__main__':
+if name == 'main':
+
     get_proxy()
     create_localhost()
     download()
+```
 
 
 ## 图片
 
+```
+
+```
