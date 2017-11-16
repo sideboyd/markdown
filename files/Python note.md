@@ -571,7 +571,131 @@ dir(dict)
 
 copy() 和赋值的区别，copy()是创建新的ID，类似clone，赋值是同ID不同标签
 
-## 课时28：
+## 课时28：集合
+
+字典的表亲：集合
+
+num = {}   num被定义为字典  dict
+
+num2 = {1, 2, 3, 4}  被定义为集合，
+
+集合唯一的作用就是 定义唯一
+
+num2 = {1, 2, 3, 3, 2, 1}   
+
+num2      {1, 2, 3}
+
+集合不支持索引     num2[2]  X   #不支持
+
+**不使用集合，如何去重？？**
+
+```
+num1 = [1, 2, 3, 4, 4, 2, 1, 0]
+```
+
+```
+temp = []
+```
+
+```python
+for each in num1:
+	if each not in temp:
+		temp.append(each)
+```
+
+```
+temp  #查看
+```
+
+**用集合去重**
+
+```python
+num1 = list(set(num1))  
+```
+
+用set得到的集合，顺序是无序的
+
+**如何向集合添加值：**
+
+```
+num2.add(6)
+```
+
+```
+num2.remove(6)
+```
+
+**不可变集合：**   frozen set
+
+```
+num3 = frozenset([1, 2, 3, 4, 5])
+```
+
+```
+num3.add(6) #结果返回：不能添加
+```
+
+
+
+## 课时29：文件
+
+输入>>处理>>输出
+
+**打开文件：**
+
+```python
+f = open('e:\\record.txt')
+
+f.read()
+
+f.tell()
+
+f.seek(0, 0)
+
+for each_line in f:
+	print(each_line)
+```
+
+**文件写入：**
+
+```python
+f = open('e:\\test.txt','w')
+
+f.write('I love fish')
+
+f.close()
+
+```
+
+
+
+    'r'       open for reading (default)
+    'w'       open for writing, truncating the file first
+    'x'       create a new file and open it for writing
+    'a'       open for writing, appending to the end of the file if it exists
+    'b'       binary mode
+    't'       text mode (default)
+    '+'       open a disk file for updating (reading and writing)
+    'U'       universal newline mode (deprecated)
+**file的读写方法：**
+
+| F.read([size])          | #size为读取的长度，以byte为单位                     |
+| ----------------------- | ---------------------------------------- |
+| F.readline([size])      | \#读一行，如果定义了size，有可能返回的只是一行的一部分           |
+| F.readlines([size])     | \#把文件每一行作为一个list的一个成员，并返回这个list。其实它的内部是通过循环调用readline()来实现的。如果提供size参数，size是表示读取内容的总长，也就是说可能只读到文件的一部分。 |
+| F.write(str)            | \#把str写到文件中，write()并不会在str后加上一个换行符       |
+| F.writelines(seq)       | \#把seq的内容全部写到文件中。这个函数也只是忠实地写入，不会在每行后面加上任何东西。 |
+| F.close()               | \#关闭文件。python会在一个文件不用后自动关闭文件，不过这一功能没有保证，最好还是养成自己关闭的习惯。如果一个文件在关闭后还对其进行操作会产生ValueError |
+| F.tell()                | 返回文件操作标记的当前位置，以文件的开头为原点                  |
+| F.seek(offset[,whence]) | 将文件打操作标记移到offset的位置。这个offset一般是相对于文件的开头来计算的，一般为正数。但如果提供了whence参数就不一定了，whence可以为0表示从头开始计算，1表示以当前位置为原点计算。2表示以文件末尾为原点进行计算。需要注意，如果文件以a或a+的模式打开，每次进行写操作时，文件操作标记会自动返回到文件末尾。 |
+
+
+
+## 课时30：
+
+
+
+
 
 
 
