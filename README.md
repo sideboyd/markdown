@@ -59,3 +59,9 @@
 软件：mockup（墨刀），html（adminLTE，sublime），git（hub，local），cloud（ali，gcp，BL-ECS（web-cli）-storage-RDS），EDIT（php，python，R）
 
 ======================================================
+
+项目管理工具：
+
+SVN，REDMINE，BACKLOG,GIT,
+
+======================================================
