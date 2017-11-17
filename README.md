@@ -22,20 +22,28 @@
     * [python-mugo](https://github.com/brilee/MuGo)
 
 
-=============================================================
+=====================================================
 
 场景设计：
 
 ![1](https://github.com/sideboyd/markdown/blob/master/image/%E5%9C%BA%E6%99%AFsiri%2BEDGE.gif)
 
+=====================================================
+
 可用性设计：
 
-![1](https://github.com/sideboyd/markdown/blob/master/image/%E5%9C%BA%E6%99%AFsiri%2BEDGE.gif)
+![1](https://github.com/sideboyd/markdown/blob/master/image/bricks.gif)
+
+=====================================================
 
 前端设计：
 
-![1](https://github.com/sideboyd/markdown/blob/master/image/%E5%9C%BA%E6%99%AFsiri%2BEDGE.gif)
+![1](https://github.com/sideboyd/markdown/blob/master/image/google_newsstand_like_navigation_pattern.gif)
+
+=====================================================
 
 后端设计：
 
-![1](https://github.com/sideboyd/markdown/blob/master/image/%E5%9C%BA%E6%99%AFsiri%2BEDGE.gif)
+![1](https://github.com/sideboyd/markdown/blob/master/image/tables.gif)
+
+======================================================
