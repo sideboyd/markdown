@@ -1,10 +1,215 @@
 # Python
 
-## 课时1：
+## 课时1：python
+
+1,python是什么类型的语言？
+Python是一种面向对象、解释型、动态类型计算机程序设计语言
+解释型：程序无需编译成二进制代码，而是在执行时对语句一条一条编译
+动态类型：在程序执行过程中，可以改变变量的类型
+它常被昵称为胶水语言，能够把用其他语言制作的各种模块（尤其是C/C++）很轻松地联结在一起
+
+## 课时2：BIF
+
+2.BIF(Build-in-functions)内置函数，Python一共有68个内置函数
+dir(__buitins__) 查看Python里面的内置函数
+help(内置函数名称) 查看内置函数的作用和用法
+
+## 课时3：引号
+
+3,在字符中打印引号，用/”输出引号
+
+## 课时4：IDLE
+
+4，IDLE是一个Python shell，shell的意思就是“外壳”，基本上来说，就是一个通过键入文本与程序交互的途径！像我们Windows那个cmd窗口，像Linux那个黑乎乎的命令窗口，他们都是shell，利用他们，我们就可以给操作系统下达命令。同样的，我们可以利用IDLE这个shell与Python进行互动。
+
+## 课时5：特设变量
+
+5，设置你的操作系统的环境变量，以便可以轻松进入Python环境
+
+Python特设变量：
+
+teacher = 'zxp'
+print(teacher)
+zxp
+teacher = 'zxp1'
+print(teacher)
+zxp1
+first = 3
+second = 8
+third = first + second
+print(third)
+11
+myteacher = 'zxp'
+yourteacher = 'he'
+ourteacher = myteacher + yourteacher
+print(ourteacher)
+zxphe
+使用变量之前，要对变量赋值
+变量名不能以数字开头，变量名可以包括字母，数字，下划线
+最好给变量取一个专业一点的名字
+
+字符串（文本）
+‘5’+’8’=’58’
+打印’Let\'s go'   转义字符  \
+"Let's go"
+打印：C：\now
+str=‘C:\\now’    print(str)
+原始字符串：在字符串前面加一个r，比如： r’C:\now’
+注意原始字符串结尾不能加反斜杠‘\’
+三重引号字符串：str="""abcd"""
+
+str
+'\na\nb\nc\nd'
+print(str)
+a
+b
+c
+d
+条件分支：
+if 条件：
+else：
+while 条件：
+引入外援
+random模块
+import random
+secret = randint(1,10)
+randint（）会返回一个随机的整数
+
+## 课时6：快捷键
+
+6，快捷键
+Alt+N：把上面的语句复制
+Alt+P: 把下面的语句复制
+
+## 课时7：逻辑操作符
+
+7，逻辑操作符：
+3<4 and 4>5  等价于 3<4<5 两种都可以实现
+​                  or
+​                 not          
+第五节 数据类型：
+整型
+浮点型
+布尔类型 (bool):True 、False
+e记法：科学计数法（不是数据类型）1.5e11是浮点型  
+
+
+
+## 课时8：类型转换
+
+8，类型转换
+int()     int(5.99)=5
+float()  float(520)=520.0
+str()    str(5.99)=’5.99’
+
+
+
+## 课时9：数据类型
+
+9,type(a)得到a的数据类型
+   isinstance()
+
+a = 'zxp'
+isinstance(a,str)
+True
+
+## 课时10：算数操作符
+
+10,算数操作符
+10//8=1
+10/8=1.25
+取余数 % 5%2
+幂运算：3**3=27
+-3**2=-9
+优先级：**
+
+
+
+## 课时11：条件操作符
+
+11,条件操作符
+elif = else if
+悬挂else：else与if同一个缩进
+三元操作符：
+if x<y
+   Small=x;
+else
+   Small=y;
+等价于：small=x  if x<y  else y
+断言(assert):当关键字后边的条件为假时，程序自动崩溃并抛出AssertionError的异常
+for循环：
+for 目标 in  表达式：
+​        循环体
+range():生成一个数列start到stop默认步长为1
+Range([start,] stop [,step=1])中括号中的参数可以省略, step为步长
+Rang(1,4)
+break ：终止循环并跳出循环
+continue ：终止本轮循环并开始下轮循环
+
+## 课时12：列表
+
+12,列表
+普通列表
+混合列表mix=[1,3,14,’xiaojiayu’,[1,2,3]]
+空列表empty=[];
+向列表添加元素：
+append()把元素添加到列表尾，只能添加一个参数
+mix.append(‘小平’)
+extend():以一个列表作为参数，可以添加多个参数
+mix.extend([‘xiaoping’,’xiaojiayu’])
+insert()：有两个参数，添加的元素和添加的位置
+mix.insert(‘小平’，0)放在列表头
+number*：从列表中获取第i个元素number.remove(‘小平’)：从列表中删除’小平’元素del语句：del number 或者 del number (删除这个列表)number.pop()：返回最后一个元素number.pop(i):返回列表中第i个元素列表分片：number[i : j]拷贝列表中第i个元素到第j-1个元素               *
+
+*number[ : j]拷贝列表中第0个元素到第j-1个元素     number[i : ]拷贝列表中第i个元素到最后一个元素注：原列表不发生变化count：number.count(‘小平’)index:number.index(‘小平’)number.index(‘小平’，起始位置，结束位置)reverse：number.reverse()sort：number.sort(func，key，reverse)用指定的方式（func）对列表进行排序func、key是默认的一般不考虑reverse =false是默认的，reverse=true逆置copy：list1=list2对list2进行操作时，list1跟着变化list1=list2[ : ]（分片）对list2进行操作是，list1不会变化*
+
+## 课时13：元组
+
+*13，元组*
+
+元组里面元素不能修改！创建和访问一个元组：tuple1=(1,2,3,4,5,6,7,8)或者tuple1=1，2，3，4，5，6，7temp =(1)是一个整型数据，temp=(1,)是一个元组数据8\*(1,)=(1,1,1,1,1,1,1,1)更新和删除一个元组：temp=(1,2,3,4,6,7,8)temp=temp[:5]+(5,)+temp[5:]del temp*
 
 
 
 
+
+
+
+## 课时16：序列
+
+介绍的几种方法：
+1.list()
+将对象转换成列表
+如:>>> b = 'I LOVE FISHC'
+​    >>>b = list(b)
+​    >>>b
+['I','L','O','V','E','F','I','S','H','C']
+2.tuple()
+将对象转换成元组
+用法同1
+3.str()
+将对象转换成字符串
+4.len()
+计算对象的长度并返回
+5.max()
+计算对象的最大值并返回
+6.min()
+max的相反方法
+7.sum(iterable[,start=0])
+将对象的数据（只限整数与浮点数）相加，加入可选参数会相加
+8.sorted()
+讲对象按照从小到大的顺序排序
+不会改变序列，只是将排序号的拷贝一份并返回，原来的对象不变
+9.reversed()
+逆袭。讲对象翻转
+与sorted联合使用可以实现从大到小的排序
+他返回的是一个迭代器对象而不是一个列表
+但可以用list()方法将他迭代成列表
+10.enumerate()
+将对象的每一个元素加上索引值组成一个元组
+并且将所有元组组成一个列表
+11.zip(a,b)
+把a和b的索引值相同的元素组成一个元组，并将所有元组组成一个列表
 
 
 
@@ -1122,14 +1327,248 @@ if name == 'main':
 ```
 
 
-## 图片
+## 糗事百科抓取
 
+```python
+#糗事百科---利用urllib库和正则表达式
+import urllib.request
+import re
+headers = ("User-Agent","Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0")
+opener = urllib.request.build_opener()
+opener.addheaders = [headers]
+urllib.request.install_opener(opener)
+for k in range(0,10):
+    url = "http://www.qiushibaike.com/8hr/page/"+ str(k)
+    data = opener.open(url).read().decode('utf-8','ignore')
+    pat = '<div class="content">\s*?<span>(.*?)</span>.*?</div>'
+    rst = re.compile(pat,re.S).findall(data)
+    for i in range(0,len(rst)):
+        print(rst[i])
+        print("----------------")
+        
+        
 ```
 
+## 乌龟吃鱼小游戏
+
 ```
+# 游戏场景为范围（x,y）：0 <= x <= 10   ,   0 <= y <= 10
+# 游戏生成 1 只乌龟(tortoise)和 10 条鱼。
+# 它们的移动方向随机。
+# 乌龟的最大移动能力是 2 （Ta可以随机选择移动 1 还是 2 ），鱼的最大移动能力是 1
+# 当移动到场景边缘，自动向反方向移动
+# 乌龟的初始化体力为100（上限）
+# 乌龟每移动一次消耗体力 1 
+# 当乌龟和鱼坐标重叠，乌龟吃掉鱼，乌龟体力增加20
+# 鱼暂不计算体力
+# 当乌龟体力值为 0 （挂掉）或者鱼儿的数量为 0 时，游戏结束。
+import random as r
+
+
+
+# ---------------------------------------------------------------------------
+axis_x = [0,100]      # 设定游戏场地的坐标值范围，圈定边界
+axis_y = [0,100]      # 因为在其他函数内部只需要引用不需要修改，所以定义为全局变量
+# ---------------------------------------------------------------------------
+
+
+# 乌龟类，初始化乌龟的坐标和体力值
+class Tortoise:
+    def __init__(self):
+        # 初始化乌龟体力值和位置
+        self.energy = 100
+        self.tt_x = 5
+        self.tt_y = 5
+
+    def ttMoving(self):
+        # 乌龟移动方法
+        new_x = self.tt_x + (r.choice([-1,1]) * r.randint(1,2))
+        new_y = self.tt_y + (r.choice([-1,1]) * r.randint(1,2))
+
+        # 检查移动后乌龟的x坐标是否超越边界
+        if new_x < axis_x[0]:
+            self.tt_x = axis_x[0] - (new_x - axis_x[0])
+        elif new_x > axis_x[1]:
+            self.tt_x = axis_x[1] - (new_x - axis_x[1])
+        else:
+            self.tt_x = new_x
+
+        # 然后检查移动后乌龟的y坐标是否超越边界
+        if new_y < axis_y[0]:
+            self.tt_y = axis_y[0] - (new_y - axis_y[0])
+        elif new_y > axis_y[1]:
+            self.tt_y = axis_y[1] - (new_y - axis_y[1])
+        else:
+            self.tt_y = new_y
+
+        # 每次调用移动方法，乌龟体力值减 1 
+        # 调整好乌龟移动后的坐标后，返回x和y坐标的值
+        self.energy -= 1
+        return (self.tt_x,self.tt_y)
+
+    # 乌龟吃鱼时的操作
+    def eat_Fish(self):
+        self.energy += 1
+        if self.energy > 100:
+            self.energy = 100
+
+
+# 鱼儿类，初始化鱼儿的位置，和移动能力
+class Fish:
+    def __init__(self):
+        # 初始化鱼儿的位置
+        self.fs_x = 0
+        self.fs_y = 0
+        self.step = 1
+
+    def fsMoving(self):
+        # 鱼儿移动方法
+        new_x = self.fs_x + (r.choice([-1,1]) * self.step)
+        new_y = self.fs_y + (r.choice([-1,1]) * self.step)
+
+        # 然后检查鱼儿移动后x坐标是否超越边界
+        if new_x < axis_x[0]:
+            self.fs_x = axis_x[0] - (new_x - axis_x[0])
+        elif new_x > axis_x[1]:
+            self.fs_x = axis_x[1] - (new_x - axis_x[1])
+        else:
+            self.fs_x = new_x
+
+        # 再检查鱼儿移动后y坐标是否超越边界
+        if new_y < axis_y[0]:
+            self.fs_y = axis_y[0] - (new_y - axis_y[0])
+        elif new_y > axis_y[1]:
+            self.fs_y = axis_y[1] - (new_y - axis_y[1])
+        else:
+            self.fs_y = new_y
+
+        # 调整好鱼儿移动后的坐标后，返回x和y坐标的值
+        return (self.fs_x,self.fs_y)
+
+
+# 游戏启动函数，生成乌龟BOSS和十条鱼儿对象
+def playground():
+    # 生成乌龟的实例化对象
+    Boss = Tortoise()
+
+    # 生成十条鱼儿的实例化对象
+    fishs = []
+    for i in range(10):
+        new_fish = Fish()
+        fishs.append(new_fish)
+    # 启动游戏
+    while True:
+        if len(fishs) == 0:
+            print("Game Over\n鱼儿被乌龟吃完了，游戏结束！")
+            break
+        if Boss.energy == 0:
+            print("Game Over\n乌龟累死了，游戏结束！")
+            break
+
+        pos = Boss.ttMoving()
+        for each_fish in fishs[:]:
+            if each_fish.fsMoving() == pos:
+                Boss.eat_Fish()
+                fishs.remove(each_fish)
+                print("有一条鱼儿被吃掉了...")
+```
+
 
 
 
 
 # EASYGUI python
 
+
+
+
+
+
+
+## 学习资源
+
+****Python基本安装：
+
+    * http://www.python.org/ 官方标准Python开发包和支持环境，同时也是Python的官方网站；
+    * http://www.activestate.com/ 集成多个有用插件的强大非官方版本，特别是针对Windows环境有不少改进；
+
+Python文档：
+
+    * http://www.python.org/doc/current/lib/lib.html Python库参考手册。
+    * http://www.byteofpython.info/ 可以代替Tutorial使用，有中文译版的入门书籍。
+    * http://diveintopython.org/ 一本比较全面易懂的入门书，中文版翻译最近进步为很及时的5.4了。
+    * http://www.python.org/peps/pep-0008.html 建议采用的Python编码风格。
+    * http://doc.zoomquiet.org/ 包括Python内容的一个挺全面的文档集。
+
+常用插件：
+
+    * http://www.pfdubois.com/numpy/ Python的数学运算库，有时候一些别的库也会调用里面的一些功能，比如数组什么的；
+    * http://www.pythonware.com/products/pil/ Python下著名的图像处理库Pil；
+    * http://simpy.sourceforge.net/ 利用Python进行仿真、模拟的解决方案；
+    * Matplotlib 据说是一个用来绘制二维图形的Python模块，它克隆了许多Matlab中的函数， 用以帮助Python用户轻松获得高质量(达到出版水平)的二维图形；
+    * http://www.amk.ca/python/code/crypto python的加解密扩展模块；
+    * http://cjkpython.i18n.org/ 提供与python有关的CJK语言支持功能：转码、显示之类。
+    * Psyco、Pyrex：两个用于提高Python代码运行效率的解决方案；
+    * Pyflakes、PyChecker、PyLint：都是用来做Python代码语法检查的工具。
+    * http://wxpython.sourceforge.net/ 基于wxWindows的易用且强大的图形界面开发包wxPython；
+    * http://www.pygame.org/ 用Python帮助开发游戏的库，也可以用这个来播放视频或者音频什么的，大概依靠的是SDL；
+    * http://starship.python.net/crew/theller/py2exe/ win下将Python程序编译为可执行程序的工具，是一个让程序脱离Python运行环境的办法，也可以生成Windows服务或者COM组件。其他能完成Python脚本到可执行文件这个工作的还有Gordon McMillan's Installer、Linux专用的freeze以及py2app、setuptools等。不过此类工具难免与一些模块有一些兼容性的问题，需要现用现测一下。
+    * 嵌入式数据库：BerkeleyDB的Python版，当然还有其他的好多。
+    * PEAK提供一些关于超轻量线程框架等基础性重要类库实现。
+
+部分常用工具：
+
+    * http://www.scons.org/ Java有Ant这个巨火的构建工具，Python的特性允许我们构建更新类型的构建工具，就是scons了。
+    * Python Sidebar for Mozilla FireFox的一个插件，提供一个用来查看Python文档、函数库的侧边栏。
+    * IPython 很好用的Python Shell。wxPython发行版还自带了PyCrust、PyShell、PyAlaCarte和PyAlaMode等几个工具，分别是图形界面Shell和代码编辑器等，分别具有不同特点可以根据自己的需要选用。
+    * Easy Install 快速安装Python模块的易用性解决方案。
+
+推荐资源：
+
+    * Parnassus山的拱顶 巨大的Python代码库，包罗万象。既可以从上面下载代码参考学习，同时也是与Python有关程序的大列表。
+    * Python号星际旅行船 著名Python社区，代码、文档、高人这里都有。
+    * faqts.com的Python程序设计知识数据库 Python程序设计知识库，都是与Python有关的程序设计问题及解决方法。
+    * 啄木鸟 Pythonic 开源社区 著名的（也可以说是最好的）国内Python开源社区。
+
+代码示例：
+
+    * http://newedit.tigris.org/technical.htm Limodou的NewEdit编辑器的技术手册，讨论了一些关于插件接口实现、i18实现、wxPython使用有关的问题，值得参考。
+
+其他东西：
+
+    * http://www.forum.nokia.com/main/0,,034-821,00.html Nokia居然发布了在Series 60系统上运行Python程序（图形界面用wxPython）的库，还有一个Wiki页是关于这个的：http://www.postneo.com/postwiki/moin.cgi/PythonForSeries60 。Python4Symbian这个页面是记录的我的使用经验。
+    * pyre：使用Python完成高性能计算需求的包，真的可以做到么？还没研究。
+    * Parallel Python：纯Python的并行计算解决方案。相关中文参考页面
+    * Pexpect：用Python作为外壳控制其他命令行程序的工具（比如Linux下标准的ftp、telnet程序什么的），还没有测试可用程度如何。
+    * pyjamas：Google GWT的Python克隆，还处在早期版本阶段。
+    * Durus：Python的对象数据库。
+
+有意思的东西：
+
+    * Howie：用Python实现的MSN对话机器人。
+    * Cankiri：用一个Python脚本实现的屏幕录像机。
+
+参考资料
+
+    * ZDNET文章：学习Python语言必备的资源
+    * Pythonic Web 应用平台对比
+    * 在wxPython下进行图像处理的经验 （其实，仅使用wxPython也可以完成很多比较基础的图像处理工作，具体可以参照《wxPython in Action》一书的第12节）
+    * 通过win32扩展接口使用Python获得系统进程列表的方法
+    * 如何获得Python脚本所在的目录位置
+    * Python的缩进问题
+    * py2exe使用中遇到的问题
+    * idle的中文支持问题
+    * 序列化存储 Python 对象
+
+Python IDE
+
+我的IDE选择经验
+
+    * http://www.xored.com Trustudio 一个基于Eclipse的、同时支持Python和PHP的插件，曾经是我最喜欢的Python IDE环境，功能相当全了，不过有些细节不完善以致不大好用。
+    * http://pydev.sourceforge.net/ 另一个基于Eclipse的，非常棒的Python环境，改进速度非常快，现在是我最喜欢的IDE。
+    * http://www-900.ibm.com/developerWorks/cn/opensource/os-ecant/index.shtml 用 Eclipse 和 Ant 进行 Python 开发
+    * http://www.die-offenbachs.de/detlev/eric3.html ERIC3 基于QT实现的不错的PYTHON IDE,支持调试，支持自动补全，甚至也支持重构，曾经在Debian下用它，但图形界面开发主要辅助qt，我倾向wxpython，所以最后还是放弃了这个。
+    * http://www.scintilla.org/ 同时支持Win和Linux的源代码编辑器，似乎支持Python文件的编辑。
+    * http://boa-constructor.sourceforge.net/ 著名的基于WxPython的GUI快速生成用的Python IDE，但是开发进度实在太差了……
+    * http://pype.sourceforge.net/ 成熟的Python代码编辑器，号称功能介于EMACS和IDLE之间的编辑器。
+    * http://www.stani.be/python/spe SPE：号称是一个Full Featured编辑器，集成WxGlade支持GUI设计。
