@@ -1,15 +1,17 @@
 ![](https://github.com/sideboyd/markdown/blob/master/image/7f419446815917.586530fe1cca4.jpg)
 
-* UI框架
+* 学习笔记
+    - [数据库设计](https://github.com/sideboyd/markdown/blob/master/files/data%20design.md)
+    - [阿里云产品](https://github.com/sideboyd/markdown/blob/master/files/aliyun.md)
+    - [Behance Note](https://github.com/sideboyd/markdown/blob/master/files/Behance%20Note.md)
+    - [Python Note](https://github.com/sideboyd/markdown/blob/master/files/Python%20note.md)
+    - [Android Note](https://github.com/sideboyd/AndroidNote)
+* WEB-UI框架
     * [BOOTSTRAP](https://github.com/sideboyd/bootstrap)
     * [adminLTE](https://github.com/sideboyd/AdminLTE)
-* 学习笔记
-    * [数据库设计](https://github.com/sideboyd/markdown/blob/master/files/data%20design.md)
-    * [阿里云产品](https://github.com/sideboyd/markdown/blob/master/files/aliyun.md)
-    * [Behance Note](https://github.com/sideboyd/markdown/blob/master/files/Behance%20Note.md)
-    * [python note](https://github.com/sideboyd/markdown/blob/master/files/Python%20note.md)
-    * [android note](https://github.com/sideboyd/AndroidNote)
-* UI案例
+
+
+* Android-UI案例
     * [开源控件](https://github.com/sideboyd/android-open-project)
     * [开源控件2](https://github.com/sideboyd/awesome-android)
     * [wechat](https://github.com/sideboyd/weui)
@@ -21,10 +23,9 @@
     * [机器学习算法汇总](https://github.com//RedditSota/state-of-the-art-result-for-machine-learning-problems)
     * [python-mugo](https://github.com/brilee/MuGo)
 
-
 =====================================================
 
-场景设计：
+场景设计（故事）：
 
 ![1](https://github.com/sideboyd/markdown/blob/master/image/%E5%9C%BA%E6%99%AFsiri%2BEDGE.gif)
 
@@ -34,7 +35,7 @@
 
 =====================================================
 
-可用性设计：
+可用性设计（功能和操作）：
 
 ![1](https://github.com/sideboyd/markdown/blob/master/image/bricks.gif)
 
@@ -44,7 +45,7 @@
 
 =====================================================
 
-前端设计：
+前端设计（UI/API/Control）：
 
 ![1](https://github.com/sideboyd/markdown/blob/master/image/google_newsstand_like_navigation_pattern.gif)
 
@@ -52,7 +53,7 @@
 
 =====================================================
 
-后端设计：
+后端设计（WEB/CLI/API/DB）：
 
 ![1](https://github.com/sideboyd/markdown/blob/master/image/tables.gif)
 
