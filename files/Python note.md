@@ -942,19 +942,21 @@ def split_file(file_name):
 	f.close()
     
 split_file('record.txt')  #主程序
-
-
 ```
 
+## 课时31： os模块-文件操作
 
+模块就是代码块的打包  .py
 
+模块可以被程序导入  import
 
+**OS 模块**
 
+import os    可以对系统进行操作
 
+os.path  模块
 
-
-
-
+## 课时32：
 
 
 
@@ -1475,11 +1477,535 @@ def playground():
 
 
 
+## 煎蛋网妹子图的爬取
+
+```python
+from selenium import webdriver
+import os
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+import urllib.request
+from selenium.webdriver.support import expected_conditions as EC
+import re
+import socket
 
 
-# EASYGUI python
+socket.setdefaulttimeout(10.0)
+# 缓存
+browser = webdriver.PhantomJS(service_args=['--disk-cache=true'])
+
+wait = WebDriverWait(browser, 10)
 
 
+# --disk-cache=true
+#模仿点击事件
+def search():
+    try:
+        submit = WebDriverWait(browser, 10).until(
+                EC.element_to_be_clickable(
+                        (By.CSS_SELECTOR, '#comments > div:nth-child(4) > div > a.previous-comment-page')))
+        submit.click()
+
+    except:
+        pass
+
+#初始界面的页码
+def get_pagenum(url):
+    html = open_url(url).decode('UTF-8')
+    p = re.compile(r'.*?current-comment-page">\[(.*?)]</span>', re.S)
+    num = re.findall(p, html)[0]
+    return num
+
+#保存图片
+def saveimage(floder, imageattr):
+    for each in imageattr:
+        filename = each.split('/')[-1]
+        print('正在保存图片%s' % filename)
+        try:
+            urllib.request.urlretrieve(each, filename, schedule)
+        except:
+            pass
+
+#下载图片的过程用xx%表示
+def schedule(a, b, c):
+    """
+    :param a:已经下载的数据块
+    :param b: 数据块的大小
+    :param c: 远程文件的大小
+    :return:返回百分数
+    """
+    per = 100.0 * a * b / c
+    if per > 100:
+        per = 100
+    print('%.2f%%' % per)
+
+#利用获取的html利用正则搜索到图片地址并放到列表中
+def find_images(html):
+    try:
+        p = re.compile('<p>.*?<img src="(.*?\.jpg)".*?</p>', re.S)
+        imagelist = re.findall(p, html)
+        imageattr = []
+        for each in imagelist:
+            imagelist = 'http:' + each
+            imageattr.append(imagelist)
+        return imageattr
+    except:
+        pass
+
+#打开url返回源代码
+def open_url(url):
+    # 读取url
+    req = urllib.request.Request(url)
+    req.add_header('User_Agent',
+                   'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36')
+    try:
+        response = urllib.request.urlopen(url)
+        html = response.read()
+        return html
+    except:
+        pass
+
+#主函数，os.chdir后面自己建一个文件夹自己命名。
+def main():
+    os.chdir('picture2')
+    url = 'http://jandan.net/ooxx/'
+    browser.get(url)
+    pagenumber = int(get_pagenum(url))
+    a = pagenumber
+    for i in range(pagenumber - 1):
+        print('第%d页内容正在加载' % (a - i))
+        html = browser.page_source
+        imageattr = find_images(html)
+        saveimage('picture2', imageattr)
+        search()
+
+
+if __name__ == '__main__':
+    main()
+    
+```
+
+## MP3 程序拷贝
+
+**故事：**
+
+家里老爸老妈买了一个广场舞那种音箱，想插U盘听歌，好不容易教会了他们用百度音乐下载mp3音乐，但一直没教会他们如何把下载的mp3文件拷到U盘去，所以借着学习python练手，写了这么一个小东东。
+
+**功能：**
+
+​	1、把指定目录下的后缀名为mp3的文件拷贝到指定的U盘上去
+
+​	2、可以对用本程序拷贝的文件在界面进行查看和单曲删除，删除时如果设定的下载目录有同名文件，也一并删除
+
+​	3、歌名进行排序，每个进行编号（为了让老年人在放的时候，可以直接根据顺序号来定位找歌）
+**操作：**
+​    1、打开程序会自动识别U盘，如果有多个，需手工选择盘符
+​    2、U盘初始化（写配置数据）
+​    3、下载目录设置：设置电脑上的mp3所在目录
+​    4、一键拷贝：将上步设置的目录下所有后缀名为mp3的文件，拷入U盘，并排序编号。
+​    5、歌曲查看：查看U盘上的mp3文件
+​    6、单曲删除：删除U盘上的mp3文件，如果电脑上设置mp3所在目录也有该文件，一并删除。
+
+```python
+__author__ = 'my.cl'
+# -*- coding:Utf-8 -*-
+import pickle
+from tkinter import ttk
+from tkinter.messagebox import *
+from tkinter.filedialog import *
+import win32file
+import wmi
+import sys
+
+
+def read_cfg_file():
+    s=os.path.join((w.get() + os.sep), 'UDiskMp3.cfg')
+    if os.path.isfile(os.path.join(s)):
+        with open(s, 'rb') as f1:
+            temp_1=pickle.load(f1)
+            temp_2=pickle.load(f1)
+            temp_3=pickle.load(f1)
+        return [temp_1, temp_2, temp_3]
+    else:
+        showwarning('', 'U盘选择错误，请重新选择！')
+        return False
+
+
+def write_cfg_file(temp_1, temp_2, temp_3):
+    s=os.path.join((w.get() + os.sep), 'UDiskMp3.cfg')
+    with open(s, 'wb') as f1:
+        pickle.dump(temp_1, f1)
+        pickle.dump(temp_2, f1)
+        pickle.dump(temp_3, f1)
+
+
+def get_fs_info():
+    """
+    获取文件系统信息。
+    包含分区的大小、已用量、可用量、使用率、挂载点信息。
+    """
+    c = wmi.WMI()
+    tmpdict = {}
+    for physical_disk in c.Win32_DiskDrive():
+        for partition in physical_disk.associators("Win32_DiskDriveToDiskPartition"):
+            for logical_disk in partition.associators("Win32_LogicalDiskToPartition"):
+                tmpdict[logical_disk.Caption] = int(int(logical_disk.Size) / 1024 / 1024 / 1024)
+    return tmpdict
+
+
+def is_UDisk(drives):
+    """
+    检则小于指定容量的分区并返回列表。
+    """
+    UDisk=[]
+    for item in drives:
+        if drives[item]<40:
+            UDisk.append(item)
+    return UDisk
+
+
+def cfg_key_check():
+    """
+    检测U盘配置文件keys
+    """
+    try:
+        rcf=read_cfg_file()
+        if not rcf:
+            return False
+        elif rcf[0]=='224002':
+            return True
+        else:
+            return False
+    except pickle.UnpicklingError:
+        # showerror('配置文件检测', message='U盘配置文件损坏，请重新进行U盘初始化后操作！')
+        return False
+
+
+def check_free_space(source_file):
+    """
+    检查文件是否小于U盘容量，注意U盘位置需修改为变量进行检查
+    """
+    sectorsPerCluster, bytesPerSector, numFreeClusters, totalNumClusters = win32file.GetDiskFreeSpace("f:/")
+    disk_free_space= (numFreeClusters * sectorsPerCluster * bytesPerSector) / (1024 * 1024)
+    file_size=(os.path.getsize(source_file)) / (1024 * 1024)
+    if disk_free_space > file_size + 5:
+        return True
+    else:
+        return False
+
+
+def check_front_str(num):
+    if len(str(num)) == 1:
+        str_num = '000' + str(num)
+    elif len(str(num)) == 2:
+        str_num = '00' + str(num)
+    elif len(str(num)) == 3:
+        str_num = '0' + str(num)
+    else:
+        str_num = str(num)
+    return str_num
+
+
+def disk_check():
+    """
+    U盘检测
+    """
+    global udisk_path
+    fs=is_UDisk(get_fs_info())
+    if len(fs)<1:  # 一个盘符也没找到
+        showwarning('', '请检查U盘是否插好，没找到U盘呢！')
+    else:  # 找到1个及以上盘符
+        udisk_path=tuple(fs)
+        exit_path=[]
+        for each in udisk_path:  # 把每个有UDiskMp3.cfg的盘符添加到exip_path
+            s=os.path.join((each + os.sep), 'UDiskMp3.cfg')
+            if os.path.isfile(os.path.join(s)):
+                exit_path.append(each)
+        if len(exit_path)>0:  # 如果有UDiskMp3.cfg的盘符大于等于1个
+            buttonDiskInitial['state']=NORMAL
+            buttonMp3FileView['state']=NORMAL
+            buttonMp3PathSet['state']=NORMAL
+            buttonOneKeyCopy['state']=NORMAL
+            w['values']=exit_path
+        else:
+            w['values']=tuple(fs)
+            buttonDiskInitial['state']=NORMAL
+            showwarning(title='U盘检测', message='请选择U盘，进行初始化！')
+
+
+def isrename(soucre_name_all, dec_path):  # f_name_all如果去掉前四位在U盘上存在，则将U盘上的文件重命名f_name_all
+    dec_mp3=os.listdir(dec_path)
+    for each in dec_mp3:
+        if os.path.splitext(each)[5:]==soucre_name_all:
+            return True
+    return False
+
+
+def one_key_copy():
+    global mp3_path
+    rcf=read_cfg_file()
+    mp3_path=rcf[1]
+    usb_path=w.get() + os.sep
+    list_mp3=[]
+    if mp3_path=='' or (not os.path.exists(mp3_path)):
+        showwarning(title='文件拷贝', message='文件源目录没设置，请先设置！')
+        return False
+    list_comper_mp3=os.listdir(mp3_path)
+    dict_mp3=rcf[2]
+    list_mp3_temp=list(dict_mp3)
+    list_mp3_temp.remove('last_num')
+    # 让U盘文件与字典保持一致，字典排序后重命名U盘文件
+    for each in list_mp3_temp:  # 字典文件中存在
+        if os.path.isfile(os.path.join(usb_path, check_front_str(dict_mp3[each]) + '_' + each + '.mp3')):  # U盘带序号文件存在
+            list_mp3.append(os.path.splitext(each)[0])
+        elif isrename(each, usb_path):  # U盘文件存在，序号不同
+            list_mp3.append(os.path.splitext(each)[0])
+        else:  # U盘文件不存在
+            dict_mp3.pop(each)
+    # 存在的文件排序后重新编号
+    list_mp3.sort()
+    for i in range(0, len(list_mp3)):
+        dict_mp3[list_mp3[i]]=i + 1
+    dict_mp3['last_num']=len(list_mp3) + 1
+    for each in dict_mp3:  # 根据排序编号后的内容重命名
+        if each == 'last_num':
+            pass
+        elif os.path.exists(os.path.join(usb_path, check_front_str(dict_mp3[each]) + '_' + each + '.mp3')):  # U盘带序号文件存在
+            pass
+        else:
+            dec_mp3=os.listdir(usb_path)
+            for each_one in dec_mp3:
+                if os.path.splitext(each_one)[0][5:] in dict_mp3:
+                    os.rename(usb_path + each_one, usb_path +
+                              check_front_str(dict_mp3[os.path.splitext(each_one)[0][5:]]) + '_' + each_one[5:])
+    write_cfg_file(rcf[0], rcf[1], dict_mp3)
+
+    if 'last_num' in dict_mp3:
+        last_num=dict_mp3['last_num']
+    else:
+        last_num=1
+    for each_file in list_comper_mp3:  # 对每个拷贝的源文件
+        if os.path.splitext(each_file)[1] != '.mp3':  # 后缀名不是.mp3的不拷贝
+            pass
+        elif not check_free_space(os.path.join(mp3_path, each_file)):  # 磁盘空间不足的提示
+            showwarning(title='文件拷贝', message='U盘空间已满，无法再写入更多文件，请删除部分文件再进行拷贝！')
+            break
+        elif os.path.splitext(each_file)[0] in dict_mp3:  # 已拷贝过的
+            pass  # 目标文件存在，不处理
+        else:  # 新增的拷贝
+            str_num=check_front_str(last_num)
+            open(os.path.join(w.get() + os.sep, str_num + "_" +
+                              each_file), "wb").write(open(os.path.join(mp3_path, each_file), "rb").read())
+            dict_mp3[os.path.splitext(each_file)[0]] = last_num
+            last_num +=1
+
+    dict_mp3['last_num']=len(list_mp3)
+    write_cfg_file(rcf[0], rcf[1], dict_mp3)
+    mp3_file_view()
+    buttonMp3FileView['state']=NORMAL
+    showinfo(title='文件拷贝', message='文件拷贝完成！')
+
+
+def one_file_del():
+
+    try:
+        select_item=treeMp3All.item(treeMp3All.selection()[0], "values")
+        usb_path=w.get() + os.sep
+        filename = usb_path + check_front_str(int(select_item[0])) + '_' + select_item[1] + '.mp3'
+
+        if os.path.exists(filename):
+            os.remove(filename)
+            rcf=read_cfg_file()
+            mp3_in_path=rcf[1]
+            comper_mp3_name=os.path.join(mp3_in_path, select_item[1] + '.mp3')
+            if os.path.exists(comper_mp3_name):
+                os.remove(comper_mp3_name)
+            mp3_file_view()
+    except IndexError:
+        showwarning(title='单曲删除', message='请先选择需删除的文件，再进行删除！')
+
+
+def mp3_file_view():
+    rcf=read_cfg_file()
+    usb_path=w.get() + os.sep
+    list_mp3=[]
+    dict_mp3=rcf[2]
+    list_mp3_temp=list(dict_mp3)
+    list_mp3_temp.remove('last_num')
+    # 让U盘文件与字典保持一致，字典排序后重命名U盘文件
+    for each in list_mp3_temp:  # 字典文件中存在
+        if os.path.isfile(os.path.join(usb_path, check_front_str(dict_mp3[each]) + '_' + each + '.mp3')):  # U盘带序号文件存在
+            list_mp3.append(os.path.splitext(each)[0])
+        elif isrename(each, usb_path):  # U盘文件存在，序号不同
+            list_mp3.append(os.path.splitext(each)[0])
+        else:  # U盘文件不存在
+            dict_mp3.pop(each)
+    # 存在的文件排序后重新编号
+    list_mp3.sort()
+    for i in range(0, len(list_mp3)):
+        dict_mp3[list_mp3[i]]=i + 1
+    dict_mp3['last_num']=len(list_mp3) + 1
+    for each in dict_mp3:  # 根据排序编号后的内容重命名
+        if each == 'last_num':
+            pass
+        elif os.path.exists(os.path.join(usb_path, check_front_str(dict_mp3[each]) + '_' + each + '.mp3')):  # U盘带序号文件存在
+            pass
+        else:
+            dec_mp3=os.listdir(usb_path)
+            for each_one in dec_mp3:
+                if os.path.splitext(each_one)[0][5:] in dict_mp3:
+                    os.rename(usb_path + each_one, usb_path +
+                              check_front_str(dict_mp3[os.path.splitext(each_one)[0][5:]]) + '_' + each_one[5:])
+    write_cfg_file(rcf[0], rcf[1], dict_mp3)
+
+    rcf=read_cfg_file()
+    dict_mp3_in=rcf[2]
+    items=[]
+    for each in dict_mp3_in:
+        if each != 'last_num':
+            items.append([dict_mp3_in[each], each])
+    items.sort()
+    x = treeMp3All.get_children()
+    for item in x:
+        treeMp3All.delete(item)
+    for item in items:
+        treeMp3All.insert('', item[0], values=item)
+    sb = Scrollbar(root)
+    sb.grid(row=2, column=3, rowspan=4, sticky='ns', padx=5, pady=5)
+    treeMp3All['yscrollcommand']=sb.set
+    sb.config(command=treeMp3All.yview)
+
+    buttonOneFileDel['state']=NORMAL
+
+
+def mp3_path_set():
+    rcf=read_cfg_file()
+    if rcf[1]=='':
+        in_mp3_path = askdirectory()
+        if in_mp3_path=='':
+            showerror(title='目录设置', message='你没选择目录，请重新设置！')
+        else:
+            write_cfg_file(rcf[0], in_mp3_path, rcf[2])
+            buttonOneKeyCopy['state']=NORMAL
+            showinfo(title='目录设置', message='目录设置成功！可开始一键拷贝!')
+    else:
+        aq=askyesno(title='目录设置', message='目录已设置为%s,你需要修改吗？' % rcf[1])
+        if aq:
+            in_mp3_path = askdirectory()
+            if in_mp3_path=='':
+                showerror(title='目录设置', message='你没选择目录，请重新设置！')
+            else:
+                write_cfg_file(rcf[0], in_mp3_path, rcf[2])
+                showinfo(title='目录设置', message='目录设置成功！可开始一键拷贝!')
+
+
+def disk_initial():
+    s=os.path.join((w.get() + os.sep), 'UDiskMp3.cfg')
+    d={}
+    d['last_num']=1
+    if os.path.isfile(os.path.join(s)):
+        if cfg_key_check():
+            ask_initial=askyesno(title='U盘初始化确认！',
+                                 message='U盘已初始化，重新初始化后可能会导致歌曲顺序混乱，你是否需要重新进行初始化？')
+            if ask_initial:
+                write_cfg_file('224002', '', d)
+                showinfo(title='初始化', message='初始化成功，请设置Mp3下载目录！')
+            else:
+                pass
+        else:
+            showinfo('U盘初始化', message='U盘已初始化，但配置文件损坏，将进行初始化！')
+            write_cfg_file('224002', '', d)
+            showinfo(title='初始化', message='初始化成功，请设置Mp3下载目录！！')
+    else:
+        write_cfg_file('224002', '', d)
+        buttonMp3PathSet['state']=NORMAL
+        showinfo(title='初始化', message='初始化成功，请设置Mp3下载目录！！')
+
+
+def quit_app():
+    sys.exit()
+
+
+def about():
+    showinfo(title='关于', message='软件版本：0.9beat\n\n软件作者：老忘\n\nEmail: mycl@qq.com')
+
+root = Tk()
+
+root.withdraw()  # 隐藏
+# 移到屏幕外，避免闪烁
+root.geometry('+%d+%d' % (root.winfo_screenwidth() + 100, root.winfo_screenheight() + 100))
+
+root.title('下载Mp3音乐文件U盘管理【老年人专用】')
+udisk_path=()
+mp3_path=''
+
+buttonDistCheck = Button(root, text='U盘检测', command=disk_check)
+buttonDistCheck.grid(row=0, column=2, padx=5, pady=5)
+buttonDiskInitial = Button(root, text='U盘初始化', state=DISABLED, command=disk_initial)
+buttonDiskInitial.grid(row=0, column=1, padx=5, pady=5)
+buttonMp3PathSet = Button(root, text='设置Mp3目录 ', state=DISABLED, command=mp3_path_set)
+buttonMp3PathSet.grid(row=6, column=1, padx=5, pady=5)
+buttonOneKeyCopy = Button(root, text='一键拷贝', state=DISABLED, command=one_key_copy)
+buttonOneKeyCopy.grid(row=2, column=0, padx=5, pady=5)
+buttonOneFileDel = Button(root, text='单曲删除', state=DISABLED, command=one_file_del)
+buttonOneFileDel.grid(row=3, column=0, padx=5, pady=5)
+
+labelUDisk=Label(root, text='操作U盘盘符：')
+labelUDisk.grid(row=1, column=1, padx=5, pady=0)
+
+w=Spinbox(root, values=udisk_path)
+w.grid(row=1, column=2, padx=5, pady=0)
+
+treeMp3All = ttk.Treeview(root, show="headings", columns=('col1', 'col2'))
+treeMp3All.grid(row=2, column=1, rowspan=4, columnspan=2, padx=5, pady=5)
+treeMp3All.column('col1', width=50, anchor='center')
+treeMp3All.column('col2', width=300, anchor='center')
+treeMp3All.heading('col1', text='序号')
+treeMp3All.heading('col2', text='歌名')
+
+buttonMp3FileView = Button(root, text='U盘歌曲查看', state=DISABLED, command=mp3_file_view)
+buttonMp3FileView.grid(row=4, column=0, padx=5, pady=5)
+
+buttonQuitApp = Button(root, text='退出程序', command=quit_app)
+buttonQuitApp.grid(row=6, column=2, padx=5, pady=5)
+
+menubar = Menu(root)
+
+filemenu = Menu(menubar, tearoff=False)
+musicmenu = Menu(menubar, tearoff=False)
+filemenu.add_separator()
+filemenu.add_command(label='U盘检测', command=disk_check)
+filemenu.add_command(label='U盘初始', command=disk_initial)
+filemenu.add_command(label='下载目录设置', command=mp3_path_set)
+filemenu.add_separator()
+filemenu.add_command(label='退出', command=quit_app)
+musicmenu.add_separator()
+musicmenu.add_command(label='一键拷贝', command=one_key_copy)
+musicmenu.add_command(label='U盘歌曲查看', command=mp3_file_view)
+musicmenu.add_command(label='单曲删除', command=one_file_del)
+menubar.add_cascade(label='开始', menu=filemenu)
+menubar.add_cascade(label='歌曲', menu=musicmenu)
+menubar.add_command(label='关于', command=about)
+root.config(menu=menubar)
+
+
+root.update()  # 刷新
+root.deiconify()  # 显示，使窗口尺寸属性可用
+root.withdraw()  # 再隐藏
+app_left = (root.winfo_screenwidth() - root.winfo_width()) // 2  # root.winfo_screenwidth()屏幕宽， root.winfo_width()程序宽
+app_top = (root.winfo_screenheight() - root.winfo_height()) // 2 - 50
+# 屏幕居中
+root.geometry('+%d+%d' % (app_left, app_top))
+root.deiconify()    # 显示
+root.resizable(False, False)
+
+disk_check()
+root.mainloop()
+```
+
+
+
+# tkinter
 
 
 
