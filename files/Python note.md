@@ -732,11 +732,7 @@ def split_file(file_name):
 			girl = []
 			count += 1
         
-        
-
-        
 	save_file(boy, girl, count)
-
 
 	f.close()
     
@@ -1131,3 +1127,9 @@ if name == 'main':
 ```
 
 ```
+
+
+
+
+# EASYGUI python
+
