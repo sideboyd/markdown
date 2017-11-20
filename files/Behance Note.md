@@ -46,6 +46,18 @@
 
 评价：苹果MACOS 2020版，
 
+#### 作品目的：notes app
+
+作品地址：https://www.behance.net/gallery/53245385/Notes-app-design
+
+评价：这是一个提供给用户写note的工具，适配IOS和watch，非常简单实用，并且底板配色很好，主要提供了编写、提醒、分享
+
+6FBFBE    EF96AC    B6A8DB     AFAAA8   
+
+
+
+
+
 
 
 END；
