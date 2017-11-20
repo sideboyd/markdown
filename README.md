@@ -5,6 +5,7 @@
     - [阿里云产品](https://github.com/sideboyd/markdown/blob/master/files/aliyun.md)
     - [Behance Note](https://github.com/sideboyd/markdown/blob/master/files/Behance%20Note.md)
     - [Python Note](https://github.com/sideboyd/markdown/blob/master/files/Python%20note.md)
+    - [Python第三方库](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
     - [Android Note](https://github.com/sideboyd/AndroidNote)
 * WEB-UI框架
     * [BOOTSTRAP](https://github.com/sideboyd/bootstrap)
