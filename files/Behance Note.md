@@ -66,6 +66,12 @@
 
 评价：这是一个家页面的方法论，随着民宿的流行，我们需要更多的信息可以了解到房子的信息。从三个方面着手进行介绍：information, interaction, and appearance.basic design strategies increasing [home page usability](https://tubikstudio.com/home-sweet-home-strategies-of-home-page-design/)
 
+#### 作品目的：android IOS 设计规范
+
+作品地址：http://www.uisdc.com/5-design-specification-sketch-file
+
+评价：为了给公司产品制定合理的设计规范，可参考的许多国内外优秀的设计规范
+
 
 
 END；

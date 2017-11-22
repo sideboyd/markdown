@@ -1,6 +1,6 @@
 ![](https://github.com/sideboyd/markdown/blob/master/image/7f419446815917.586530fe1cca4.jpg)
 
-​                                                                                                                                                                    There’s no place like home
+​     ===============================================  There’s no place like home                                                                                                                                                   
 
 * 学习笔记
     - [数据库设计](https://github.com/sideboyd/markdown/blob/master/files/data%20design.md)
@@ -14,7 +14,13 @@
     * [adminLTE](https://github.com/sideboyd/AdminLTE)
 
 
-* Android-UI案例
+* UI设计规范
+    * [**Material Design**](https://material.io/guidelines/resources/sticker-sheets-icons.html#sticker-sheets-icons-components)
+    * [**iOS Human Interface Guidelines**](https://developer.apple.com/design/resources/#ios-apps)
+    * [**Lightning Design System**](https://www.lightningdesignsystem.com/)
+    * [**Ant Design**](https://ant.design/docs/resource/download-cn)
+    * [微信小程序设计指南](https://mp.weixin.qq.com/debug/wxadoc/design/#资源下载)
+* Android-控件代码
     * [开源控件](https://github.com/sideboyd/android-open-project)
     * [开源控件2](https://github.com/sideboyd/awesome-android)
     * [wechat](https://github.com/sideboyd/weui)
