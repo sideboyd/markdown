@@ -54,9 +54,17 @@
 
 6FBFBE    EF96AC    B6A8DB     AFAAA8   
 
+#### 作品目的：天气APPUI 汇总
 
+作品地址：http://mp.weixin.qq.com/s/eOOrZulqSrAcNyjc29EUYw
 
+评价：这是展示多种sensor 的UI页面，展示方式多样，可以借鉴其中的布局和构思。
 
+#### 作品目的：home page design
+
+作品地址：https://tubikstudio.com/feel-homey-handy-tips-for-home-page-design/
+
+评价：这是一个家页面的方法论，随着民宿的流行，我们需要更多的信息可以了解到房子的信息。从三个方面着手进行介绍：information, interaction, and appearance.basic design strategies increasing [home page usability](https://tubikstudio.com/home-sweet-home-strategies-of-home-page-design/)
 
 
 
@@ -78,6 +86,3 @@ END；
 
 END；
 
-#### 作品目的：
-
-作品地址：
