@@ -956,7 +956,59 @@ import os    可以对系统进行操作
 
 os.path  模块
 
-## 课时32：
+## 课时32：pickle模块
+
+将列表、字典转化为二进制
+
+picking  unpicking
+
+pickle模块
+
+```python
+#写pickle文件
+
+import pickle
+
+my_list = [123, 3.12, 'xiaojiayu', ['another list']]
+
+pickle_file = open('my_list.pkl', 'wb')
+
+pickle.dump(my_list, pickle_file)  #将列表dump到my_list
+
+pickle_file.close()  #保存文件
+
+```
+
+```python
+#主程序
+
+import pickle
+
+pickle_file = open('my_list.pkl', 'rb')  #打开pickle 文件 只读模式
+pickle.load(my_list.pkl)
+
+#其他代码
+```
+
+
+
+## 课时33：exception 异常
+
+```python
+file_name = input('请输入需要打开的文件名：')
+
+f = open(file_name)
+
+print('文件的内容是：')
+
+for each_line in f:
+	print(each_line)
+	
+```
+
+
+
+
 
 
 
@@ -1025,7 +1077,6 @@ def show_weather(weather_data):
     print('***********************************')
 
 show_weather(get_weather_data())
-
 ```
 
 
