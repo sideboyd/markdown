@@ -1008,6 +1008,139 @@ for each_line in f:
 
 
 
+## 课时34：检测异常
+
+```python
+try:
+	#检测范围
+except exception[as reason]:
+	#出现异常后如何处理的代码
+finally：
+    #无论如何都会被执行的代码
+```
+
+
+
+```python
+try:
+    sum = 1 + '1'
+    f = open('readme.txt')
+    print(f.read())
+    
+except OSError as reason:
+    print('file error T_T ' + str(reason))
+except TypeError as reason:
+    print('type error T_T ' + str(reason))
+except(VlueError, TypeError):
+    print('error T_T ')
+finally:
+    f.close()
+    
+```
+
+## 课时35：else语句及with语句
+
+在python中，else语句的使用：
+
+1. 要么怎样，要么不怎样
+2. 干完了能怎样，干不完就别想怎样
+3. 没有问题，那就干吧
+
+```python
+def showMaxfactor(num):
+    count = num // 2
+    while count > 1:
+        if num % count ==0:
+            print('%d最大的约数是%d' % (num, count))
+            break   #如果执行break则不执行else
+        count -= 1
+    else:
+        print('%d是素数！' % num)
+
+num = int(input('请输入一个数：'))
+showMaxfactor(num)
+
+```
+
+```python
+try:
+    sum = 1 + '1'
+except TypeError as reason:
+    print('type error T_T ' + str(reason))
+else：
+	print('no error')
+    
+```
+
+with语句的使用：
+
+```python
+try:
+    with open('data.txt', 'w') as f:
+    	for each_line in f:
+        	print(each_line)
+except OSError as reason:
+    print('error:' + str(reason))
+finally:
+    f.close()
+    
+```
+
+## 课时36： easyGUI
+
+图形界面编程：
+
+官网：easygui.sourceforge.net
+
+英文：easygui-docs-0.96\tutorial\index.html
+
+中文：bbs.fishc.com/thread-46069-1-1.html
+
+```python
+#C:python33/python.exe setup.py install
+import easygui
+	easygui.msgbox('hello, world')
+
+from easygui import *
+	msgbox('hello, world')
+
+#推荐的使用方式
+import easygui as g
+	g.msgbox('hello, world')
+
+```
+
+```python
+import easygui as g
+import sys
+
+while 1:
+        g.msgbox("嗨，欢迎进入第一个界面小游戏^_^")    #模块函数，一个按钮的对话框
+
+        msg ="请问你希望在鱼C工作室学习到什么知识呢？"
+        title = "小游戏互动"
+        choices = ["谈恋爱", "编程", "OOXX", "琴棋书画"]
+        
+        choice = g.choicebox(msg, title, choices)   #模块函数，一个选择对话框
+
+        # note that we convert choice to string, in case
+        # the user cancelled the choice, and we got None.
+        g.msgbox("你的选择是: " + str(choice), "结果")
+
+        msg = "你希望重新开始小游戏吗？"
+        title = "请选择"
+        
+        if g.ccbox(msg, title):     # show a Continue/Cancel dialog    #CCBOX = 继续和取消
+                pass  # user chose Continue
+        else:
+                sys.exit(0)     # user chose Cancel
+
+```
+
+
+
+
+
 
 
 
