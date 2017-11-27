@@ -1107,7 +1107,6 @@ from easygui import *
 #推荐的使用方式
 import easygui as g
 	g.msgbox('hello, world')
-
 ```
 
 ```python
@@ -1134,14 +1133,46 @@ while 1:
                 pass  # user chose Continue
         else:
                 sys.exit(0)     # user chose Cancel
+```
+
+1. 下载easygui 文件
+2. 使用cmd 进入easygui文件夹路径: cd C:\Users\dzhang\Downloads\easygui-0.96
+3. 输入：C:\Users\dzhang\AppData\Local\Programs\Python\Python36-32\python.exe setup.py install
+4.  编辑  C:\Users\dzhang\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\easygui.py
+
+* 建议不要在IDLE上运行easygui
+
+
+
+```python
+import sys
+import easygui as g
+
+choices = ['愿意','不愿意','有钱时候愿意']
+reply = g.choicebox('愿意购买资源吗？', choices = choices)
+
+g.msgbox("我一定要学会编程", ok_button="加油！")
+
+g.ynbox(msg='要继续吗？', title='请确认', choices=('Yes','No'), image=None)
+
+g.buttonbox(msg='你喜欢哪种水果？',title='请选择',choices=('香蕉','梨子','苹果'),image=None,root=None)
+
+g.buttonbox(msg='你喜欢哪种水果？',image='bricks.gif',choices=('香蕉','梨子','苹果'))
+
+g.enterbox(msg='请输入一句话',title='数据采集',default='',strip=True,image=None,root=None)
+
+g.integerbox(msg='请输入数值',title='数据采集',default='',lowerbound=9,upperbound=99,image=None,root=None)
+
+g.multenterbox()
+
+if g.ccbox('要在玩一次吗？', choices=('要啊要啊', '算了吧')):
+    g.msgbox('不给玩了，在玩就玩坏了')
+else:
+    sys.exit(0)
 
 ```
 
-
-
-
-
-
+## 课时37：
 
 
 
@@ -1153,7 +1184,7 @@ END;
 
 # 小玩意
 
-## 天气
+## 天气--赞
 
 ```python
 import urllib.request
@@ -1216,7 +1247,7 @@ show_weather(get_weather_data())
 
 
 
-## 百度地图查距离
+## 百度地图查距离--赞
 
 ```python
 import json
@@ -1274,64 +1305,7 @@ else:
     print ("距离： %.1f  公里，开车大约需要%d分钟 " % (result["distance"]/1000,result["duration"]/60+1))  
 ```
 
-## 百度爬虫
 
-```python
-import requests
-
-from bs4 import BeautifulSoup
-
-from datetime import datetime
-
-import pandas
-
-import re
-
-
-
-data=[]
-
-for k in range(1,33):
-
-    
-
-    date=[]
-    media=[]
-    title=[]
-    link=[]
-    newsurl='http://news.baidu.com/ns?word=%28%E6%B7%B1%E5%BA%B7%E4%BD%B3A%2C%E5%BA%B7%E4%BD%B3%E9%9B%86%E5%9B%A2%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%2C%E5%BA%B7%E4%BD%B3%E9%9B%86%E5%9B%A2%29&pn='+str((k-1)*20)+'&cl=2&ct=1&tn=newsdy&rn=20&ie=utf-8&bt=1293811200&et=1451577599'
-    kv={"User-Agent":"Mozilla/5.0 "}
-    res=requests.get(newsurl,headers=kv)
-    res.encoding='utf-8'
-    soup=BeautifulSoup(res.text,'html.parser')
-    for i in range(20):
-        news=soup.find_all( 'div', { 'class', 'result'})[i]
-    
-        h3=news.find( name= "a", attrs={ "target": re.compile( "_blank")})#取出每则新闻的标题
-        title.append(h3.text)
-    
-        m=news.find( name= "p", attrs={ "class": re.compile( "c-author")})#取出每则新闻的发布媒体
-        m1=m.text.split()[0]
-        media.append(m1)
-                
-        t=m.text.split()[1]#取出每则新闻的发布时间
-        dt=datetime.strptime(t,'%Y年%m月%d日')
-        d=dt.strftime('%Y-%m-%d')
-        date.append(d)
-        
-        href=news.h3.a['href']
-        link.append(href)
-        
-        data.append((date[i], title[i], media[i],link[i]))
-
-
-
-    print("第" + str(k) + "页完成")
-
-df=pandas.DataFrame(data)
-
-df.to_excel('000016深康佳.xlsx')
-```
 
 ## 汉诺塔
 
@@ -1350,170 +1324,100 @@ n = int(input('input hanoi level:'))
 hanoi(n, 'x', 'y', 'z')
 ```
 
-## 图片爬虫
+## bing图片抓取
 
 ```python
+#####utf-8
 import urllib.request
-
-import urllib.error
-
+import urllib.parse
 import os
-
-import sys
-
-import http.server
-
-import http.client
-
-import time
-
 import re
-
-import random
-
-import math
-
-home = 'http://jandan.net/ooxx'
-
-data = None
-
-headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36'}
-
-enctype = 'utf-8'
-
-proxies = []
-
-error = None
-
-max_error_times = 5        #最多允许失败5次，否则放弃该图片下载
-
-def create_localhost():
-
-    number = int((math.sqrt(5)-1)/2) * len(proxies)
-    for x in range(number):
-        proxies.append(None)
-
-def get_response(req):
-
-    error_time = 0
-    while True:
+import sys,threading,time
+import socket
+class Bing:
+    def openurl(self,url):
+        tml=urllib.request.Request(url)
+        tml.add_header('User-Agent','Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36')
         try:
-            if error_time == max_error_times:
-                print('失败次数达%d次......放弃操作' % max_error_times)
-                return None
-            error_time += 1
-            response = urllib.request.urlopen(req)
-        except urllib.error.URLError as e:
-            if hasattr(e,'code'):         
-                print(e.code,e.reason)
-                change_proxy()
-                continue
-            elif hasattr(e,'reason'):
-                print(e)
-                change_proxy()
-                continue
-        except (ConnectionResetError,http.client.BadStatusLine) as e:
-            print(e)
-            change_proxy()
-            continue
-        except TimeoutError as e:
-            print(e)
-            print('服务器长时间无响应，自动切换代理.....')
-            change_proxy()
-            continue
-        return response
+            response = urllib.request.urlopen(tml)
+            html = response.read()
+            return html
+        except:
+            print(sys.exc_info())
+            return None
+        
+    def analysis(self,html):
+        jpg=[]
+        if html!=True:
+            ss=re.findall(r',imgurl:"(http://[^"]+?\.[jpeg]{3,4})&',html)
 
-def get_proxy():
+        return (ss,len(ss))
+        
+    def savejpg(self,jpglits):
+        for x in jpglits:
+            tie=x.split("/")
+            if not os.path.exists(self.关键词+'//'+tie[-1]):  
+                self.下载+=1
+                threading.Thread(target=self.save,args=(x,tie[-1])).start()#创建线程 执行下载X连接内的图片任务
+            else:
+                self.跳过+=1
+            
+    def save(self,http,tie):
+        try:
+            socket.setdefaulttimeout(50)#########设置50秒连接超时
+            urllib.request.urlretrieve(http,self.关键词+'\\'+tie)#下载网页图片
+            self.完成+=1
+        except:
+            if  os.path.exists(self.关键词+'\\'+tie):
+                os.remove(self.关键词+'\\'+tie)
+            print (sys.exc_info()[0],sys.exc_info()[1],http)
+            self.跳过+=1
+        self.结束+=1
 
-    global data,headers,proxies
-    req = urllib.request.Request('http://www.xici.net.co',None,headers)
-    response = get_response(req)
-    html = response.read().decode('utf-8')
-    p = re.compile(r'''<tr\sclass[^>]*>\s+
-                                    <td>.+</td>\s+
-                                    <td>(.*)?</td>\s+
-                                    <td>(.*)?</td>\s+
-                                    <td>(.*)?</td>\s+
-                                    <td>(.*)?</td>\s+
-                                    <td>(.*)?</td>\s+
-                                    <td>(.*)?</td>\s+
-                                </tr>''',re.VERBOSE)
-    proxy_list = p.findall(html)
-    for each_proxy in proxy_list[1:]:
-        if each_proxy[4] == 'HTTP':
-            proxies.append(each_proxy[0]+':'+each_proxy[1])
+        if self.stop:
+            print('还有%d个图片正在下载!!!!!!\r\n此次共下载 %d张图片!'%((int(self.下载)-int(self.结束),self.完成)))
+            
+    def getopen(self):
+        self.关键词=input('请输入关键词')
+        self.页面上限=input('请输入爬取的页数')
+        self.页面=0
+        self.结束=0
+        self.跳过=0
+        self.下载=0
+        self.完成=0
+        jpg=[0,0]
+        self.stop=False
 
-def change_proxy():
+        if not os.path.exists(os.getcwd()+'\\'+self.关键词):
+            os.makedirs(os.getcwd()+'\\'+self.关键词)
+        for each in range(int(self.页面上限)):
+            print('正在爬取第%d页上一页%d张图片'%(each+1,jpg[1]))
+            url2 = 'http://cn.bing.com/images/search?&q=%s&FORM=R5IR3&first=%d'%(urllib.parse.quote(self.关键词.encode('utf-8')),self.页面+1)
+            html = self.openurl(url2)
+            
+            html = html.decode('UTF-8')
+           
+            jpg=self.analysis(html)
+            
+            self.savejpg(jpg[0])
 
-    proxy = random.choice(proxies)
-    if proxy == None:
-        proxy_support = proxy_support = urllib.request.ProxyHandler({})
-    else:
-        proxy_support = urllib.request.ProxyHandler({'http':proxy})
-    opener = urllib.request.build_opener(proxy_support)
-    opener.addheaders = [('User-Agent',headers['User-Agent'])]
-    urllib.request.install_opener(opener)
-    print('智能切换代理：%s' % ('本机' if proxy==None else proxy))
+            if (int(self.页面上限)-1)!=each:
+            
+                self.页面=self.页面+jpg[1]
+            else:
+                self.stop=True
+        
+        print('总共爬取%d张图片 些许数量不准 可能是网络等原因导致下载不成功 爬取结束%d张,还有%d个线程正在运行,共错误跳过%d张'%(self.下载,self.结束,self.下载-self.结束,self.跳过))
+        print('注意!此时可能有的图片单个线程还在下载,')
 
-def get_pic(page):      #生成器，返回一个图片链接
+if __name__=='__main__':
+    jpgg=Bing()
+    jpgg.getopen()
 
-    global data,headers,enctype
-    while True:
-        url = 'https://yande.re/post?page=%d&tags=rating:e' % page
-        print('当前页面：%d' % page)
-        req = urllib.request.Request(url,data,headers)
-        response = get_response(req)
-        if response == None:
-            print('获取页面失败.....')
-            sys.exit()
-        html = response.read().decode(enctype)
-        pic = re.compile(r'''<a\s+
-                                            class="directlink\s+largeimg"\s+
-                                                href="
-                                                    (https://files.yande.re/.+?\.jpg)
-                                                         "
-                                      >''',re.VERBOSE)
-        for pic_url in pic.findall(html):
-            if re.match(r'https?://files.yande.re.+\.je?pg
-
-
-
-[/hide]
-
-,pic_url):      #检测是否是正确的html格式
-
-                yield pic_url
-        time.sleep(5)
-        page += 1
-
-save_path = 'D:\图片\马克思主义'
-
-def download():
-
-    count = 1
-    global data,headers
-    for pic_url in get_pic(1):         #get_pic(1)表示从第1页开始下载
-        file_name = os.path.split(pic_url)[1]
-        if not os.path.isdir(save_path):    #目录不存在就创建
-            os.makedirs(save_path)
-        with open('%s\\%s' % (save_path , file_name) , 'wb') as f:
-            req = urllib.request.Request(pic_url,data,headers)
-            response = get_response(req)
-            if response == None:
-                continue
-            f.write(response.read())
-            print('本次成功下载第%d个图片! %s' % (count , pic_url))
-            count += 1
-
-if name == 'main':
-
-    get_proxy()
-    create_localhost()
-    download()
 ```
 
 
-## 糗事百科抓取
+## 糗事百科抓取--赞
 
 ```python
 #糗事百科---利用urllib库和正则表达式
@@ -1535,237 +1439,144 @@ for k in range(0,10):
         
 ```
 
-## 乌龟吃鱼小游戏
+
+
+## 妹子图的爬取--赞
 
 ```python
-# 游戏场景为范围（x,y）：0 <= x <= 10   ,   0 <= y <= 10
-# 游戏生成 1 只乌龟(tortoise)和 10 条鱼。
-# 它们的移动方向随机。
-# 乌龟的最大移动能力是 2 （Ta可以随机选择移动 1 还是 2 ），鱼的最大移动能力是 1
-# 当移动到场景边缘，自动向反方向移动
-# 乌龟的初始化体力为100（上限）
-# 乌龟每移动一次消耗体力 1 
-# 当乌龟和鱼坐标重叠，乌龟吃掉鱼，乌龟体力增加20
-# 鱼暂不计算体力
-# 当乌龟体力值为 0 （挂掉）或者鱼儿的数量为 0 时，游戏结束。
-import random as r
 
-
-
-# ---------------------------------------------------------------------------
-axis_x = [0,100]      # 设定游戏场地的坐标值范围，圈定边界
-axis_y = [0,100]      # 因为在其他函数内部只需要引用不需要修改，所以定义为全局变量
-# ---------------------------------------------------------------------------
-
-
-# 乌龟类，初始化乌龟的坐标和体力值
-class Tortoise:
-    def __init__(self):
-        # 初始化乌龟体力值和位置
-        self.energy = 100
-        self.tt_x = 5
-        self.tt_y = 5
-
-    def ttMoving(self):
-        # 乌龟移动方法
-        new_x = self.tt_x + (r.choice([-1,1]) * r.randint(1,2))
-        new_y = self.tt_y + (r.choice([-1,1]) * r.randint(1,2))
-
-        # 检查移动后乌龟的x坐标是否超越边界
-        if new_x < axis_x[0]:
-            self.tt_x = axis_x[0] - (new_x - axis_x[0])
-        elif new_x > axis_x[1]:
-            self.tt_x = axis_x[1] - (new_x - axis_x[1])
-        else:
-            self.tt_x = new_x
-
-        # 然后检查移动后乌龟的y坐标是否超越边界
-        if new_y < axis_y[0]:
-            self.tt_y = axis_y[0] - (new_y - axis_y[0])
-        elif new_y > axis_y[1]:
-            self.tt_y = axis_y[1] - (new_y - axis_y[1])
-        else:
-            self.tt_y = new_y
-
-        # 每次调用移动方法，乌龟体力值减 1 
-        # 调整好乌龟移动后的坐标后，返回x和y坐标的值
-        self.energy -= 1
-        return (self.tt_x,self.tt_y)
-
-    # 乌龟吃鱼时的操作
-    def eat_Fish(self):
-        self.energy += 1
-        if self.energy > 100:
-            self.energy = 100
-
-
-# 鱼儿类，初始化鱼儿的位置，和移动能力
-class Fish:
-    def __init__(self):
-        # 初始化鱼儿的位置
-        self.fs_x = 0
-        self.fs_y = 0
-        self.step = 1
-
-    def fsMoving(self):
-        # 鱼儿移动方法
-        new_x = self.fs_x + (r.choice([-1,1]) * self.step)
-        new_y = self.fs_y + (r.choice([-1,1]) * self.step)
-
-        # 然后检查鱼儿移动后x坐标是否超越边界
-        if new_x < axis_x[0]:
-            self.fs_x = axis_x[0] - (new_x - axis_x[0])
-        elif new_x > axis_x[1]:
-            self.fs_x = axis_x[1] - (new_x - axis_x[1])
-        else:
-            self.fs_x = new_x
-
-        # 再检查鱼儿移动后y坐标是否超越边界
-        if new_y < axis_y[0]:
-            self.fs_y = axis_y[0] - (new_y - axis_y[0])
-        elif new_y > axis_y[1]:
-            self.fs_y = axis_y[1] - (new_y - axis_y[1])
-        else:
-            self.fs_y = new_y
-
-        # 调整好鱼儿移动后的坐标后，返回x和y坐标的值
-        return (self.fs_x,self.fs_y)
-
-
-# 游戏启动函数，生成乌龟BOSS和十条鱼儿对象
-def playground():
-    # 生成乌龟的实例化对象
-    Boss = Tortoise()
-
-    # 生成十条鱼儿的实例化对象
-    fishs = []
-    for i in range(10):
-        new_fish = Fish()
-        fishs.append(new_fish)
-    # 启动游戏
-    while True:
-        if len(fishs) == 0:
-            print("Game Over\n鱼儿被乌龟吃完了，游戏结束！")
-            break
-        if Boss.energy == 0:
-            print("Game Over\n乌龟累死了，游戏结束！")
-            break
-
-        pos = Boss.ttMoving()
-        for each_fish in fishs[:]:
-            if each_fish.fsMoving() == pos:
-                Boss.eat_Fish()
-                fishs.remove(each_fish)
-                print("有一条鱼儿被吃掉了...")
-```
-
-
-
-## 煎蛋网妹子图的爬取
-
-```python
-from selenium import webdriver
-import os
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
 import urllib.request
-from selenium.webdriver.support import expected_conditions as EC
+import urllib.error
+import os
+import sys
+import http.server
+import http.client
+import time
 import re
-import socket
+import random
+import math
 
+data = None
+headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36'}
+enctype = 'utf-8'
+proxies = []
+max_error_times = 5        #最多允许失败5次，否则放弃该图片下载
 
-socket.setdefaulttimeout(10.0)
-# 缓存
-browser = webdriver.PhantomJS(service_args=['--disk-cache=true'])
+def create_localhost():
+    number = int((math.sqrt(5)-1)/2) * len(proxies)
+    for x in range(number):
+        proxies.append(None)
 
-wait = WebDriverWait(browser, 10)
-
-
-# --disk-cache=true
-#模仿点击事件
-def search():
-    try:
-        submit = WebDriverWait(browser, 10).until(
-                EC.element_to_be_clickable(
-                        (By.CSS_SELECTOR, '#comments > div:nth-child(4) > div > a.previous-comment-page')))
-        submit.click()
-
-    except:
-        pass
-
-#初始界面的页码
-def get_pagenum(url):
-    html = open_url(url).decode('UTF-8')
-    p = re.compile(r'.*?current-comment-page">\[(.*?)]</span>', re.S)
-    num = re.findall(p, html)[0]
-    return num
-
-#保存图片
-def saveimage(floder, imageattr):
-    for each in imageattr:
-        filename = each.split('/')[-1]
-        print('正在保存图片%s' % filename)
+def get_result(req_or_url,is_retrieve=False,filename = None):         #flag是否使用retrieve
+    error_time = 0 
+    while True:
         try:
-            urllib.request.urlretrieve(each, filename, schedule)
-        except:
-            pass
+            if error_time == max_error_times:
+                print('失败次数达%d次......放弃操作' % max_error_times)
+                return None
+            error_time += 1
+            if is_retrieve:
+                return urllib.request.urlretrieve(req_or_url,filename)
+            else:
+                return urllib.request.urlopen(req_or_url)
+        except urllib.error.URLError as e:
+            if hasattr(e,'code'):         
+                print(e.code,e.reason)
+                change_proxy()
+                continue
+            elif hasattr(e,'reason'):
+                print(e)
+                change_proxy()
+                continue
+        except (ConnectionResetError,http.client.BadStatusLine) as e:
+            print(e)
+            change_proxy()
+            continue
+        except TimeoutError as e:
+            print(e)
+            print('服务器长时间无响应，自动切换代理.....')
+            change_proxy()
+            continue
 
-#下载图片的过程用xx%表示
-def schedule(a, b, c):
-    """
-    :param a:已经下载的数据块
-    :param b: 数据块的大小
-    :param c: 远程文件的大小
-    :return:返回百分数
-    """
-    per = 100.0 * a * b / c
-    if per > 100:
-        per = 100
-    print('%.2f%%' % per)
+def get_proxy():
+    global data,headers,proxies
+    req = urllib.request.Request('http://www.xici.net.co',None,headers)
+    response = get_result(req)
+    html = response.read().decode('utf-8')
+    p = re.compile(r'''<tr\sclass[^>]*>\s+
+                                    <td>.+</td>\s+
+                                    <td>(.*)?</td>\s+
+                                    <td>(.*)?</td>\s+
+                                    <td>(.*)?</td>\s+
+                                    <td>(.*)?</td>\s+
+                                    <td>(.*)?</td>\s+
+                                    <td>(.*)?</td>\s+
+                                </tr>''',re.VERBOSE)
+    proxy_list = p.findall(html)
+    for each_proxy in proxy_list[1:]:
+        if each_proxy[4] == 'HTTP':
+            proxies.append(each_proxy[0]+':'+each_proxy[1])
 
-#利用获取的html利用正则搜索到图片地址并放到列表中
-def find_images(html):
-    try:
-        p = re.compile('<p>.*?<img src="(.*?\.jpg)".*?</p>', re.S)
-        imagelist = re.findall(p, html)
-        imageattr = []
-        for each in imagelist:
-            imagelist = 'http:' + each
-            imageattr.append(imagelist)
-        return imageattr
-    except:
-        pass
+def change_proxy():
+    proxy = random.choice(proxies)
+    if proxy == None:
+        proxy_support = proxy_support = urllib.request.ProxyHandler({})
+    else:
+        proxy_support = urllib.request.ProxyHandler({'http':proxy})
+    opener = urllib.request.build_opener(proxy_support)
+    opener.addheaders = [('User-Agent',headers['User-Agent'])]
+    urllib.request.install_opener(opener)
+    print('智能切换代理：%s' % ('本机' if proxy==None else proxy))
 
-#打开url返回源代码
-def open_url(url):
-    # 读取url
-    req = urllib.request.Request(url)
-    req.add_header('User_Agent',
-                   'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36')
-    try:
-        response = urllib.request.urlopen(url)
-        html = response.read()
-        return html
-    except:
-        pass
+def get_page():         #获取最大页数
+    home = 'http://jandan.net/ooxx'
+    global data,headers,enctype
+    req = urllib.request.Request(home,data,headers)
+    response = get_result(req)
+    html = response.read().decode(enctype)
+    find_string = 'current-comment-page'
+    find_start = html.index(find_string) + len(find_string) + 3
+    find_end = html.index(']',find_start+1)
+    return int(html[find_start:find_end])
+test = None
+def get_pic(page):      #生成器，返回一个图片链接
+    global data,headers,enctype
+    while True:
+        url = 'http://jandan.net/ooxx/page-%d' % page
+        print('当前页面：%d' % page)
+        req = urllib.request.Request(url,data,headers)
+        response = get_result(req)
+        if response == None:
+            print('获取页面失败.....')
+            sys.exit()
+        html = response.read().decode(enctype)
+        pic = re.compile(r'<img\s+src="(http://.+?\.(?:jpg|jpeg|gif))"')
+        for pic in pic.finditer(html):
+            yield pic.group(1)
+        time.sleep(5)
+        page -= 1
+        if page<1:
+            break
 
-#主函数，os.chdir后面自己建一个文件夹自己命名。
-def main():
-    os.chdir('picture2')
-    url = 'http://jandan.net/ooxx/'
-    browser.get(url)
-    pagenumber = int(get_pagenum(url))
-    a = pagenumber
-    for i in range(pagenumber - 1):
-        print('第%d页内容正在加载' % (a - i))
-        html = browser.page_source
-        imageattr = find_images(html)
-        saveimage('picture2', imageattr)
-        search()
+save_path = 'D:\\图片\\妹子图'
 
+def download():
+    count = 1
+    global data,headers
+    for pic_url in get_pic(get_page()):         #get_page()改为页数如1000可从1000页开始下载
+        file_name = os.path.split(pic_url)[1]
+        if not os.path.isdir(save_path):    #目录不存在就创建
+            os.makedirs(save_path)
+        get_result(pic_url,True,save_path+'\\'+file_name)
+        print('本次成功下载第%d个图片! %s' % (count , pic_url))
+        count += 1
 
 if __name__ == '__main__':
-    main()
+    get_proxy()
+    create_localhost()
+    download()
+
+
     
 ```
 

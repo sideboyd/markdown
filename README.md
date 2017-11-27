@@ -1,6 +1,6 @@
 ![](https://github.com/sideboyd/markdown/blob/master/image/7f419446815917.586530fe1cca4.jpg)
 
-​     ===============================================  There’s no place like home                                                                                                                                                   
+​     =========================================================== **Study and practise, years of it.**                                                                                                                                           
 
 * 学习笔记
     - [数据库设计](https://github.com/sideboyd/markdown/blob/master/files/data%20design.md)
@@ -9,6 +9,7 @@
     - [Python Note](https://github.com/sideboyd/markdown/blob/master/files/Python%20note.md)
     - [Python第三方库](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
     - [Android Note](https://github.com/sideboyd/AndroidNote)
+    - [Design Note]()
 * WEB-UI框架
     * [BOOTSTRAP](https://github.com/sideboyd/bootstrap)
     * [adminLTE](https://github.com/sideboyd/AdminLTE)
