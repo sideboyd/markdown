@@ -9,7 +9,7 @@
     - [Python Note](https://github.com/sideboyd/markdown/blob/master/files/Python%20note.md)
     - [Python第三方库](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
     - [Android Note](https://github.com/sideboyd/AndroidNote)
-    - [Design Note]()
+    - [Design Note](https://github.com/sideboyd/markdown/blob/master/files/Design%20Note.md)
 * WEB-UI框架
     * [BOOTSTRAP](https://github.com/sideboyd/bootstrap)
     * [adminLTE](https://github.com/sideboyd/AdminLTE)
