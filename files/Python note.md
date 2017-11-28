@@ -1138,7 +1138,7 @@ while 1:
 1. 下载easygui 文件
 2. 使用cmd 进入easygui文件夹路径: cd C:\Users\dzhang\Downloads\easygui-0.96
 3. 输入：C:\Users\dzhang\AppData\Local\Programs\Python\Python36-32\python.exe setup.py install
-4.  编辑  C:\Users\dzhang\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\easygui.py
+4. 编辑  C:\Users\dzhang\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\easygui.py
 
 * 建议不要在IDLE上运行easygui
 
@@ -2008,7 +2008,11 @@ root.mainloop()
 
 ## 学习资源
 
-****Python基本安装：
+https://edu.aliyun.com/course/137?spm=0.0.0.0.SOazL4
+
+
+
+Python基本安装：
 
     * http://www.python.org/ 官方标准Python开发包和支持环境，同时也是Python的官方网站；
     * http://www.activestate.com/ 集成多个有用插件的强大非官方版本，特别是针对Windows环境有不少改进；

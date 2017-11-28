@@ -1,12 +1,13 @@
 ![](https://github.com/sideboyd/markdown/blob/master/image/7f419446815917.586530fe1cca4.jpg)
 
-​     =========================================================== **Study and practise, years of it.**                                                                                                                                           
+​     ============================================= **Study and practise, years of it.**   we become what we repeatedly do.                                                                                                                                        
 
 * 学习笔记
     - [数据库设计](https://github.com/sideboyd/markdown/blob/master/files/data%20design.md)
     - [阿里云产品](https://github.com/sideboyd/markdown/blob/master/files/aliyun.md)
     - [Behance Note](https://github.com/sideboyd/markdown/blob/master/files/Behance%20Note.md)
     - [Python Note](https://github.com/sideboyd/markdown/blob/master/files/Python%20note.md)
+    - [R Note]()
     - [Python第三方库](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
     - [Android Note](https://github.com/sideboyd/AndroidNote)
     - [Design Note](https://github.com/sideboyd/markdown/blob/master/files/Design%20Note.md)
