@@ -7,7 +7,7 @@
     - [阿里云产品](https://github.com/sideboyd/markdown/blob/master/files/aliyun.md)
     - [Behance Note](https://github.com/sideboyd/markdown/blob/master/files/Behance%20Note.md)
     - [Python Note](https://github.com/sideboyd/markdown/blob/master/files/Python%20note.md)
-    - [R Note]()
+    - [R Note](https://github.com/sideboyd/markdown/blob/master/files/R%20Note.md)
     - [Python第三方库](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
     - [Android Note](https://github.com/sideboyd/AndroidNote)
     - [Design Note](https://github.com/sideboyd/markdown/blob/master/files/Design%20Note.md)
