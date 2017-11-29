@@ -68,3 +68,21 @@ Resource: https://tubikstudio.com/get-professional-useful-habits-for-ux-designer
 
 # next
 
+# Keep Fit. UI Design for Fitness apps
+
+a professional athlete billie jean king once said:"sports teaches you character, it teaches you to play by the rules, it teaches you to know what it feels like to win and lose.--- it teaches you about life." sports has become a part of your routine a long time ago. even more, today a healthy lifestyle is a top trend which constantly grows its popularity across the world.
+
+fitness apps are the key helpers for people who strive to get fit. their functionality gives a lot of opportunities and makes keeping fit easier. understanding the significant impact of these applications on users' everyday life, designers do their best to activate the problem-solving potential of fitness apps. today's article describes common screens and essential UI elements for fitness apps.
+
+## sign-in and profile screen
+
+fitness app is something like a pocket instructor telling you what to do and gives a feedback on your achievements. to make it more comfortable and personalized, designers need to create an effective profile UI.
+
+before users obtain their profiles 
+
+
+
+
+
+
+
