@@ -66,7 +66,7 @@ Resource: https://tubikstudio.com/get-professional-useful-habits-for-ux-designer
 
 
 
-# next
+# NEXT
 
 # Keep Fit. UI Design for Fitness apps
 
@@ -88,11 +88,49 @@ it's a core element for any type of apps. home screens serve as the main point w
 
 first of all, home screen should provide access to the other parts of the app. designers can choose various ways of the presentation from a sidebar with minimalistic icons to the click-able sub-headers leading to the different sections of app content. the choice often depends on the number of features provided by the product as well as the platform which it is meat for.
 
+## activity screen
+
+people who aim at getting fit always have to do various physical activities. fitness apps provide users with the feature which helps to track how active they are during a day. to make a sufficient UI for activity screen, designers include different kinds of activities and sports. traditionally, fitness apps provide tracking time spent on sports as well as measuring the distance which users cover during a day. the distance can be calculated in two ways: walking is measured by the number of steps and running is usually measured in miles(kilometers).
+
+the information about users' activity is often presented via diagrams of various forms. such presentation contributes the effective visual perception of the data which includes many numerals. also, designers often apply custom icons representing each kind of activity. this way the screen looks clean and neat even if users have a really active life.
+
+## heart rate screen
+
+the heart is an engine which lets our body live and function, so it's important to follow its condition daily. many fitness apps can be connected to the various devices such as fitness wearables which allow measuring pulse. the applications usually transfer the data gathered with devices on a heart rate screen.
+
+user interface representing the feature should be simple with the minimum of elements so that it could be easily operated. since the process of pulse measuring takes some time it may be a good idea to supply the UI with sufficient animation which will show the loading process. for example, motion designers can animate an illustration of the heart showing it beats. custom illustrations along with motion design can make UI look more proficient and make the process of the pulse measuring more interactive.
+
+## sleep tracking screen
+
+nice sleep is a guarantee of the human health. sports people know it better than anyone else and always try to control the time and quality of their sleep. fitness apps show the gathered information during a night which includes the time and stages of sleep. there are four stages of sleep: the first and the second are called light sleep, the third is deep sleep and the fourth is rem sleep. the applications track these stages and in the morning users can see the statistics. the data on sleep is often shown as graphs.
+
+## calories screen
+
+they say that fitness people are obsessed with calories. well, there is truth in the words because if you want to get fit it's vital to control what and how much you eat. as we said above, fitness applications show the information on the number of burnt calories based on the activity results. the calories data can be displayed on the activity screen as well as on the personal profile. however, it may be an effective solution to create a separate screen to provide users with the expanded information on the lost calories.
+
+## progress screen
+
+to stay motivated and continue self-improvement, it's important to know that the hard work gives results. the progress screen shows the statistics about users achievements along with failures. here the graphs will be the best choice. if people have the progress, they see that their results are getting better and the scales on the graphs go higher.
+
+## schedule screen
+
+there can be many sports activities in different time and different places so the schedule seems to be essential in this situation. the screen of schedule is standardized, but to make it unique and original, designers can add some interesting icons representing various sports directions.
+
+## goals screen
+
+goals move us to achieve more and more, especially if we talk about fitness. people stat doing sport because they have some goals like losing wight or shaping up. in fitness applications, users set maybe a bit less radical goals but easier to achieve on a regular basis. they often include walking a certain number of steps per day or week along with burning the fixed amount of calories.
+
+the screen of goals can be presented as a sheet divided into categories: to do, doing, done. this way users will see how much they have managed to achieve and what they need to strive for. in addition, designers can settle the system of awards which will help users be even more motivated. we've already described awards as effective gamification tools which contribute increasing user engagement. you can find detailed info in our previous articles.
+
+the sport requires persistence and fortitude and so does the creation of sufficient UI design. learn the basics, add some inspiration and you can surprise yourself. 
+
+stay tuned!!!
+
+=============================================================
+
+Resource : https://tubikstudio.com/keep-fit-ui-design-for-fitness-apps/
 
 
 
-
-
-
-
+# NEXT
 
