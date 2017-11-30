@@ -78,7 +78,17 @@ fitness apps are the key helpers for people who strive to get fit. their functio
 
 fitness app is something like a pocket instructor telling you what to do and gives a feedback on your achievements. to make it more comfortable and personalized, designers need to create an effective profile UI.
 
-before users obtain their profiles 
+before users obtain their profiles they usually go through the sign-in process. fitness apps, as well as the other ones, can allow logging in via social networks still there are some aspects which users have to fill in to create a personalized profile. the applications usually require the personal data including age, gender, weight, and height which helps to define users' physical condition. profile creation is often similar to filling in an app;ication form. this way users can easily provide the needed information to make a profile more personalized.
+
+the major objective of a fitness app is to help users in their self-improvement, the reason why profiles should contain not only the personal data but also the user's achievements such as the number of burnt calories or personal records in sports. it's important to not to overload the profile screen with the unnecessary information otherwise user interface may look chaotic.
+
+## home screen
+
+it's a core element for any type of apps. home screens serve as the main point where users start the journey within a product. creating UI for home screen designers need to think of it as a center of navigation and make sure users will be able to operate it easily.
+
+first of all, home screen should provide access to the other parts of the app. designers can choose various ways of the presentation from a sidebar with minimalistic icons to the click-able sub-headers leading to the different sections of app content. the choice often depends on the number of features provided by the product as well as the platform which it is meat for.
+
+
 
 
 
