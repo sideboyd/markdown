@@ -134,3 +134,49 @@ Resource : https://tubikstudio.com/keep-fit-ui-design-for-fitness-apps/
 
 # NEXT
 
+# case study: lunnscape. identity design for a landscape company 
+
+the task of logo and identity development seems to be not really simple today. more and more companies and products are filling the market with branding designs of various complexity and quality. what ever is the business or charity, it needs the original and recognizable image to support brand awareness and promotion. on the other hand, is that so easy to get original stepping into the ocean of various and diverse competition? this is the time for designers to come into play.
+
+today we offer you another case study showing the way which a brand passes to get its face designed in one of the recent projects, tubik team had a task of creating a logo for a landscaping business with further stretching the style and visual presentation on a number of items promoting the corporate identity. this challenge was assigned to graphic designer denys boldyriev.
+
+# project
+
+redesign of corporate identity for landscape firm lunnscape.
+
+# process
+
+Lunnscape is a company based in Florida, USA, and specializing in landscaping services to commercial properties like office and courtyard spaces, parks etc. the firm was founded by steven lunn in 2009: it's easy to see that the brand name presents the harmonic combination of the founder's name with the key word 《landscape》. being already established and known on the local market, the company strived for refreshing the visual identity and putting its promotion to the next level. the client came to us with a very basic branding they already used and wanted a new design corresponding to the modern trends and requirements and enhancing the connection with the customers.
+
+we had already had a chance to create a brand identity for a landscape firm  - it was shared here in the case studies on logo design and corporate branding for andre. that made the challenge even more interesting, as the companies providing similar services had different approaches and vision of their brand images and needed new original looks. there is always the place for creative perspective in design, which makes the job so cool.
+
+for this project, we accomplished a set of tasks according to the client's marketing strategy:
+
+1. landscape company logo
+2. slogan
+3. theme illustrations
+4. corporate letterhead, envelop, and business cards
+5. stationery
+6. corporate vehicle
+7. style guile
+
+# logo
+
+brainstorming ideas on the task to design a logo for a landscaping business, most people will imagine something connected with plants, flowers or their elements. that's a natural and very quick association. actually, that approach had also been followed in the previous version of the logo presented with a simple stroke image featuring a leaf. however, keen on getting fresh stuff which would distinguish the company from the competitors, the client stated the wish to step aside from the traditional associations and try other creative directions. they wanted the brand sign to be dynamic, immediately connected to the theme of nature but moving away from ideas and patterns typical for landscaping logo design.
+
+as well as in the previous case study on identity for reborn restaurant, early ideas were visualized in in the quick pencil sketches to catch the the possible silhouette of the future logo and discuss possible directions of creative search with the stakeholders. after that, the set of basic digitized options were offered. to make the picture full and ensure how far the logo should move from the common associations set, the designer provided the variety of options, as you can see below. some of the options were visually connected to the plants and greenery, for example, the letter mark made of leaves, the image of a flower, the shapes of landscape site patches also resembling the flower petals. also, there were shown the shapes of trees presented in balanced geometric forms giving the room for flexibility in a landscape logo design. the other options in this set were focused on dynamic images of living creatures like insects or birds.
+
+so, it's easy to see that in general, the creative search moved around two global themes, flora and fauna, both effective to set the instant connection to the theme of nature and land care. thinking about the number of factors, the client put their preference on the image of a dragonfly as a mascot. here's the next stage of the logo design process - construction of a symbol image.
+
+for the variety of usage options, the mascot image was added with the word mark featuring the company name and accomplished in a style harmonically corresponding to the mascot. so, the final lunnscape logo is designed as a mascot of a dragonfly in an aqua circle depicting one of the fauna symbols which habitats in Florida nature. the dragonfly visualizes a bright creature on a green lawn, besides, its wings look like flower leaves. turquoise circle with a dragon fly gives a solid stamp effect as well as looks playful due to the color palette. the word mark typography complements and also unveils the core brand services of the company.
+
+
+
+
+
+
+
+
+
+
+
