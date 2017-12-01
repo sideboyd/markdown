@@ -34,7 +34,7 @@
     * [机器学习算法汇总](https://github.com//RedditSota/state-of-the-art-result-for-machine-learning-problems)
     * [python-mugo](https://github.com/brilee/MuGo)
 
-=====================================================
+=========================Design System============================
 
 场景设计（故事）：
 
@@ -44,9 +44,9 @@
 
 软件：IOS, android thing，
 
-=====================================================
+===========================UX==========================
 
-可用性设计UX（功能和操作）：
+可用性设计UX（功能和操作）：focus on the experience
 
 ![1](https://github.com/sideboyd/markdown/blob/master/image/bricks.gif)
 
@@ -54,23 +54,25 @@
 
 软件：会议记录（石墨），脑图（百度脑图），流程图（processon），mockup（墨刀），element（百度网盘-build tools），提案（PPT），PRD（excel），PJ Plan（石墨excel），
 
-=====================================================
+=========================UI============================
 
-前端设计（UI/API/Control）：
+前端设计（focus on UI/API/Control）：
 
 ![1](https://github.com/sideboyd/markdown/blob/master/image/google_newsstand_like_navigation_pattern.gif)
 
 软件：mockup（墨刀），图片编辑（picpick），android studio，
 
-=====================================================
+UI design system ： pattern library>>UI components，page templates，reference files
 
-人机交互UX：
+=========================ID UX============================
+
+人机交互UX： focus on ID/DATA>> input, output
 
 ![1](https://github.com/sideboyd/markdown/blob/master/image/placeholder-ovp-card.gif)
 
 **Visual feedback can be provided until content has been loaded**
 
-=====================================================
+========================console=============================
 
 后端设计（WEB/CLI/API/DB）：
 
@@ -78,7 +80,11 @@
 
 软件：mockup（墨刀），html（adminLTE，sublime），git（hub，local），cloud（ali，gcp，BL-ECS（web-cli）-storage-RDS），EDIT（php，python，R）
 
-======================================================
+========================coding==============================
+
+dev team: focus on implementation
+
+========================project==============================
 
 项目管理工具：
 

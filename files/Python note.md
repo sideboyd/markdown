@@ -1175,11 +1175,51 @@ else:
 
 面向对象：比如会开车但是不一定知道汽车的原理
 
+封装：数据和代码都封装在一起
 
+静态特征，动态特征，
 
+对象=属性（静态）（变量） + 方法（动态）（函数）
 
+类对象：达到量产的效果，模具
 
+实例对象：类的实例化，
 
+oo = object oriented 的特征
+
+1. 封装：成为一个模块，信息隐蔽技术（直接调用模块即可）
+2. 继承：子类自动共享父类之间数据和方法的机制
+3. 多态：不同对象对同一方法响应不同的行动
+
+## 课时38：面向对象编程
+
+OOA:面向对象分析
+
+OOD:面向对象设计
+
+OOP:面向对象编程
+
+OOP： self是什么？  相当于 C+里的 this
+
+```python
+class Ball:
+	def setName(self, name):
+		self.name = name
+	def kick(self):
+		print("我叫%s，该死的，谁踢我。。" % self.name)
+a = Ball()
+a.setName('球A')
+b = Ball()
+b.setName('球B')
+c = Ball()
+c.setName('球C')
+
+a.kick()
+```
+
+```
+_init_(self)   # 魔法的构建方法
+```
 
 
 
