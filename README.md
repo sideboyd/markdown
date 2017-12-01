@@ -46,7 +46,7 @@
 
 =====================================================
 
-可用性设计（功能和操作）：
+可用性设计UX（功能和操作）：
 
 ![1](https://github.com/sideboyd/markdown/blob/master/image/bricks.gif)
 
@@ -61,6 +61,14 @@
 ![1](https://github.com/sideboyd/markdown/blob/master/image/google_newsstand_like_navigation_pattern.gif)
 
 软件：mockup（墨刀），图片编辑（picpick），android studio，
+
+=====================================================
+
+人机交互UX：
+
+![1](https://github.com/sideboyd/markdown/blob/master/image/placeholder-ovp-card.gif)
+
+**Visual feedback can be provided until content has been loaded**
 
 =====================================================
 
