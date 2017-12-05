@@ -1223,6 +1223,134 @@ _init_(self)   # 魔法的构建方法
 
 
 
+## 课时39：继承
+
+```python
+class DerivedClassName(BaseClassName):
+```
+
+继承者：子类          
+
+被继承者：父类、基类、超类
+
+```python
+class Parent:
+	def hello(self):
+		print("正在调用父类的方法。。。")
+		
+		
+class Child(Parent):
+	pass
+	
+p = Parent()
+p.hello()
+
+c = Child()
+c.hello()
+
+class Child(Parent):
+    def hello(self):
+        print("正在调用子类的方法。。。")
+        
+c = Child()
+c.hello()
+
+```
+
+PS:如果子类中定义与父类同名的方法或属性，则会自动覆盖父类对应的方法和属性。
+
+鱼与乌龟
+
+```python
+import random as r
+
+class Fish:
+    def _init_(self):
+        self.x = r.randint(0, 10)
+        self.y = r.randint(0, 10)
+        
+    def move(self):
+        self.x -= 1
+        print("location:", self.x, self.y)
+        
+class Goldfish(Fish):
+    pass
+
+class Carp(Fish):
+    pass
+
+class Salmon(Fish):
+    pass
+
+class Shark(Fish):
+    def _init_(self):
+        #Fish._init_(self)  #调用未绑定的父类方法
+        #super()._init_()   #super调用方法
+        self.hungry: True
+            
+    def eat(self):
+        if self.hungry:
+            print("出货的梦想就是天天有的吃！！")
+            self.hungry = False
+        else:
+            print("太饱了，吃不下了！！！")
+            
+
+```
+
+开始：
+
+```python
+fish = Fish()
+
+fish.move()
+
+goldfish = Goldfish()
+
+goldfish.move()
+
+shark = Shark()
+
+```
+
+多重继承
+
+```python
+class DerivedClassName(BaseClassName1, BaseClassName2, BaseClassName3,):
+    
+```
+
+
+
+```python
+class Base1:
+    def foo1(self):
+        print("我是foo1，我为Base1代言。。。")
+        
+class Base2:
+    def foo2(self):
+        print("我是foo2，我为Base2代言。。。")
+        
+class C(Base1, Base2):
+    pass
+
+c = C()
+c.foo1()
+
+c.foo2()
+	
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 END;

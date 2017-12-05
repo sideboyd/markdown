@@ -170,13 +170,97 @@ so, it's easy to see that in general, the creative search moved around two globa
 
 for the variety of usage options, the mascot image was added with the word mark featuring the company name and accomplished in a style harmonically corresponding to the mascot. so, the final lunnscape logo is designed as a mascot of a dragonfly in an aqua circle depicting one of the fauna symbols which habitats in Florida nature. the dragonfly visualizes a bright creature on a green lawn, besides, its wings look like flower leaves. turquoise circle with a dragon fly gives a solid stamp effect as well as looks playful due to the color palette. the word mark typography complements and also unveils the core brand services of the company.
 
+both the brand mark and word-mark go hand in hand to keep an ultimate balance for user's perception and brand recognition. having agreed and polished all the details in the landscape logo design, the creative team moved to the work on slogan and corporate identity development.
+
+# slogan
+
+the next step of the creative process was to support design with copy-writing: the company needed a new slogan, so the copywriter was also engaged in the project. short and catchy, the slogan had to support the idea of the beauty made by people but rooting in natural harmony. what's more, the slogan had to set the tight link with the logo, so that in combination they effectively supported each other.
+
+the company name uses the altered version replacing the keyword "land" with "lunn", but still preserves the general structure of the word so that the word "landscape" could be easily restored in mind. among several directions for the slogan, we developed the one which used the word "land" acturalizing its double meaning: land as an object of services the company provides and land as the action of coming down through the air and rest on the ground or another surface. this approach enabled to set the link with the logo featuring the dragonfly so that together they presented the clear message.
+
+after discussing the several sets of variants, the final version of the slogan was agreed upon "landed on nature beauty".
+
+# branded items
+
+stationery and business cards
+
+the designer prepared a set of templates for company documents, including business cards, letterhead, and envelopes, that reflect the brand identity in an elegant, non-distracting way. it enabled to stretch the design solutions of logo design for the landscape company and give them flexible ways of usage for different business purposes. as you can see below, business cards and the title page of a letter blank used the stroke version of the logo appplied to the combination of corporate colors.
 
 
 
+https://tubikstudio.com/case-study-lunnscape-identity-design-for-a-landscape-company/
 
 
 
+# NEXT
+
+# 7 tips to enhance mobile interactions
+
+the quality of mobile design can be measured simply. when the process of usage is so smooth and effortless that people don't even think about it, it is the sign of the professional design work. on the other hand, if there are some problems in the inter action system, users will definitely notice them and won't be pleased about it.
+
+mobile apps are expected to be clear and easy to operate so that they could be effectively used anytime and anyplace. designers' task is to create an intuitive interface which will guide users within the app helping them operate its functionality without problems. in this article, we describe the essential aspects of the effective mobile interaction system along with the tips helping designers to create intuitive design.
+
+## increase learnability
+
+every designer strives at creating a unique product with original interactions and navigation systems. such an approach allows standing out a crowd and being noticeable on the market. however, creating absolutely new environment designers have to think how users will adjust to it.
+
+if the interaction system of a mobile application has no logic and sequence or it doesn't respond to needs of the target audience, it may be frustrating and annoying. that condition is critical for ux, so people will simply give up on trying to decipher an app and quit it.
+
+to avoid this kind of outcome, designers need to care about learn-ability of the interactive elements. learn-ability stands for how easy tasks can be attained during the learn-ability, designers need to keep it simple and clear helping quickly adjust to it. also, the system should be consistent and logical so that users could identify the repeating patterns and use a mobile app intuitively.
+
+## consider multiple holds
+
+we all are different in many ways, even how we hold smart-phones. the way of holding smart-phones depends on various factors including the situation and conditions in which the app is used as well as the task we need to accomplish.
+
+there are three common types of holding a mobile. the first is when we take it with one hand and navigate it with a thumb. another way is to hold a smart-phone in one hand and interact with it with the forefinger of the other hand. also, the type which is common for chatting people is holding a phone in two hands using both thumbs for actions. of course, there are other types of holds but these three are thought to be the most common.
+
+considering this fact, designers have to figure out if the layout elements placed effectively for different holds. one handed hold requires special attention since it has the most limited space of reach. to make the interaction process within a mobile app effortless it may be a good idea to put the key components at the bottom of the screen so that users would be able to reach tap areas easily. in addition, the interactive elements should be big engough so there would be no chance for a mis-tap.
+
+## apply recognition patterns
+
+when a new app can be used intuitively it means that the designer did a good job. to provide intuitive interactions, UI design has to contain recognition patterns. they are the elements which users are already familiar with and those which give slight hints on how a app works. the thing is that using an application we are expecting to see certain things associated with the definite kind of product. for example, working with e-commerce apps we are used to seeing cart icons along with CTA buttons "buy". familiar elements in a new app make people feel more confident in their actions.
+
+users become accustomed to things quickly and their absence makes them feel uncomfortable. that's why, if you plan to use custom interactive elements, don't forget to add some standard components. this way a new application won't overwhelm with an absolutely unfamiliar environment and will help to learn quickly.
+
+## make a clean UI
+
+a big pitfall of mobile UI design is small screens of the devices. designers have to figure out how to cnclude all content in a short space without turning user interface into clutter. clean UI design helps effectively interact with a product since all the core elements can be easily reached.
+
+to create neat mobile UI it is recommended to use icons as interactive components. copy elements often can be too big for the small screen, so icons are a sufficient alternative. they can explain a function visualizing it with simple shapes and it helps to save the space on the screen. however, during usability testing, it should be thoroughly checked if the icons are perceived appropriately and transfer the right message.
+
+## decrease the number of actions
+
+probably, many of us have the experience of using an annoying mobile app which made us take a long way before we could finally accomplish the task. it may often be caused by ineffective interaction system which employs too many actions and the unnecessary functionality.
+
+mobile apps usually serve as problem-solving assistants, so it's vital for them to be designed ergonomically. it means that designers have to apply only core functional elements which will get the users right to the point they needed. minimum of actions won't make your product look primitive. it will help a mobile app be effective and pleasing in usage. remember that people mostly rate the quality of an application not by extraordinary features but how helpful it is.
+
+## add game mechanics
+
+based on the facts described above, we can say that an effective mobile interaction system should be simple and clear to use so that it could be operated without problems.
+
+however, simplifying the interface it's vital not make it boring. apps which seem ordinary have fewer chances to gain users' attention. that's why it's important to bring some emotional aspects into applications that look standard at the first glance.
+
+to make the process interesting and catchy, it may be a good idea to use gamification. it is the technique of exerting game mechanics into the non-game environment like mobile applications. various challenges and leader-boards along with the awards and stickers motivate users to interact with a product more and come back to it constantly.
+
+what's more, implementing a game mechanic called a user journey is an effective way to create clear layout and transitions. a journey is user's progression stages at the time of usage. designers create UX that way so that people could go step-by-step through the various features which gradually change depending on needs of the target audience. an approach helps to avoid problems with incomprehensible interactions and functions.
+
+last but not least, gamification adds the elements of fun. users enjoy entertainments, challenges, and competitive spirit similar to video games, so they are encouraged to go back. people always need some kind of recreational activity so that they could escape from everyday routine for a bit. by adding the fun element into a casual application, you help to reduce some stress and relax for a moment.
+
+## don't forget about testing
+
+mobile interaction design aims at creating a user-friendly product which will be pleasure to use under different circumstances. but how can a designer define if an app is usable enough and distinguish possible problems in UX? this is when usability testing comes into play.
+
+usability testing is an essential stage in creating mobile apps helping to evaluate it by testing on the potential audience. it is usually conducted at the UX building stage before a project goes to the development team so that inefficient solutions could be changed easier and faster.
+
+various usability testing methods allow identifying problems and bugs and quickly eliminate them. this way designers can improve all the aspects of UX ensuring user satisfaction.
+
+so, before you deliver a project to the development team remember to handle testing. test it by yourself, on your colleagues, on the potential users and then you'll get the desired outcome.
+
+a simple mobile interaction system is not that easy to create. it requires hard word, concentration and lots of practice before you receive sufficient results. 
+
+stay tuned!
 
 
 
+# NEXT
 
