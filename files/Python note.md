@@ -1343,7 +1343,33 @@ c.foo2()
 
 
 
+## 课时40：组合
 
+```python
+class Turtle:
+    def _init_(self, x):  #self在定义时需要定义，但是在调用时会自动传入。
+        self.num = x
+        
+class Fish:
+    def _init_(self, x):
+        self.num = x
+        
+class Pool:
+    def _init_(self, x, y):
+        self.turtle = Turtle(x)
+        self.fish = Fish(y)
+        
+    def print_num(self):
+        print("水池中总共有乌龟 %d 只， 小鱼 %d 条！" % (self.turtle.num, self.fish.num))
+```
+
+Mix-in
+
+类，类对象，实例对象
+
+不要在一个类中定义所有的方法，用继承或组合来实现
+
+**属性名用名词，方法名用动词**
 
 
 

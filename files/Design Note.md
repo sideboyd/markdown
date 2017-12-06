@@ -264,3 +264,47 @@ stay tuned!
 
 # NEXT
 
+# feel homey. handy tips for home page design
+
+there's no place like home, they say. and in the growing world of websites for all the needs and aims, it actually works the same. home page has multiple functions: it's a card of invitation, a starting point of the journey around the website, a storage of the vital links and data, and a strategic asset for marketing goals. in the majority of cases, it is often the first visual and emotional touch to the website. no doubt, design is one of the core ways to make this touch gentle, smart and helpful. today we are discussing some effective tips for creating user-friendly home pages.
+
+one of our previous articles has already given the insights into the definition, types of content such a page usually includes and basic design strategies in creasing home page usability. continuing the topic, today we are adding more recommendations organized around three essential aspects: information, interaction, and appearance.
+
+## information
+
+to use or not to use? that is the question. in the vast majority of cases, home page is the point of user's decision. in the early 2000s guru of usability Jacob Nielsen mentioned in his article: your home page is often your first - and possibly your last - chance to attract and retain each customer, rather like the front page of a newspaper. with all the progress the world wide web has witnessed, this position doesn't change: home page often defines if a user goes further around the website. and it is done not only by beauty and style but first of all by information which is looked for by visitors to the resource. making it accessible, noticeable and clear, designers grow the chances of positive user experience.
+
+ in general, home page can include the following data:
+
+1. the nature of the website: the page has to instantly inform users if it's a company website, blog, e-commerce website, social network, educational platform or anything else;
+2. brand or company identity elements: home page requires a recognizable visual presentation distinguishing the website from its competitors. if there is  a product, company or  brand behind it, web-page design should be seen as a brand and apply strategies of identity design for better brand awareness.
+3. benefits of the website: it should quickly inform users why the website can be helpful or interesting for them.
+4. internal search: many users come to the websites with clear goals, so functionality to search right from the homepage will make interaction highly productive.
+5. links to the core interaction zones
+6. contact data and links to social networks
+7. signs of trust: testimonials, reviews, big numbers of presence in social networks
+
+
+
+the solution which of the mentioned points are going to be included and how they are going to be spread on the layout should depend on the goals of the website and the research of target audience. let's check some tips effective in this aspect.
+
+## fill the header with core data
+
+as we mentioned in the article about web header design, it is the top part of the web-page, which people see before scrolling the page in the first seconds of introduction to the website. headers can include a variety of meaningful layout elements, for example:
+
+1. basic elements of brand identity: log, slogan etc.
+2. tag-line setting the theme of the website
+3. links to the core categories of website content
+4. links to the most important social networks
+5. basic contact information
+6. a language switch in case of multilingual interface
+7. search field
+8. subscription field
+9. links to interaction with the product such as trial version, downloading from the App-Store etc.
+
+
+
+obviously, it's impossible to put all the list into one header. moreover, 
+
+
+
