@@ -56,7 +56,7 @@
 
 软件：会议记录（石墨），脑图（百度脑图），流程图（processon），mockup（墨刀），element（百度网盘-build tools），提案（PPT），PRD（excel），PJ Plan（石墨excel），
 
-=========================UI============================
+=========================UI=====page templates===============
 
 前端设计（focus on UI/API/Control）：
 
@@ -66,7 +66,7 @@
 
 UI design system ： pattern library>>UI components，page templates，reference files
 
-=========================ID UX============================
+====================ID UX===Test the loading speed============
 
 人机交互UX： focus on ID/DATA>> input, output
 

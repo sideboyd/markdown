@@ -303,8 +303,67 @@ as we mentioned in the article about web header design, it is the top part of th
 9. links to interaction with the product such as trial version, downloading from the App-Store etc.
 
 
+obviously, it's impossible to put all the list into one header. moreover, its not a good idea to put everything because the header overloaded with diverse information will distract users' attention. as Arron Walter said in his book, if everything yells for your viewer's attention, nothing is heard. that is why the choice which information goes to the header and what is looks like arises on the solid ground of communication between a designer, a stakeholder and a marketing specialist. header is the top zone of early interaction: eye-tracking studies show that the web page is mostly scanned starting from it. so decide, which elements are primary to achieve website goals and use the limited space of header for them. for example, on a news website or a big e-commerce platform search field is crucial for positive UX while on a small company website it may be not needed at all.
 
-obviously, it's impossible to put all the list into one header. moreover, 
+ ## apply informative tag line
 
+don't think the users are going to wander around the website trying to set why it's useful for them. being surrounded by the thousands of website, they may get away at the first seconds if they don't see a clear reason to stay. so, give it to them - it's the time for a tag line. in marketing terms, it is the name of a short and catchy phrase that summarizes the benefits or gives the description of the website. including the keywords setting the proper theme and taking the place on the first level of visual hierarchy for the page, the tag line will quickly inform users why the website is worth their attention.
 
+## enable users to contact with duty holders
+
+home page is usually the place where people expect to find the contact info any time they need it. the most popular placement for it is footer, the bottom part of the page. however, if any kind of contact data is core for conversion, it's logical to put in the pre-scroll area or even a header. for example, if the website presents the delivery service or on-line shop, users may want to call more frequently and this ability will have a direct impact on conversion rate. meanwhile, for an entertainment or news resource, it may be not that crucial so it's placed in zones of less active interaction. however, in any case, the contact data should be available from home. among other reasons, it is one of the factors influencing the level of trust to the website.
+
+contacts can be presented in various formats. they can reveal the data such as phone number and location, emails, links to messengers, contact forms and instant chat window. making the phone numbers clickable is supportive as many users now browse from their smart phones and may want to call right from there. the address can be also clickable opening the screenshot or map showing how to find the location. the solutions have to be based on thoughtful user research setting target audience's expectations, level of tech literacy and the most convenient ways of contact for them. for instance, if your target audience is teenagers, just giving the phone number may be not effective as they really stick to messengers and social networks. at the same time, if your users are elderly people, social networks may not work in comparison to a phone number.
+
+## make call to action element instantly visible
+
+unlike the landing pages, focused on narrow and concise goals, home page contents are quite diverse. that's why it's important for a ux designer to care how users will see what they really need to see in all that mass of data. no doubt, it cannot happen that all, let's say, fifty available links on the home page are equally important. so, to make the page usable, all the interactive elements in the layout should be prioritized. visually, it can be done via the rules of visual hierarchy so taht users could see the key things first. and among them, call to action elements should be noticed instantly. otherwise, there will be loss in conversion not because users didn't want to do the action but because they did't find how to do it.
+
+## interaction
+
+the next aspect to consider is interaction - hte way how users perceive, process and interact with the information they find on the home page as well as the website in general. the next set of tips is all about that.
+
+check scannability and mind eye-tracking models
+
+it's not a secret that users first scan pages and only then make a decision if they want o get dip into details. interface designers are highly recommended to study eye-tracking models which are now described in numerous publications, with the most prominent contribution by Nielsen Norman Blog sharing the results of actual experiments in that sphere for a couple of decades. in brief, researchers mention three typical models of scanning: Gutenberg Diagram, Z-Pattern, And F-Pattern. in case you want to get more, we have given detailed descriptions in an earlier article, so now let's just check them on schemes.
+
+scannability of web pages i enhanced with visual hierarchy that enables designers to show the content in terms of its priority and navigates user from the core zones to the secondary ones. scannability is one of the parameters to be carefully tested all the time as it has a great impact on usability of the page and its problem-solving potential.
+
+## remember that patterns are user's friends
+
+every creative person feels the urge to apply the original and unique solutions and think out of the box all the time. however, make not to go too far on that way. remember that the website is made not for creative contests or gallery of fame but for real users. as we mentioned in the post about social networks design, the power of habit in terms of user experience can be stronger than the wish of revolution. surely, the dose of wow-effect is needed, but not so much to knock down the user. on home page, too much of design revolution might confuse and scare: if the first page is so hard to understand, user thinks, what's going to be next? study the habits of interaction and typical products for that particular target audience to make their habits their power. strive for the balance between innovation and traditions.
+
+## make the search field easily accessible
+
+as we said above, search means much, especially for the users coming to the resource with a clear understanding what they want. A/B testing can support the analysis of its most productive placement on the page layout. it can be a small search field, an icon in the header, a long horizontal field across the page as we have here in Tubik Blog. the main thing is to make it noticeable and clear so that users didn't waste their time.
+
+## use different menus and interaction zones
+
+as home pages can provide a variety of links, tabs, fields and buttons, they should be grouped in different menus and zones instead of being given as the list of links. for example, double menu in the header can present two layers of navigation. we have shown the example of such a trick in the case study for a bakery website design. the website uses a sticky header which has two levels of navigation. the upper menu shows the links to social networks, the logo, search, shopping cart and hamburger button hiding the extended menu. the second line of navigation gives instant connection to the core interaction areas: products catalog, locations for the point of sales, news and special offers, information about the service and contact section. visual and typographic hierarchy makes all the elements clear and easily scanned providing solid ground for quick interaction right from home page.
+
+## make the home page accessible from any point of the website
+
+home is usually the foundation of the website structure. so, users need to have a chance to get back home from any page they are on. check it when all the pages are designed not to miss this abvious still vital interaction.
+
+## don't direct all the outer traffic to home page
+
+for simple one page websites this question is not actual: indeed, they represent only a home page which satisfies one or multiple functions and there is no other place where the traffic could be directed from the outer sources. the same happens if the website is not complex, home is not overloaded with diverse links and navigation elements, so conversion can be reached right from it while other pages play secondary roles. in this case directing all the traffic to the most informative part of the site, which also enables a user to accomplish necessary action and get what they need, is a good idea.
+
+however, for complex websites and platforms, especially if they satisfy multiple needs of broad target audience, this approach can be the step killing profitability and reducing conversion rates. the user can get scared, distracted or even annoyed with the amount of information they have to get through to find what they need, especially if focused on a particular narrow goal. using landing pages in the case when you need to concentrate user's attention on something specific can be the efficient way of solving this problem. landing page is focused on one item, to make it quickly found and reduce delays when target user seeks for specific operations, services or items. this is the issue of especially high importance in the case of e-commerce websites when unwise design solutions bring to poor user experience and financial losses.
+
+## appearance
+
+the third set of tips is concentrated on the page looks. no doubt, the recommendations are applicable for any kind of webpage, still, on home page, they ten to be more influential.
+
+## be stringent in color choice
+
+color is power which can either strengthen or ruin other design decisions. choosing the color palette, remember that colors influence user perception. studying color psychology is helpful to make choices that transfer the right message. attention to traditional color theory will help to find the color combinations that will look elegant and harmonic. one more popular issue is choosing between light or dark background: the solution is mostly based on the type of content website presents. text- based websites usually use light and airy interfaces while visual based ones can apply dark background to make the images look deeper and more stylish.
+
+## apply recognizable visual prompts and associations
+
+being full of data, home pages usually include the variety of icons and illustrations. choosing them, always test their recognizability and check if they build right associations. if there is the risk of double meaning or culture differences of target audience, supporting the icons or illustrations with a short copy might be helpful.
+
+## mind the typography issues and readability
+
+choice of fonts and their combination determine not only style but also 
 
