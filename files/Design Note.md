@@ -365,5 +365,24 @@ being full of data, home pages usually include the variety of icons and illustra
 
 ## mind the typography issues and readability
 
-choice of fonts and their combination determine not only style but also 
 
+
+# NEXT
+
+# 11 profitable strategies for e-commerce UI design
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+END;
