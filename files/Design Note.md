@@ -371,12 +371,66 @@ being full of data, home pages usually include the variety of icons and illustra
 
 # 11 profitable strategies for e-commerce UI design
 
- 
+ ratings of e-commerce are booming and rocketing. people are getting more and more confident in buying things on-line. the report by big commerce on customers buying habits in 2016-2017 shows really interesting stats about on-line shopping:
+
+1. 51% of Americans prefer to shop on-line
+2. 96% of Americans with Internet access have made an on-line purchase in their life, 80% in the past month alone
+3. E-commerce is growing 23% year-over-year, yet 46% of American small businesses do not have a website
+4. on-line orders increase 8.9% in Q3 2016, but average order value(AOV) increased only 0.2% - indicating that transactional growth is outpacing total revenue
 
 
 
+the numbers above still haven't stopped their increasing. that wouldn't be reasonable for any business to ignore such global trends having a great impact on profits and reaching customers. for the last couple of years here in tubik we see the obvious and logical growth of interest from big and small businesses in establishing their presence on-line via websites and mobile applications. based on our experience and the research of the sphere today we offer you the article telling a bit more about strategies and best practices in UI design for e-commerce.
+
+so, let's start with the 11 points which are important to consider when you are designing e-commerce user interfaces.
+
+## 1. make the branding instantly visible
+
+from the business perspective, branding is a crucial thing: it enables to provide a product, company or service with a recognizable face and personality. in general terms, branding means a sort of image created via a set of distinguishing features and promoting awareness and recognizability of the product or service on the market.
+
+branding tends to be essential in an e-commerce user interface design, especially if stakeholders want to use the digital product as the additional flow of customer attraction. moreover, identity integrated thoughtfully into the interface is the effective way to increase brand awareness. the time taken for proper market and user research, target audience definition, competition analysis and development of brand identity on the basis of all that data by a professional designer is a worthy investment. if that's done before launching the process of UI design, the product gets higher chances of becoming recognizable faster and easier.
+
+in this case, UI designer working on the interface, its color palette, shapes, types and fonts, illustrations and icons, will consider design solutions appropriate and corresponding to the general branding concept of the product that will make them mutually supporting each other. it provides more natural and harmonic feeling of the brand in general and the particular interface as an integral part of this brand.
+
+there are numerous ways to add branding to the interface, still some layout zones and elements which have the highest potential in this issue:
+
+headers. in the article about website header design, we showed in detail that headers present the area of high visibility. so putting strategically important elements of branding in it is a good way to strengthen its memorability.
+
+splash screens. in mobile applications, splash screen or welcome screen is the first screen seen by a user while the application is loading and starting. it's good idea to use a logo, mascot or any other thing setting the instant visual connection with a brand. moreover, adding a bit of wow-effect with slight stylish animation, it's easy to make the sign even more attractive and memorable.
+
+pre-loaders and pull-to-refresh indicators. these are the elements which show the flow of the current loading process on the app or website. branding applied elegantly in them can add much into the consistency of both UI and identity design.
+
+mascots. mascots are images, usually personified, which often represent the brand, product or service identity and can be its symbolic convention in all the application or website. mascots push the limits of personification and give the chance to create the unexpected combinations of elements or make fantastic and non-existing characters alive. a mascot becomes the element of identity and inter-connector between the user and the product. in many cases, it is the basic element of communication and interaction delivering the necessary message to the user.
+
+## 2. set clear and easy navigation as the core task
+
+in the article on UX design for e-commerce, we stated: whatever an amazing website or app is, whatever the stylish and trendy design and breathtaking images it features, its success will be measured not by the number of wows. the efficiency is analyzed simply - by he number of complete purchases. if users don't buy, design means nothing while stakeholders lose their money, clear intuitive navigation plays the premier violin here. at every step of interaction, uses need to understand clearly plenty of simple things, like:
+
+1. what company or brand they are dealing with
+2. what page they are at
+3. where the menu is
+4. how they can get back to home page or catalog
+5. where the search and filters are
+6. how long the page-loading process is going to take
+7. how they can see the detailed information about the item
+8. how they can choose between the option for the same item (color, size, etc)
+9. how they can pay for the item
+10. how they can save the items they could like to get back to later
+11. how they can contact the seller
+12. how they can see the rating and reviews of previous buyers etc.
 
 
+## check the scannability of the page or screen
+
+as it was already mentioned, users don't usually read and observe all the content on the page or screen from the starting point: instead, they start from quick scanning to understand if it contains something they need or want. knowing the eye-tracking models, gestalt principles and laws of visual hierarchy, designers and information architects can put the core data and interaction elements to the zones of high and natural visibility.
+
+calls to action(CTA), in particular, should be instantly seen in the first seconds on the page or screen. in the interfaces for e-commerce, CTA elements are the core factor of effective interaction with the product playing the crucial role in usability and navigability and therefore in getting profits. when all the path of interaction and transitions is built clearly for users but CTA elements is not thought-out, placed or designed well, users can get confused and will need to take additional effort trying to achieve their goals. that increases the risk of poor conversion rate and general user experience.
+
+## minimize user's efforts whenever its possible
+
+the respect to the customer lies not in pouring out your thanks. the real respect is in saving users' time and effort day in and day out. here are some design practices which can make the inter face effort-saving.
+
+show related products. seen on the item page as recommendations close to the features of this particular
 
 
 
