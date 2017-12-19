@@ -442,7 +442,66 @@ check that perception of the layout is natural and harmonic for the human eye. t
 
 ## 5. don't go too far experimenting
 
-there are many articles and videos calling creative people to hear their heart, trust their guts and think out-of-the-box. however, design is not just pure creativity striving to show all the power of original solution. first of all, it the way to solve the problem and make users happier. so, it's vital to look at the interface from user's perspective and find the way to make interactions that will provide the smooth and easy way to conversion. in the article on home page design strategies we mentioned: the website is made not for 
+there are many articles and videos calling creative people to hear their heart, trust their guts and think out-of-the-box. however, design is not just pure creativity striving to show all the power of original solution. first of all, it the way to solve the problem and make users happier. so, it's vital to look at the interface from user's perspective and find the way to make interactions that will provide the smooth and easy way to conversion. in the article on home page design strategies we mentioned: the website is made not for creative contests or gallery of fame but for real users. the positive impact of habit in terms of user experience can be stronger than the wish of revolution. surely, the dose of uniqueness is needed, but not so much to knock down the user. in e-commerce UI design, often aimed at quite a diverse target audience, too much of revolution might confuse and scare: do i really need to buy this thing, a user may think, if it's so hard to get it? study the interaction patterns and typical products for that particular target audience to make their habits their power. and don't forget to check that all the icons on the screen don't have a double meaning. strive for the balance between innovation and traditions.
+
+## 6. use landing pages for specific purposes
+
+for business aims and profits rate, this tip may bring crucial changes. e-commerce UI design principles are usually based on dealing complex websites or apps which are filled in with a variety of information. so, the approach of directing all the traffic from outer sources to the home page can be step killing profitability and reducing conversion rates. users might get overwhelmed, distracted or even annoyed with the amount of data they have to process finding what they need, especially if they are focused on a particular narrow goal presented in the source they came from. using landing pages when you need to concentrate user's attention on something specific can solve this problem efficiently. landing page is focused on one item, to make it quickly found and reduce delays when target user seeks for specific operations, services or items. this is the issue of especially high importance in the case of e-commerce websites when unwise design solutions bring to poor user experience and financial losses.
+
+## 7. make the homepage informative
+
+home page can satisfy multiple functions: it's a card of invitation, a starting point of the journey around the website, a storage of the vital links and data, and a strategic asset for marketing goals. in the majority of cases, it is the first visual and emotional touch to the website. certainly, design is one of the core ways to make this touch gentle, smart and helpful. with all the progress the world wide web has witnessed, this position doesn't change: home page often defines if a user goes further around the website, not only by beauty and style but first of all by information which is looked for. making it accessible, noticeable and clear, designers grow the chances of positive user experience.
+
+in general, home page can include the following data:
+
+1. the nature of the website
+2. brand or company identity elements
+3. internal search
+4. links to the core interaction zones
+5. contact data and links to social networks
+6. signs of trust(testimonials, reviews, big numbers of presence in social networks etc)
+7. for e-commerce websites, it can be visual presentation of bestselling and exclusive items, for example, specific books, toys, clothing, equipment etc.
+
+the solution which of the mentioned points are going to be included and how they are going to be spread on the layout should depend on the goals set for the website and the research of target audience.
+
+## 8. apply high quality images giving the message
+
+images take a big part in usability: as the vast majority of users are visually driven, images become the hook points of getting basic data about the website or app. they present the part of the content which is both informative and emotionally appealing. the level of detail and functionality allow classifying the images in user interfaces into types, among which:
+
+1. photos:theme photos creating the appropriate mood and setting the message, demonstration photos, photos of the items, title photos for blog articles and pages of special offers etc.
+2. illustrations: custom illustrations in graphic interface design can look both informative and original allowing the design to stand out of the competition.
+3. hero banners: applied mostly in web design, they are big images which are usually the first visual element catching user's attention in the initial seconds of interaction; they usually give the attractive visual presentation of the main content of the resource.
+4. icons: these are small but meaningful pictograms which are informative and support data exchange between the informer and addressee. icons play the key role in providing clear and intuitive navigation, but they should be checked on proper clarity and the absence of double meanings.
+5. mascots: images, usually personified, representing the brand, product or service identity.
+6. visual identity elements: various visual signs of branding like logos, custom lettering for brand name and slogan etc.
+
+## 9. think about promotional videos of different kinds
+
+there are several common types of promotional videos:
+
+1. introduction video: the first insights on the company, product, or brand showing its benefits for users
+2. product presentation videos: details about product's features and advantages, special steps of interactions and the problem solving potential of the product.
+3. landing page videos: strengthening the message driving users to a particular call to action offered on the page
+4. video testimonials: the reasons and signs of trust and loyalty to the company, brand or brand.
+5. entertaining and educational videos: rising emotional appeal and often presenting the material for viral marketing
+
+all the mentioned types can serve efficiently for marketing goals and increase brand awareness. a creative and catchy video is a good way of attracting customers' attention and the proven method of informing them quickly and brightly. a video activates several channels of perception: audio, visual, sound. simultaneously and usually do it in a way of telling a story. people are daily overloaded with tons of information of all kinds, so most of them aren't ready to devote much time learning about products or services, especially the new ones. in these conditions, video can become the way of communication which is dynamic, informative and attractive. however, the technical side should be double checked so that the video was integrated correctly and didn't overload the page.
+
+## 10. let the user contact the duty holders from any point of interaction
+
+ the most popular placement for contact information is footer, the bottom part of the page. however, if any kind of contact data is core for conversion, it's logical to put in the pre-scroll area or even a header. for example, on an e-commerce website, presents the on-line shop, users may want to call more frequently and this ability will have a direct impact on conversion rate. anyway, the contact data should be available at any point users may need it. among others, it is one of the factors influencing the level of trust to the website.
+
+contacts can be presented in various formats. they can reveal the data such as a phone number and location, emails, links to messengers, contact forms and instant chat window. making the phone numbers click-able is supportive as many user now browse from their smart-phones and may want to call right from there. the address can be also click-able opening the screen-shot or map showing how to find the location. the solutions have to be based on thoughtful user research setting target audience's expectations, level of tech literacy and ways of contact which are the most convenient for them. for instance, if your target audience is teenagers, just giving the phone number may be not effective as they really stick to messengers and social networks. at the same time, if your users are elderly people, social networks may not work in comparison to a phone number.
+
+## 11. add gamification
+
+gamification integrated into digital products is a great way to stimulate users' extrinsic motivation, which is mostly a seek of reword, which can be tangible,money, prizes, diplomas, certificates, trophies,medals. and intangible . so, challenges, leader-boards, rewards for loyalty and big orders, discounts, badges, coupons, stickers and all the other stuff of that kind can become great stimuli for users to not only start interaction with a website or app but also stay there and buy regularly.
+
+the offered e-commerce UI design examples and strategies, for sure, do not cover the whole scope of issues to consider in this fields. however, they can serve as a useful checklist or a source of UI design inspiration for those who aim at creating user friendly platforms supporting business goals. no doubt, best UI design for e-commerce website is the one which leaves a buyer happy and brings profits to the stakeholders.
+
+# NEXT
+
+
 
 
 
