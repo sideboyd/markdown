@@ -420,17 +420,29 @@ in the article on UX design for e-commerce, we stated: whatever an amazing websi
 12. how they can see the rating and reviews of previous buyers etc.
 
 
-## check the scannability of the page or screen
+## 3. check the scannability of the page or screen
 
 as it was already mentioned, users don't usually read and observe all the content on the page or screen from the starting point: instead, they start from quick scanning to understand if it contains something they need or want. knowing the eye-tracking models, gestalt principles and laws of visual hierarchy, designers and information architects can put the core data and interaction elements to the zones of high and natural visibility.
 
 calls to action(CTA), in particular, should be instantly seen in the first seconds on the page or screen. in the interfaces for e-commerce, CTA elements are the core factor of effective interaction with the product playing the crucial role in usability and navigability and therefore in getting profits. when all the path of interaction and transitions is built clearly for users but CTA elements is not thought-out, placed or designed well, users can get confused and will need to take additional effort trying to achieve their goals. that increases the risk of poor conversion rate and general user experience.
 
-## minimize user's efforts whenever its possible
+## 4. minimize user's efforts whenever its possible
 
 the respect to the customer lies not in pouring out your thanks. the real respect is in saving users' time and effort day in and day out. here are some design practices which can make the inter face effort-saving.
 
-show related products. seen on the item page as recommendations close to the features of this particular
+show related products. seen on the item page as recommendations close to the features of this particular product can make the process of search and browsing much faster for users. however, it's vital to check together with developers that this section really works according to the algorithm which show s suitable items, not random ones.
+
+strive for a minimal number of clicks. if going from page to page or jumping from screen to screen is not a part of the journey into the sales funnel, save every users' click possible. too many operations are tiring and annoying which is a kind of negative emotion. and emotions have a huge influence on user experience and make retaining users much harder. minimize the number of clicks on the way of choosing and buying whenever it's possible - his way you respect user's time better than politest word of thanks.
+
+simplify the sign-in process. imagine the situation when you got to the amazing website selling the goods of your dream, and they presented in such a stylish way that you want to buy them at once. but when you click the button buy, you are taken to the huge long from which you have to fill in to register on that website. that will cool down your hot wish to buy everything right here, right now, isn't it ? you change from the state take my money, give me that to really? 20 points to fill in before i can buy? in split seconds. not all the users will survive that transformation and the website or app will lose a part of buyers. so, it's necessary to make the sign-in/log-in process as simple as possible.
+
+user shape and color marking to group the items or types of content. color and shape codes enable designers to apply gestalt principle of similarity not only on one screen or page but on the whole app or website. color or shape markers simplify navigation and keep the consistency of design enabling users to remember the prompts and find content they want easily. for e-commerce platforms which are usually full of numerous items, it can make the interface much more user-friendly.
+
+check that perception of the layout is natural and harmonic for the human eye. there are numerous things that have an impact on decision-making, and harmony is one of them. eye-tensing color combinations, unreadable or not combining fonts, aggressive background, intrusive pop-ups or animations, annoying sounds or pages loading for ages- any point of that stuff can spoil the experience quickly and move users away.
+
+## 5. don't go too far experimenting
+
+there are many articles and videos calling creative people to hear their heart, trust their guts and think out-of-the-box. however, design is not just pure creativity striving to show all the power of original solution. first of all, it the way to solve the problem and make users happier. so, it's vital to look at the interface from user's perspective and find the way to make interactions that will provide the smooth and easy way to conversion. in the article on home page design strategies we mentioned: the website is made not for 
 
 
 
