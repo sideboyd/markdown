@@ -501,9 +501,19 @@ the offered e-commerce UI design examples and strategies, for sure, do not cover
 
 # NEXT
 
+# take it easy: tips for effort-saving user interface
+
+simplicity is the ultimate sophistication, said genius Leonardo da Vinci, and this eternal truth is as fair now as it was several centuries ago. 
 
 
 
+
+
+# NEXT
+
+
+
+https://tubikstudio.com/effective-teamwork-in-digital-agency-how-to-avoid-pitfalls/
 
 
 
