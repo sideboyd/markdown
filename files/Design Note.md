@@ -503,11 +503,53 @@ the offered e-commerce UI design examples and strategies, for sure, do not cover
 
 # take it easy: tips for effort-saving user interface
 
-simplicity is the ultimate sophistication, said genius Leonardo da Vinci, and this eternal truth is as fair now as it was several centuries ago. 
+simplicity is the ultimate sophistication, said genius Leonardo da Vinci, and this eternal truth is as fair now as it was several centuries ago. such an approach in design for web and mobile interfaces results in human centered products which are pleasant and easy in use. make no mistake, simple doesn't mean empty, primitive or mono-functional. instead, it means clear, intuitive and helpful. really simple products not only solve user's problems but also do it in an optimal way in the aspects of times and effort.
+
+we aren't often thinking in terms of love and respect when it comes to digital products. we can describe them in tons of other words featuring appearance like beautiful, elegant, interesting etc. or functionality like intuitive, easy to use, confusing etc. or content like informative, consistent etc. but you rarely can hear that someone names a website or app respectful. however, repect ofr user's time and energy is one of the vital goals which designers should strive to achieve in the product they work on. this approach is a great factor of usability and desirability. today we would like to share some advice and techniques which could be come supportive of this aim. these tips aren't reinventing the wheel but present a helpful checklist for design outcome. so, let's check what designers can do to save time and effort for users.
+
+## 1. put the core data into header
+
+talking about websites, it is an extremely helpful idea for quick and easy navigation. the only problem is to decide on what core data is, especially for websites with a huge amount of various data, like big e-commerce websites, news platforms or multi-theme blogs. header is a strategic part as people see it before scrolling the page in the first seconds of introduction to the website. being a sign of invitation, header should provide the key information about the digital product so that users could scan it in split seconds.
+
+in our article telling about web headers design in detail, we provided the typical kinds of content which can be included into headers:
+
+1. basic elements of brand identity: logo, brand name lettering, slogan or company statement, corporate mascot, photo presenting the company or its leader, corporate colors etc.
+2. copy block setting the theme of the product or service presented 
+3. links to basic categories of website content
+4. links to the most important social networks
+5. basic contact information
+6. switcher of the languages in case of multi-lingual interface
+7. search field
+8. subscription field
+9. links to interaction with the product such as trial version, downloading from the app store etc.
+
+
+
+it doesn't mean that all the mentioned elements should be included in one web page header: in this case, the risk is high that the header section would be overloaded with information. the more objects attract user's attention, the harder it is to concentrate on the vital ones. here designers, preferably together with marketing specialists and stakeholders, need to decide on the strategically important options and pick them up from the list or add the others.
+
+why is header so essential? eye-tracking investigations show that whichever scanning mode a particular user follows, the scanning precess will start in the top horizontal area of the web page. using it for showing the core information and branding is a strategy supporting both sides: readers scan the key data quickly while website gets the chance to retain them if it's presented properly. that is the basic reason why header design is an essential issue for UIUX designers as well as content and promotion specialists.
+
+## 2. make branding highly visual
+
+in terms of the discussed topic, brand means a sort of image created via a set of distinguishing features and promoting awareness and recognizability of the product or service on the market. this image can be created in tons of diverse ways. visual, verbal, touchable etc. in web and mobile design, branding supposedly means a set of visual elements defining the brand style, which can be applied in the interfaces such as logo, typography, brand colors and the like. all of them together are a powerful tool for creating visual recognizability of the product as well as its style. being based on the analysis of target audience and marketing customer research, branding in this sense plays the vital role in product promotion as visual perception is very fast and easy for most people, much easier than reading the text and much more memorable than listening to speech. moreover, if the brand is already well established, its signs observed in the first seconds of seeing a website or app increase the level of trust.
+
+## 3. use numbers, not words
+
+one of the investigations of user behavior provided by Nielsen Norman Blog shared an interesting finding: based on eye-tracking studies while users scan web pages, numerals often stop the wandering eye and attract fixations, even when they are embedded within a mass of words that users otherwise ignore. people subconsciously associate numbers with facts, stats, sizes and distance something potentially useful for them. so they are hooked with the numbers included in copy while words representing numbers represent, they are more compact than their textual variant, which enables to make the content more concise and time saving for skimming the data.
 
 
 
 
+
+
+
+
+
+
+
+
+
+https://tubikstudio.com/take-it-easy-tips-for-effort-saving-user-interfaces/
 
 # NEXT
 
