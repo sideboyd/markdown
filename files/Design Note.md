@@ -562,4 +562,20 @@ https://tubikstudio.com/effective-teamwork-in-digital-agency-how-to-avoid-pitfal
 
 
 
+
+# NEXT
+
+# review of popular interface design trends in 2017
+
+the new year 2018 is closer and closer,so stepping into a phase of fresh challenges and new horizons, we would like to look back and remember what the ending year has been marked out with. here we've gathered the collection of trends 
+
+
+
+
+
+
+
+https://tubikstudio.com/review-of-popular-interface-design-trends-in-2017/
+
+
 END;

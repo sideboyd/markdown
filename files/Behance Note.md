@@ -1,4 +1,4 @@
-# Behance Note
+# @@Behance Note
 
 如何优化客户体验？如何提升运营效率？如何创造更多销售机会？
 
@@ -124,11 +124,28 @@
 
 评价：这是一个健康手机UI，设计成果展示方式新颖，作为项目初期介绍产品时的PPT素材很棒。可以借鉴
 
-#### 作品目的：购票系统
+#### @@作品目的：购票系统
 
 作品地址：https://www.behance.net/gallery/58271919/Digital-Ticket-App-Airport-Information-via-IOT
 
 评价：这是一个购票网站页面，从故事，需求，设计思路完整，需求调研思路清晰可以借鉴。
+
+1. user studies and research
+   1. user study goal
+   2. design goal
+2. observed problems
+   1. problem statement
+3. validation
+4. final solution
+5. ecosystem
+6. persona
+7. conseptual model
+8. data architecture
+9. prototype
+10. scenario
+11. user journey
+
+
 
 #### 作品目的：项目管理软件
 
@@ -264,6 +281,8 @@ https://uiiiuiii.com/inspiration/161639276.html
 
 作品地址：https://www.behance.net/gallery/59900987/M-O-O-Z-D-A-S-H-B-O-A-R-D
 
+https://uiiiuiii.com/inspiration/161641620.html
+
 评价：作为一个后台页面的设计，element 和 template 的规范定义很重要，配色一般使用传统配色，此后台配色和基础定义做的很完整，
 
 其中，页面布局在配色的搭配下更显立体，纸片的效果跃然纸上，非常棒。
@@ -278,7 +297,7 @@ https://uiiiuiii.com/inspiration/161639276.html
 
 
 
-#### 作品目的：产品解决方案设计流程
+#### @@作品目的：产品解决方案设计流程
 
 作品地址：https://www.behance.net/gallery/59901041/_
 
@@ -321,8 +340,98 @@ https://uiiiuiii.com/inspiration/161639276.html
 
 评价：目前流行的一页流，简洁又高效，如何页面分区成为了设计的核心话题，一个优雅的分屏可以增色不少。
 
+#### @@作品目的：产品改进方案  website redesign
+
+作品地址：https://www.behance.net/gallery/60200031/Vienna-Teng-official-website-redesign
+
+评价：作为一个产品经理，产品数据分析，改进计划是必不可少的一项技能。
+
+official website redesign
+
+1. background
+
+   1. the problem
+   2. the goal
+
+2. website analysis
+
+   1. world ranking
+   2. domestic ranking
+   3. industry ranking
+   4. visits
+   5. avg. time on site
+   6. avg. page on site
+   7. index bounce rate
+   8. searching sources
+      1. direct 直接输入网址进入
+      2. mail 门户网站链接进入
+      3. referrals 自然搜索进入
+      4. social 社交门户进入
+      5. organic search 电子邮件推送进入
+      6. paid search 付费搜索进入
+      7. display   广告进入
+   9. portal sites sources
+   10. way of searching
+   11. key words
+   12. top link destination
+       1. thinking  - what do people want to see?
+
+3. comparison-list-screen shot
+
+   1. banner
+   2. navigation bars
+   3. MV/performance
+   4. album/tours
+   5. songs players
+   6. social media links
+   7. register bars
+
+   thinking - is it right to do just as same as other websites? how can i do better?
+
+4. user research
+
+   1. three things people care about most
+      1. MV/performance
+      2. merch purchasing
+      3. tours information
+
+5. the insights
+
+   1. why do you enter the website
+   2. things you hate most on the website
+   3. how to decrease the bounce rate
+   4. the believability of this research
+
+6. wire-framing 
+
+7. ui-design
+
+8. the reflection
+
+   1. tools and methods I used
+      1. desktop research
+      2. competitive overview
+      3. interview
+      4. wire framing + prototyping
+      5. UI design
+      6. illustrator + PS + sketch
+   2. things i learned
+      1. a lot of desktop research and interviews ensured that our design was user centered
+      2. co-designing with users was a great way to find solutions that truly meet people's need
+      3. the design process is a series of divergent thinking(build up)and convergent thinking(narrow down)
 
 
+
+
+#### 作品目的：CTA 设计方法
+
+作品地址：http://www.uisdc.com/ux-design-call-to-action
+
+评价：在绝大多数人的眼里，交互设计师的职责是对产品用户体验负责，毋庸置疑这肯定是正确的。但交互设计师并不是一个独立的个体，我们既服务于用户又服务于团队，服务于产品的商业价值，提升转化率也是交互设计中不得不考虑的重要一环。
+
+福格模型简单来讲就是一个公式：B=MAT。B(behavior)代表行为，M(motivation)代表动机也就是用户需求，A(ability)代表用户使用的门槛，T(trigger)代表触发。也就是用户行为的产生需要用户需求为基础，需要保证产品的易用性，但是这还不够，在这个基础上我们还需要在产品中通过设计触发用户。
+
+有三个环节不能忽略：注意力、传达、触发点。
 
 
 

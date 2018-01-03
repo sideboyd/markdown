@@ -6,9 +6,15 @@
 
 ​	**Speed, meet beauty.**
 
-​	图片文字再精美，还是无法弥补不能眼见为实的缺憾   
+​	图片文字再精美，还是无法弥补不能眼见为实的缺憾。
 
-​	                                                                                                                                    
+​	免费体验整个流程，收费可以弥补或快捷。诱发购买，指导购买，奖励购买，记录购买（寺庙功德箱），
+
+​	在游戏中，用户技术是核心（操作），不可取代的，充值可以快速体验游戏。
+
+​	在应用中，用户体验是核心（解决问题），不可中断的，充值可以体验多样服务。   
+
+​	从事信息管理以及信息系统分析、设计、实施、管理                                                                                                                                 
 
 * 学习笔记
     - [数据库设计](https://github.com/sideboyd/markdown/blob/master/files/data%20design.md)
@@ -19,6 +25,7 @@
     - [Python第三方库](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
     - [Android Note](https://github.com/sideboyd/AndroidNote)
     - [Design Note](https://github.com/sideboyd/markdown/blob/master/files/Design%20Note.md)
+    - [DLD process]()
 * WEB-UI框架
     * [BOOTSTRAP](https://github.com/sideboyd/bootstrap)
     * [adminLTE](https://github.com/sideboyd/AdminLTE)
@@ -47,7 +54,19 @@
 
 
 
-=========================Starter Kit============================
+=======Starter Kit===define TOB OR TOC=技术拐点+MVP=================
+
+MVP的选择和验证很重要，新产品切入点：辅助自有产品，取缔自有产品。**技术能实现，成本能接受**
+
+比如微商，最想验证的是朋友之间适不适合做生意，如果朋友推荐的东西以赚钱为目的，这个推荐是否还有价值。（验证需求）
+
+如何验证：先保存其他人的宣传图，广告词。再发到自己的朋友圈，如果有人下单就直接找货源下单并邮寄够购买者。如果有量可以考虑做，如果没量则不成功。验证微商就是这么简单。
+
+比如迅雷，三大功能：浏览器拉起，下载协议支持，下载管理。（下载这个需求是常识，需要验证的下载技术是否比别人快）
+
+如何验证：只做下载这一个功能，而且只支持HTTP，提供对话框拷贝URL进行下载。
+
+做了MVP之后呢：数据收集，亲自体验，再次用户访谈，来验证假设。并且避免KPI导向。
 
 在现在这个共享时代，创业团队只需要抓住三个点，
 
@@ -127,13 +146,27 @@ UX设计：
 
 ![1](https://github.com/sideboyd/markdown/blob/master/image/uisdc-feeldesign-20171127-11.jpg)
 
+福格模型简单来讲就是一个公式：B=MAT。B(behavior)代表行为，M(motivation)代表动机也就是用户需求，A(ability)代表用户使用的门槛，T(trigger)代表触发。也就是用户行为的产生需要用户需求为基础，需要保证产品的易用性，但是这还不够，在这个基础上我们还需要在产品中通过设计触发用户。
+
+有三个环节不能忽略：注意力、传达、触发点。
+
+卡诺分析：**期望的功能：****必需的功能：令人愉悦的功能：无关紧要的功能和反功能：**
+
+识别办法：如果有这个功能，你感觉如何？？如果没有这个功能，你会感觉如何？？
+
 可用性设计UX（功能和操作）：focus on the experience
 
 ![1](https://github.com/sideboyd/markdown/blob/master/image/bricks.gif)
 
 硬件：打印纸张，铁夹
 
-软件：会议记录（石墨），脑图（百度脑图），流程图（processon），mockup（墨刀），element（百度网盘-build tools），提案（PPT），PRD（excel），PJ Plan（石墨excel），
+软件：用户地图，会议记录（石墨），脑图（百度脑图），流程图（processon），mockup（墨刀），element（百度网盘-build tools），提案（PPT），PRD（excel），PJ Plan（石墨excel），
+
+![1]()
+
+- 设计形式追随功能——营销线应以业务需求为导向，避免新颖美观却不能解决实际问题的设计，如何提升产品转化率才是交互设计师需要重点关注的。
+- 好用易用为首要目标——营销活动往往信息量巨大，又容易因时间和操作等因素而变化频繁，所以要尽量保持样式简洁和逻辑清晰，让用户能高效地浏览操作，减少购物中的困惑和焦虑感。
+- 以用户为中心——深入挖掘用户行为习惯，真正从用户的角度去分析购物流程中可能会出现的问题，考虑多端多场景的兼容，保证每个触点都能得到及时有效的反馈，在满足业务需求下保持良好的用户体验。
 
 =========================UI=====page templates===============
 
@@ -206,7 +239,7 @@ SVN，REDMINE，BACKLOG,GIT,
 
 
 
-================CASE_1====================================
+================CASE_1===production investigation=================================
 
 人脸识别能提供的数据：
 
@@ -227,3 +260,107 @@ PS：语音的记录也可以作为辅助分析工具。
 上课后：使用问卷收集信息，结合上课中采集的信息，给出综合评价。
 
 评价：产品的设计要经过需求分析、基础原型、交互设计、视觉设计、配合开发、产品首先出于行业，从行业中脱颖而出，同时也可以跨行业，产品成型的架构都是来自于需求，第一目标用户定义，典型用户调研（分组经常使用同类产品的和从来不用同类产品的）需求从说、做、想入手，场景故事模拟可用性测试。第二将需求点转化为设计点，在业务流程中，系统能够做什么以及接触点有哪些，怎么设计这些接触点，mockup模拟。利益相关者及盈利模式。第三，针对每个环节流程进行分别设计解决方案流程，第四，设计前端后端架构infra/api/db，第五，demo测试及场景模拟测试。
+
+================CASE_2==project proposal==================================
+
+1. user studies and research
+   1. user study goal
+   2. design goal
+2. observed problems
+   1. problem statement
+3. validation
+4. final solution
+5. ecosystem
+6. persona
+7. conseptual model
+8. data architecture
+9. prototype
+10. scenario
+11. user journey
+
+
+
+================CASE_3==production redesign==================================
+
+official website redesign
+
+1. background
+
+   1. the problem
+   2. the goal
+
+2. website analysis
+
+   1. world ranking
+   2. domestic ranking
+   3. industry ranking
+   4. visits
+   5. avg. time on site
+   6. avg. page on site
+   7. index bounce rate
+   8. searching sources
+      1. direct 直接输入网址进入
+      2. mail 门户网站链接进入
+      3. referrals 自然搜索进入
+      4. social 社交门户进入
+      5. organic search 电子邮件推送进入
+      6. paid search 付费搜索进入
+      7. display   广告进入
+   9. portal sites sources
+   10. way of searching
+   11. key words
+   12. top link destination
+       1. thinking  - what do people want to see?
+
+3. comparison-list-screen shot
+
+   1. banner
+   2. navigation bars
+   3. MV/performance
+   4. album/tours
+   5. songs players
+   6. social media links
+   7. register bars
+
+   thinking - is it right to do just as same as other websites? how can i do better?
+
+4. user research
+
+   1. three things people care about most
+      1. MV/performance
+      2. merch purchasing
+      3. tours information
+
+5. the insights
+
+   1. why do you enter the website
+   2. things you hate most on the website
+   3. how to decrease the bounce rate
+   4. the believability of this research
+
+6. wire-framing 
+
+7. ui-design
+
+8. the reflection
+
+   1. tools and methods I used
+      1. desktop research
+      2. competitive overview
+      3. interview
+      4. wire framing + prototyping
+      5. UI design
+      6. illustrator + PS + sketch
+   2. things i learned
+      1. a lot of desktop research and interviews ensured that our design was user centered
+      2. co-designing with users was a great way to find solutions that truly meet people's need
+      3. the design process is a series of divergent thinking(build up)and convergent thinking(narrow down)
+
+===================applet========================
+
+优点：微信内页面跳转  JS控件丰富
+
+.json 后缀的 JSON 配置文件 = 框架（tab，roadmap，）（RD的活）
+.wxml 后缀的 WXML 模板文件 = 用户地图（user journey 调用： 逻辑JS/组件component/接口API）（RD的活）
+.wxss 后缀的 WXSS 样式文件 = 样式 （描述 WXML 的组件样式）（UI的活）
+.js 后缀的 JS 脚本逻辑文件 = 交互库（响应方式）（产品UX的活）
