@@ -162,7 +162,7 @@ UX设计：
 
 软件：用户地图，会议记录（石墨），脑图（百度脑图），流程图（processon），mockup（墨刀），element（百度网盘-build tools），提案（PPT），PRD（excel），PJ Plan（石墨excel），
 
-![1]()
+![1](https://github.com/sideboyd/markdown/blob/master/image/user-journey.png)
 
 - 设计形式追随功能——营销线应以业务需求为导向，避免新颖美观却不能解决实际问题的设计，如何提升产品转化率才是交互设计师需要重点关注的。
 - 好用易用为首要目标——营销活动往往信息量巨大，又容易因时间和操作等因素而变化频繁，所以要尽量保持样式简洁和逻辑清晰，让用户能高效地浏览操作，减少购物中的困惑和焦虑感。
