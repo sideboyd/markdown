@@ -112,6 +112,20 @@
 
 评价：这是一个医疗保险的网页版，使用了现在常用的大图做底板，三个主功能横向布局第一页，布局合理，颜色搭配醒目
 
+#### 作品目的：care-U-app  慢病管理
+
+作品地址：https://www.behance.net/gallery/60458757/Care-U-APP-Concept
+
+评价：慢病管理，核心的价值就是，care you ，非常贴切，在产品设计中突出了care的概念，血压交互，tip交互，家庭成员交互，（朋友圈，聊天管理，人员分享关注管理，血压分析）
+
+#### 作品目的：数据展示方法论
+
+作品地址：https://uiiiuiii.com/inspiration/161642108.html
+
+评价：如何更优雅的展示结果是一门艺术，合理的布局和配色，体现功底的时候到了。
+
+
+
 #### 作品目的：教育平台-IOS
 
 作品地址：https://www.behance.net/gallery/54963329/Socio-Mobile-App-Education-Technology
@@ -433,9 +447,21 @@ official website redesign
 
 有三个环节不能忽略：注意力、传达、触发点。
 
+#### 作品目的：横向UX设计细节描述
+
+作品地址：https://www.behance.net/gallery/60458931/Koins
+
+评价：在梳理PRD的过程中，将MVP核心业务流程纵向展示之后，横向的UX交互可以通过这种方式进行梳理说明。横向展开的UX交互是一些细节的雕琢，比如动效，点击，旋转，theme等。
+
+
+
+
+
 
 
 END；
+
+
 
 #### 作品目的：
 
@@ -444,6 +470,4 @@ END；
 评价：
 
 
-
-END；
 
