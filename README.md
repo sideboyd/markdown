@@ -4,7 +4,11 @@
 
 ​	**Study and Practice, years of it.**   we become what we repeatedly do. 
 
-​	**Speed, meet beauty.**
+​	**Speed, meet beauty.** 独立思考，分析问题，逻辑推理，
+
+​	快速推翻你的假设，在拳头打到你的脸之前，每个人都有一个完美的计划。
+
+​	我们的错误是在不假思索地对待你想象的东西，就好像是对事实的准确表示。
 
 ​	图片文字再精美，还是无法弥补不能眼见为实的缺憾。一次是体验，十次是动机，百次是洞察预测。
 
