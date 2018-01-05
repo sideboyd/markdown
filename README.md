@@ -16,7 +16,7 @@
 
 ​	信息管理以及信息系统分析、设计、实施、管理。数据安全与隐私（视频、语音、声波、传感）   
 
-​	大数据的核心价值：预测、洞察   （以数据为驱动）                                                                                                                          
+​	大数据的核心价值：预测、洞察  。用户已经不满足于得到数据，他们更想要一个直接的分析结果。                                                                                                                          
 
 * 学习笔记
     - [数据库设计](https://github.com/sideboyd/markdown/blob/master/files/data%20design.md)
@@ -27,7 +27,9 @@
     - [Python第三方库](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
     - [Android Note](https://github.com/sideboyd/AndroidNote)
     - [Design Note](https://github.com/sideboyd/markdown/blob/master/files/Design%20Note.md)
-    - [DLD process]()
+    - [DLD process](https://github.com/sideboyd/markdown/blob/master/files/DLDprocess.md)
+    - [ACA Learning](https://github.com/sideboyd/markdown/blob/master/files/ACA.md)
+    - [PM Learning]()
 * WEB-UI框架
     * [BOOTSTRAP](https://github.com/sideboyd/bootstrap)
     * [adminLTE](https://github.com/sideboyd/AdminLTE)
