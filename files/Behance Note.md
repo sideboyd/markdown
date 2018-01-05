@@ -126,6 +126,14 @@
 
 
 
+#### 作品目的：health app
+
+作品地址：https://www.behance.net/gallery/60494103/Health-App
+
+评价：远程医疗是未来解决医疗资源紧张的一条途径，全科社区医生的定位是否能够实现也是一个节点。登录应用之后根据location自动导向附近的社区医生，主要功能：chat，diagnostic，patient info，
+
+
+
 #### 作品目的：教育平台-IOS
 
 作品地址：https://www.behance.net/gallery/54963329/Socio-Mobile-App-Education-Technology
