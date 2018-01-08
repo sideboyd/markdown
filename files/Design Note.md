@@ -537,7 +537,9 @@ in terms of the discussed topic, brand means a sort of image created via a set o
 
 one of the investigations of user behavior provided by Nielsen Norman Blog shared an interesting finding: based on eye-tracking studies while users scan web pages, numerals often stop the wandering eye and attract fixations, even when they are embedded within a mass of words that users otherwise ignore. people subconsciously associate numbers with facts, stats, sizes and distance something potentially useful for them. so they are hooked with the numbers included in copy while words representing numbers represent, they are more compact than their textual variant, which enables to make the content more concise and time saving for skimming the data.
 
+##4. make the call to action instantly noticeable
 
+a call to action is actually a word of phrase stimulating users to interact with a product in a way and for the aim it is designed for. CTA elements are the interactive controls which enable users to do the action they are called to. common types of such interactive elements in the layout are buttons, tabs, or links. in the interfaces of all kinds, CTA elements are the interactive controls which enable users to do the action they are called to. common types of such interactive elements in the layout are buttons,
 
 
 
@@ -565,17 +567,7 @@ https://tubikstudio.com/effective-teamwork-in-digital-agency-how-to-avoid-pitfal
 
 # NEXT
 
-# review of popular interface design trends in 2017
 
-the new year 2018 is closer and closer,so stepping into a phase of fresh challenges and new horizons, we would like to look back and remember what the ending year has been marked out with. here we've gathered the collection of trends 
-
-
-
-
-
-
-
-https://tubikstudio.com/review-of-popular-interface-design-trends-in-2017/
 
 
 END;

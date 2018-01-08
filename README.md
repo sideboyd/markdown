@@ -54,6 +54,7 @@
     * [android thing UI](https://github.com/sideboyd/sample-simpleui)
 * 图表
     * [Echarts](https://github.com/sideboyd/markdown/blob/master/files/Echarts.md)
+    * [Recharts](https://github.com/cosname/recharts)
 * 人脸识别
     * [arcfaceSDK](https://github.com/sideboyd/ArcFaceDemo)
 * 机器学习
@@ -101,6 +102,14 @@ UI用官方标准素材（好看的插画先不要，google和IOS安排的还不
 \----------------------------------------------------
 
 SUM：以最快的速度出适用场景解决核心问题的第一版才是最关键的。
+
+寻找天使用户：天使用户不是主流用户
+
+1. 存在问题或痛点
+2. 知道他们自己存在问题或痛点
+3. 尝试寻找解决方案
+4. 倒腾他们自己的解决方案
+5. 愿意并且能够为解决方案付钱
 
 =========================Design System===服务价值=利益+体验+效率===================
 
