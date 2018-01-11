@@ -34,7 +34,7 @@
     - [DLD process](https://github.com/sideboyd/markdown/blob/master/files/DLDprocess.md)
     - [ACA Learning](https://github.com/sideboyd/markdown/blob/master/files/ACA.md)
     - [PM Learning](https://github.com/sideboyd/markdown/blob/master/files/PM%20learning.md)
-    - [Design mem]()
+    - [Design mem](https://github.com/sideboyd/markdown/blob/master/files/Design%20mem.md)
 * WEB-UI框架
     * [BOOTSTRAP](https://github.com/sideboyd/bootstrap)
     * [adminLTE](https://github.com/sideboyd/AdminLTE)

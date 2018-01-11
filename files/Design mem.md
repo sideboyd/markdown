@@ -4,9 +4,11 @@
 
 =======Starter Kit===define TOB OR TOC=技术拐点+MVP=================
 
-MVP的选择和验证很重要，新产品切入点：辅助自有产品，取缔自有产品。**技术能实现，成本能接受**
+产品三步法：搭架子，定流程，扣细节
 
+敏捷MVP的选择和验证很重要，新产品切入点：辅助自有产品，取缔自有产品。**技术能实现，成本能接受**
 
+![1](https://github.com/sideboyd/markdown/blob/master/image/agileDEV.jpg)
 
 比如微商，最想验证的是朋友之间适不适合做生意，如果朋友推荐的东西以赚钱为目的，这个推荐是否还有价值。（验证需求）
 
@@ -148,8 +150,6 @@ UX设计：
 
 ============================================================
 
-
-
 #5. 表现层-视觉传达，易用的交互操作
 
 =========================UI=====page templates===============
@@ -184,7 +184,15 @@ SVN，REDMINE，BACKLOG,GIT,
 
 #6. 竞品分析-方法论
 
+竞品分析的方法，其实就是产品重构的方法，从历史版本下手，从产品目的下手。
 
+![1](https://github.com/sideboyd/markdown/blob/master/image/Competitive_analysis1.jpg)
+
+![2](https://github.com/sideboyd/markdown/blob/master/image/Competitive_analysis2.jpg)
+
+![3](https://github.com/sideboyd/markdown/blob/master/image/Competitive_analysis3.jpg)
+
+![4](https://github.com/sideboyd/markdown/blob/master/image/Competitive_analysis4.jpg)
 
 
 
