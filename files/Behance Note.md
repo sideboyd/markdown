@@ -154,6 +154,14 @@
 
 评价：这是一个健康手机UI，设计成果展示方式新颖，作为项目初期介绍产品时的PPT素材很棒。可以借鉴
 
+#### 作品目的：知识库，在线课程APP的设计方法
+
+作品地址：https://uiiiuiii.com/inspiration/161644155.html
+
+评价：在线课程三大元素，视频，互动，报名。知识库三大课程，视频，文字，留言。
+
+
+
 #### @@作品目的：购票系统
 
 作品地址：https://www.behance.net/gallery/58271919/Digital-Ticket-App-Airport-Information-via-IOT
