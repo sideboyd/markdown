@@ -1105,7 +1105,33 @@ UX的ROI有理可寻，但不可能绝对量化
 
 
 
+信息管理>>IDC/ICT>>行业解决方案SE>>仓储信息管理SE>>医疗O2OPM
 
+
+
+UI standards  and  best practice  >>假设和验证的结果>>用户体验流程化>>标准化交付物
+
+不要四不像，要的是有个性和一致性的产品
+
+UX专业能力，设计管理能力，沟通说服能力
+
+我们需要一群专注的人盯着产品用户体验
+
+--
+
+design to innovate
+
+design to differentiate
+
+design to simplify
+
+机器人的 UX
+
+GUI + PUI + AUI + external design + usability + functional design 
+
+--
+
+体验是持续的长期的
 
 
 
