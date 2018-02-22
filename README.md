@@ -1,5 +1,7 @@
 ![](https://github.com/sideboyd/markdown/blob/master/image/7f419446815917.586530fe1cca4.jpg)
 
+写给自己的话：2017-1-1
+
 ​      Identify and focus on your top priorities – because if you don't, wtf are you doing?
 
 ​	**Study and Practice, years of it.**   we become what we repeatedly do. 
@@ -20,9 +22,20 @@
 
 ​	信息管理以及信息系统分析、设计、实施、管理。数据安全与隐私（视频、语音、声波、传感）   
 
-​	大数据的核心价值：预测、洞察  。用户已经不满足于得到数据，他们更想要一个直接的分析结果。                                                                                                                          
+​	大数据的核心价值：预测、洞察  。用户已经不满足于得到数据，他们更想要一个直接的分析结果。          
+
+​	用户动线规划是建立在用研的基础上。
+
+​	创造力并不局限于创意或是艺术的表达形式，而更多是一种“创造性思维”。产生于某种辛勤的工作，结合充满好奇的探索和系统化的研究。
+
+​	在设定目标前，问自己在十分钟、十个月和十年之后如何去做决定，这其中阻力最小的路径并不一定是最好的方式。必须有一定的认知与远见才能确定延迟满足的模式。
+
+​	实现长期愿景与目标的关键在于：行动，行动，行动！
+
+================                                                                                                                
 
 * 学习笔记
+    - [终身幼儿园]()
     - [数据库设计](https://github.com/sideboyd/markdown/blob/master/files/data%20design.md)
     - [阿里云产品](https://github.com/sideboyd/markdown/blob/master/files/aliyun.md)
     - [Behance Note](https://github.com/sideboyd/markdown/blob/master/files/Behance%20Note.md)
