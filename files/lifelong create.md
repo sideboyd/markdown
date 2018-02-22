@@ -28,6 +28,8 @@
 
 imagine-create-play-share-reflect-imagine
 
+![](https://github.com/sideboyd/markdown/blob/master/image/lifelong.jpg)
+
 ==
 
 **想象：**就像上面的举例一样，孩子们的创造从他们对一个城堡的想象开始。
