@@ -96,6 +96,12 @@
 
 ## 已整理笔记
 
+#### 作品目的：这7个实用的设计技巧，能让你的UI高级感更强烈
+
+作品地址：http://www.uisdc.com/7-practical-tips-cheating-design
+
+评价：页面的感觉是细节的调整，调整的方法论可以让页面更美观和高效
+
 #### 作品目的：通感设计
 
 作品地址：http://www.uisdc.com/synaesthesia-design-language
