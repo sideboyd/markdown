@@ -192,26 +192,7 @@
 
 
 
-#### @@作品目的：购票系统
-
-作品地址：https://www.behance.net/gallery/58271919/Digital-Ticket-App-Airport-Information-via-IOT
-
-评价：这是一个购票网站页面，从故事，需求，设计思路完整，需求调研思路清晰可以借鉴。
-
-1. user studies and research
-   1. user study goal
-   2. design goal
-2. observed problems
-   1. problem statement
-3. validation
-4. final solution
-5. ecosystem
-6. persona
-7. conseptual model
-8. data architecture
-9. prototype
-10. scenario
-11. user journey
+1. ​
 
 
 
@@ -363,13 +344,40 @@ https://uiiiuiii.com/inspiration/161641620.html
 
 评价：对于医疗而言，为了让医院更加有序，使用预约制是最好的途径。除了突发性的病情，慢性病管理及孕期管理都是一个周期较长并需要多次回访的一个管理过程。此APP的孕期管理预约流程操作顺畅配色合适，值得借鉴。
 
+#### @@作品目的：购票系统
 
+作品地址：https://www.behance.net/gallery/58271919/Digital-Ticket-App-Airport-Information-via-IOT
+
+评价：这是一个购票网站页面，从故事，需求，设计思路完整，需求调研思路清晰可以借鉴。
+
+1. user studies and research
+   1. user study goal
+   2. design goal
+2. observed problems
+   1. problem statement
+3. validation
+4. final solution
+5. ecosystem
+6. persona
+7. conseptual model
+8. data architecture
+9. prototype
+10. scenario
+11. user journey
 
 #### @@作品目的：产品解决方案设计流程
 
 作品地址：https://www.behance.net/gallery/59901041/_
 
 评价：产品的设计要经过需求分析、基础原型、交互设计、视觉设计、配合开发、产品首先出于行业，从行业中脱颖而出，同时也可以跨行业，产品成型的架构都是来自于需求，第一目标用户定义，典型用户调研（分组经常使用同类产品的和从来不用同类产品的）需求从说、做、想入手，场景故事模拟可用性测试。第二将需求点转化为设计点，在业务流程中，系统能够做什么以及接触点有哪些，怎么设计这些接触点，mockup模拟。利益相关者及盈利模式。第三，针对每个环节流程进行分别设计解决方案流程，第四，设计前端后端架构infra/api/db，第五，demo测试及场景模拟测试。
+
+####@@作品目的：旅行APP的设计思路
+
+作品地址：https://www.behance.net/gallery/43735733/MeTravel
+
+评价：简单直观的设计方式，可以有效快速的确定APP的主要功能及用户需求，user flow ， wireframe，UI，color icon ，最后结合场景，user flow，配合UI，讲述APP自己的故事。
+
+
 
 #### 作品目的：聊天互动集锦
 
@@ -556,6 +564,18 @@ official website redesign
 作品地址：https://uiiiuiii.com/inspiration/161660814.html
 
 评价：越来越多的物联网设备被使用起来，但是数据采集，数据存储，数据分析，数据消费，的生态链中，数据消费是落地端，用户如何快速的使用数据带来的便捷。简单使用能达到可用的目的。
+
+
+
+#### 作品目的：停车软件
+
+作品地址：https://uiiiuiii.com/inspiration/161667945.html
+
+评价：车辆可以手动驾驶，可以自动驾驶，但是另一个问题就是，车到达目的地之后。存放在哪里。如何快捷的存放汽车是一个很有意思的问题。
+
+一般场景是在距离目的地2KM左右或20分钟时，用户在车上选择距离目的地附近100M范围内的停车位或停车场状态。
+
+导航软件自动提示或手动打开APP。自动定位（默认车型）、默认选择最近停车场和停车位，告知收费标准，
 
 
 
