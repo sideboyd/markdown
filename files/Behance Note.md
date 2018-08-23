@@ -344,6 +344,14 @@ https://uiiiuiii.com/inspiration/161641620.html
 
 评价：对于医疗而言，为了让医院更加有序，使用预约制是最好的途径。除了突发性的病情，慢性病管理及孕期管理都是一个周期较长并需要多次回访的一个管理过程。此APP的孕期管理预约流程操作顺畅配色合适，值得借鉴。
 
+#### @@作品目的：peiway  标准设计流程
+
+作品地址：https://www.behance.net/gallery/67996949/Peiway-Mobile-UXUI-Concept
+
+评价：storyteller >> user flow >> UX wire frames >> work process >> page details >> mock up >>UI ICON >> developer team
+
+
+
 #### @@作品目的：购票系统
 
 作品地址：https://www.behance.net/gallery/58271919/Digital-Ticket-App-Airport-Information-via-IOT
