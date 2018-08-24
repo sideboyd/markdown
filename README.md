@@ -77,6 +77,10 @@
 
 
 
-总纲：
+能力总纲：
 
 ![](https://github.com/sideboyd/markdown/blob/master/image/TTW_QUESTION_201802_20180209171102_0255.png)
+
+技能总纲：
+
+![](https://github.com/sideboyd/markdown/blob/master/image/PO.png)
