@@ -6,33 +6,21 @@
 
 ​	**Study and Practice, years of it.**   we become what we repeatedly do. 
 
-​	**Speed, meet beauty.** 独立思考，分析问题，逻辑推理，
-
 ​	快速推翻你的假设，在拳头打到你的脸之前，每个人都有一个完美的计划。
 
 ​	我们的错误是在不假思索地对待你想象的东西，就好像是对事实的准确表示。
 
-​	图片文字再精美，还是无法弥补不能眼见为实的缺憾。一次是体验，十次是动机，百次是洞察预测。
+​	用户动线上千万不要阻止用户想使用的功能，告诉他，你要先做什么才能做什么是最大的忌讳。   
 
-​	免费体验整个流程，收费可以弥补或快捷。诱发购买，指导购买，奖励购买，记录购买（寺庙功德箱），
+​	大数据要做到AI，首先要制定IA。          
 
-​	在游戏中，用户技术是核心（操作），不可取代的，充值可以快速体验游戏。
+​	价值=需求-成本-问题  &  动机=商业目标+用户需求
 
-​	在应用中，用户体验是核心（解决问题），不可中断的，充值可以体验多样服务。   
+​	流程图、架构图、原型图、用例图、是需求确认的四大里程碑
 
-​	信息管理以及信息系统分析、设计、实施、管理。数据安全与隐私（视频、语音、声波、传感）   
+​	斯坦福：Empathy>Define>Idea>Prototype>Test
 
-​	大数据的核心价值：预测、洞察  。用户已经不满足于得到数据，他们更想要一个直接的分析结果。          
-
-​	用户动线规划是建立在用研的基础上。
-
-​	创造力并不局限于创意或是艺术的表达形式，而更多是一种“创造性思维”。产生于某种辛勤的工作，结合充满好奇的探索和系统化的研究。创造力=复制+转化+结合
-
-​	在设定目标前，问自己在十分钟、十个月和十年之后如何去做决定，这其中阻力最小的路径并不一定是最好的方式。必须有一定的认知与远见才能确定延迟满足的模式。
-
-​	实现长期愿景与目标的关键在于：行动，行动，行动！成功的职业规划也如此，目标+优势+战略+行动+反思，缺一不可。首先确定我们要什么（厘清目标），然后看看我们有什么（确立优势），然后怎么做（部署战略），接着动起来（聚焦行动），最后回顾下次再做我需要调整什么（反思改进）。
-
-​	数学计算思路，让他先找到一条总的目标推行路线，然后再一步步克服这条路上的各种难题。
+​	风格流派：Storyteller >> Idea >> Analysis >> BRD >> User flow >> X mind >> UX wire frames >> Work process >> Mock up >> Page details >> UI icon >> PRD
 
 ================                                                                                                                
 
@@ -46,7 +34,7 @@
     - [Python第三方库](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
     - [Android Note](https://github.com/sideboyd/AndroidNote)
     - [Design Note](https://github.com/sideboyd/markdown/blob/master/files/Design%20Note.md)
-    - [DLD process](https://github.com/sideboyd/markdown/blob/master/files/DLDprocess.md)
+    - [斯坦福 DLD process](https://github.com/sideboyd/markdown/blob/master/files/DLDprocess.md)
     - [ACA Learning](https://github.com/sideboyd/markdown/blob/master/files/ACA.md)
     - [PM Learning](https://github.com/sideboyd/markdown/blob/master/files/PM%20learning.md)
     - [Design mem](https://github.com/sideboyd/markdown/blob/master/files/Design%20mem.md)

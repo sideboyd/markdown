@@ -1,6 +1,6 @@
 # DLD
 
-empathy>define>idea>prototype>test
+Empathy>Define>Idea>Prototype>Test
 
 ## discover the unknown - phase 1 of the DLD process
 
