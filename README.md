@@ -12,7 +12,7 @@
 
 ​	用户动线上千万不要阻止用户想使用的功能，告诉他，你要先做什么才能做什么是最大的忌讳。   
 
-​	大数据要做到AI，首先要制定IA。          
+​	大数据要做到AI（Artificial Intelligence），首先要制定IA（information architecture）。          
 
 ​	价值=需求-成本-问题  &  动机=商业目标+用户需求
 
@@ -21,6 +21,10 @@
 ​	斯坦福：Empathy>Define>Idea>Prototype>Test
 
 ​	风格流派：Storyteller >> Idea >> Analysis >> BRD >> User flow >> X mind >> UX wire frames >> Work process >> Mock up >> Page details >> UI icon >> PRD
+
+![](https://github.com/sideboyd/markdown/blob/master/image/0BUILD%20tools.PNG)
+
+
 
 ================                                                                                                                
 
