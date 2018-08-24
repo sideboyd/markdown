@@ -16,9 +16,11 @@
 
 ​	价值=需求-成本-问题  &  动机=商业目标+用户需求
 
-​	流程图、架构图、原型图、用例图、是需求确认的四大里程碑
+​	产品思维逻辑分析法：5W2H分析法，鱼骨因果图分析法，麦肯锡7步分析法，思维导图分析法。
 
-​	斯坦福：Empathy>Define>Idea>Prototype>Test
+​	用户画像、流程图、架构图、原型图、用例图、是需求确认的五大里程碑工具
+
+​	斯坦福：Empathy（Persona）>Define（PoV）>Idea（Use case）>Prototype（Storyboard）>Test
 
 ​	风格流派：Storyteller >> Idea >> Analysis >> BRD >> User flow >> X mind >> UX wire frames >> Work process >> Mock up >> Page details >> UI icon >> PRD
 
