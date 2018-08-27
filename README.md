@@ -22,7 +22,9 @@
 
 ​	斯坦福：Empathy（Persona）>Define（PoV）>Idea（Use case）>Prototype（Storyboard）>Test
 
-​	风格流派：Storyteller >> Idea >> Analysis >> BRD >> User flow >> X mind >> UX wire frames >> Work process >> Mock up >> Page details >> UI icon >> PRD
+​	实操：目标及核心问题>>用户画像>>需求罗列>>需求分类>>点子>>原型>>评议
+
+​	成果物：Storyteller >> Idea >> Analysis >> BRD >> User flow >> X mind >> UX wire frames >> Work process >> Mock up >> Page details >> UI icon >> PRD
 
 ![](https://github.com/sideboyd/markdown/blob/master/image/0BUILD%20tools.PNG)
 
