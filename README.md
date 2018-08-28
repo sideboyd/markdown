@@ -28,7 +28,7 @@
 
 ​	4.商业模式：商业价值=布标人群X客单价X购买频次  & 细分市场（切蛋糕）：人群，地域，档次，频次
 
-​		价值=需求-成本-问题  &  动机=商业目标+用户需求 
+​		价值=需求-成本-问题  &  动机=商业目标+用户需求   &  成本回收
 
 ![](https://github.com/sideboyd/markdown/blob/master/image/0BUILD%20tools.PNG)
 
