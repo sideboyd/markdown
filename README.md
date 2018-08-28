@@ -10,21 +10,25 @@
 
 ​	我们的错误是在不假思索地对待你想象的东西，就好像是对事实的准确表示。
 
-​	用户动线上千万不要阻止用户想使用的功能，告诉他，你要先做什么才能做什么是最大的忌讳。   
+=======================================================================
 
-​	大数据要做到AI（Artificial Intelligence），首先要制定IA（information architecture）。          
+​	1.用户体验： 用户动线是核心最简流程，满足客户需求，也许根本不需要功能。    
 
-​	价值=需求-成本-问题  &  动机=商业目标+用户需求
+​		产品思维逻辑分析法：5W2H分析法，鱼骨因果图分析法，麦肯锡7步分析法，思维导图分析法。
 
-​	产品思维逻辑分析法：5W2H分析法，鱼骨因果图分析法，麦肯锡7步分析法，思维导图分析法。
+​	2.迭代功能：功能>>需求>>动机
 
-​	用户画像、流程图、架构图、原型图、用例图、是需求确认的五大里程碑工具
+​		用户画像、流程图、架构图、原型图、用例图、是需求确认的五大里程碑工具
 
-​	斯坦福：Empathy（Persona）>Define（PoV）>Idea（Use case）>Prototype（Storyboard）>Test
+​	3.产品策略：Empathy（Persona）>Define（PoV）>Idea（Use case）>Prototype（Storyboard）>Test
 
-​	实操：目标及核心问题>>用户画像>>需求罗列>>需求分类>>点子>>原型>>评议
+​		实操：用户目标是什么要解决什么问题>>用户画像>>需求罗列>>需求分类>>点子>>原型>>评议
 
-​	成果物：Storyteller >> Idea >> Analysis >> BRD >> User flow >> X mind >> UX wire frames >> Work process >> Mock up >> Page details >> UI icon >> PRD
+​		成果物：Storyteller >> Idea >> Analysis >> BRD >> User flow >> X mind >> UX wire frames >> Work process >> Mock up >> Page details >> UI icon >> PRD
+
+​	4.商业模式：商业价值=布标人群X客单价X购买频次  & 细分市场（切蛋糕）：人群，地域，档次，频次
+
+​		价值=需求-成本-问题  &  动机=商业目标+用户需求 
 
 ![](https://github.com/sideboyd/markdown/blob/master/image/0BUILD%20tools.PNG)
 
