@@ -10,7 +10,11 @@
 
 ​	我们的错误是在不假思索地对待你想象的东西，就好像是对事实的准确表示。
 
-=======================================================================
+​	选择和努力你觉得那个重要？ 我觉得选择重要。一个好的数据结构搭配一个劣的算法&一个坏的数据结构搭配一个优的算法。我觉得一个好的数据结构配一个劣的算法更好。一个好的商业模式配一个差的产品&和一个坏的商业模式配一个好的产品，我更倾向于选择一个好的商业模式。
+
+​	**最优的学方法论就是：理论，模型&直觉**
+
+=======================================================
 
 ​	1.用户体验： 用户动线是核心最简流程，满足客户需求，也许根本不需要功能。    
 
@@ -24,17 +28,17 @@
 
 ​		实操：用户目标是什么要解决什么问题>>用户画像>>需求罗列>>需求分类>>点子>>原型>>评议
 
-​		成果物：Storyteller >> Idea >> Analysis >> BRD >> User flow >> X mind >> UX wire frames >> Work process >> Mock up >> Page details >> UI icon >> PRD
+​		成果物：Storyteller >> Idea >> business canvas >> BRD >> User flow >> X mind >> UX wire frames >> design thinking >> Mock up >> Page details >> UI standard >> PRD
 
-​	4.商业模式：商业价值=布标人群X客单价X购买频次  & 细分市场（切蛋糕）：人群，地域，档次，频次
+​	4.商业模式：产品思维(业务逻辑产品化及产品逻辑可视化)>>商业思维（商业闭环设计）
+
+​		商业价值=布标人群X客单价X购买频次  & 细分市场（切蛋糕）：人群，地域，档次，频次
 
 ​		价值=需求-成本-问题  &  动机=商业目标+用户需求   &  成本回收
 
 ![](https://github.com/sideboyd/markdown/blob/master/image/0BUILD%20tools.PNG)
 
-
-
-================                                                                                                                
+=====================================================                                                                                                                
 
 * 学习笔记
     - [数据库设计](https://github.com/sideboyd/markdown/blob/master/files/data%20design.md)
@@ -49,6 +53,7 @@
     - [ACA Learning](https://github.com/sideboyd/markdown/blob/master/files/ACA.md)
     - [PM Learning](https://github.com/sideboyd/markdown/blob/master/files/PM%20learning.md)
     - [Design mem](https://github.com/sideboyd/markdown/blob/master/files/Design%20mem.md)
+    - [商业画布-闭环设计](http://coffee.pmcaff.com/article/1360751763409024/pmcaff?utm_source=forum)
 * WEB-UI框架
     * [BOOTSTRAP](https://github.com/sideboyd/bootstrap)
     * [adminLTE](https://github.com/sideboyd/AdminLTE)
@@ -91,3 +96,13 @@
 技能总纲：
 
 ![](https://github.com/sideboyd/markdown/blob/master/image/PO.png)
+
+书库：
+
+​	《产品设计规范与关乎“秩序和混乱”的人生算法》
+
+​	《产品经理职业生涯规划&每个阶段的弯道超越算法》
+
+​	《产品经理职业成长的加速度变量&精进方法论》
+
+​	《产品经理的高阶能力：架构图的设计与画法》
