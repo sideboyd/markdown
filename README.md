@@ -53,7 +53,6 @@
     - [ACA Learning](https://github.com/sideboyd/markdown/blob/master/files/ACA.md)
     - [PM Learning](https://github.com/sideboyd/markdown/blob/master/files/PM%20learning.md)
     - [Design mem](https://github.com/sideboyd/markdown/blob/master/files/Design%20mem.md)
-    - [商业画布-闭环设计](http://coffee.pmcaff.com/article/1360751763409024/pmcaff?utm_source=forum)
 * WEB-UI框架
     * [BOOTSTRAP](https://github.com/sideboyd/bootstrap)
     * [adminLTE](https://github.com/sideboyd/AdminLTE)
@@ -97,7 +96,7 @@
 
 ![](https://github.com/sideboyd/markdown/blob/master/image/PO.png)
 
-书库：
+知识库：
 
 ​	《产品设计规范与关乎“秩序和混乱”的人生算法》
 
@@ -106,3 +105,5 @@
 ​	《产品经理职业成长的加速度变量&精进方法论》
 
 ​	《产品经理的高阶能力：架构图的设计与画法》
+
+​	《产品经理的高阶能力：商业思维&基于商业画布的研习方法论》
