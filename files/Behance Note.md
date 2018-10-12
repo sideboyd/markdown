@@ -385,6 +385,12 @@ https://uiiiuiii.com/inspiration/161641620.html
 
 评价：简单直观的设计方式，可以有效快速的确定APP的主要功能及用户需求，user flow ， wireframe，UI，color icon ，最后结合场景，user flow，配合UI，讲述APP自己的故事。
 
+#### @@作品目的：android IOS 动效设计库
+
+作品地址：https://www.behance.net/gallery/37148547/Swift-UI-Libraries-and-Java-Components-iOS-Android
+
+评价：炫酷的动效库，让APP显得高大上的秘诀
+
 
 
 #### 作品目的：聊天互动集锦
@@ -584,6 +590,12 @@ official website redesign
 一般场景是在距离目的地2KM左右或20分钟时，用户在车上选择距离目的地附近100M范围内的停车位或停车场状态。
 
 导航软件自动提示或手动打开APP。自动定位（默认车型）、默认选择最近停车场和停车位，告知收费标准，
+
+#### 作品目的：从wireframe 到 mockup 的画法及思路
+
+作品地址：https://www.behance.net/gallery/68649487/3-iOS-Games-Word-Puzzle-Quiz-Sudoku
+
+评价：从故事开始，到从简的wireframe 到mockup UI 的节奏
 
 
 
