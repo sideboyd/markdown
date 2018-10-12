@@ -53,6 +53,7 @@
     - [ACA Learning](https://github.com/sideboyd/markdown/blob/master/files/ACA.md)
     - [PM Learning](https://github.com/sideboyd/markdown/blob/master/files/PM%20learning.md)
     - [Design mem](https://github.com/sideboyd/markdown/blob/master/files/Design%20mem.md)
+    - [PM Tech](https://github.com/sideboyd/markdown/blob/master/files/PM%20tech.md)
 * WEB-UI框架
     * [BOOTSTRAP](https://github.com/sideboyd/bootstrap)
     * [adminLTE](https://github.com/sideboyd/AdminLTE)
