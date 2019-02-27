@@ -2,9 +2,13 @@
 
 写给自己的话：2017-1-1
 
-​      Identify and focus on your top priorities – because if you don't, wtf are you doing?
-
 ​	**Study and Practice, years of it.**   we become what we repeatedly do. 
+
+​	研究と実践、それの年。 私たちは繰り返し行うことになります。
+
+​	要一致坚持学习和练习，每天做的事情造就我们自己。
+
+​	Identify and focus on your top priorities – because if you don't, wtf are you doing?
 
 ​	快速推翻你的假设，在拳头打到你的脸之前，每个人都有一个完美的计划。
 
